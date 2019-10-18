@@ -15,8 +15,16 @@ Lyon, Rennes et Saint-Etienne sont au format JSON.
 
 ## TO DO 
 
-- Quelles informations on souhaite conserver ?
+- Quelles informations on souhaite conserver (Upload dans Fuseki) ?
+    * nom de station
+    * id station
+    * lat
+    * lon
+    * nb vélos dispos
+    * nb vélos utilisés
+    * nb total vélos
+    * Pour une ville, on liste les stations.
 - Requêtes SPARQL permettant de mettre à jour le seveur Fuseki avec les différents fichier
-- Site Web permettant de choisir des villes
+- Site Web (Spring) permettant de choisir des villes
 - Réponse en RDFa
 - (Créer itinéraire)
