@@ -28,3 +28,7 @@ Lyon, Rennes et Saint-Etienne sont au format JSON.
 - Site Web (Spring) permettant de choisir des villes
 - Réponse en RDFa
 - (Créer itinéraire)
+
+## Infos supplémentaires
+
+Il devrait être possible de rajouter n'importe quelle ville.

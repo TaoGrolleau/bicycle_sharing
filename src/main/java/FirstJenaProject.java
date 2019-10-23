@@ -1,15 +1,17 @@
 import org.apache.jena.datatypes.xsd.XSDDatatype;
-import org.apache.jena.rdf.model.Model;
-import org.apache.jena.rdf.model.ModelFactory;
-import org.apache.jena.rdf.model.Property;
-import org.apache.jena.rdf.model.Resource;
+import org.apache.jena.query.QueryExecution;
+import org.apache.jena.query.QuerySolution;
+import org.apache.jena.query.ResultSet;
+import org.apache.jena.rdf.model.*;
+import org.apache.jena.rdfconnection.RDFConnectionFactory;
+import org.apache.jena.rdfconnection.SparqlQueryConnection;
 import org.apache.jena.vocabulary.RDF;
 import org.apache.jena.vocabulary.RDFS;
 
 import java.io.*;
 
-public class MainApplication {
-    static public void main (String[] args) throws FileNotFoundException {
+public class FirstJenaProject {
+    static public void jena_project (String[] args) throws FileNotFoundException {
 
         String personURI = "http://somewhere/JohnSmith";
         String fullName = "John Smith";
@@ -27,7 +29,7 @@ public class MainApplication {
         johnSmith.addProperty(foafname, name);
         johnSmith.addProperty(RDFS.label, fullName, "en");
 
-        /*SparqlQueryConnection conn = RDFConnectionFactory.connect("http://dbpedia.org/sparql", null, null);
+        SparqlQueryConnection conn = RDFConnectionFactory.connect("http://dbpedia.org/sparql", null, null);
         QueryExecution qe = conn.query("SELECT * WHERE { ?s ?p ?o } LIMIT 10)");
         ResultSet rs = qe.execSelect();
         while(rs.hasNext()) {
@@ -36,7 +38,7 @@ public class MainApplication {
             RDFNode p = qs.get("P");
             RDFNode o = qs.get("O");
             System.out.println("subject: " + s + ", predicate: " + p + ", object: " + o);
-        }*/
+        }
 
         //m.read("http://dbpedia.org/resource/Saint-Étienne");
         m.write(System.out, "Turtle"); //Autres formats : Turtle, N-TRIPLES
