@@ -15,6 +15,7 @@ Lyon, Rennes et Saint-Etienne sont au format JSON.
 
 ## TO DO 
 
+- Faire un vocabulaire RDF
 - Quelles informations on souhaite conserver (Upload dans Fuseki) ?
     * nom de station
     * id station
