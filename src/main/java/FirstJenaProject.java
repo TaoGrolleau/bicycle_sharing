@@ -60,7 +60,7 @@ public class FirstJenaProject {
         m_stations.setNsPrefix("rdfs", rdfsURI);
         m_stations.setNsPrefix("geo", geoURI);
 
-        File file = new File("C:\\Users\\taogr\\IdeaProjects\\bicycle_sharing\\src\\main\\resources\\stops.txt");
+        /* File file = new File("C:\\Users\\taogr\\IdeaProjects\\bicycle_sharing\\src\\main\\resources\\stops.txt");
         BufferedReader br = new BufferedReader(new FileReader(file));
         String line;
         String[] splittedLine;
@@ -96,5 +96,6 @@ public class FirstJenaProject {
         }
 
         m_stations.write(System.out, "Turtle");
+         */
     }
 }
