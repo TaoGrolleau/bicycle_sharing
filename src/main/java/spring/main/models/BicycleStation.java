@@ -3,7 +3,7 @@ package spring.main.models;
 import lombok.Data;
 
 @Data
-public class BycicleStation {
+public class BicycleStation {
     private String station_name;
     private String station_id;
     private String station_lon;
