@@ -1,0 +1,110 @@
+
+@base          <http://example.org/> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix ex:    <http://example.org/> .
+@prefix vocab: <http://rdf.ontology2.com/vocab#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ite:   <http://w3id.org/sparql-generate/iter/> .
+@prefix fun:   <http://w3id.org/sparql-generate/fn/> .
+@prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<http://ex.com/Faubourg%20Du%20Temple%20-%20Republique>
+        a                   ex:station ;
+        rdfs:label          "Faubourg Du Temple - Republique" ;
+        dbo:idNumber        "11037" ;
+        ex:availableBikes   1 ;
+        ex:availableStands  37 ;
+        vocab:capacity      38 ;
+        geo:lat             "48.867872484748744" ;
+        geo:lon             "2.3648982158072323" .
+
+<http://ex.com/Andr%C3%A9%20Mazet%20-%20Saint-Andr%C3%A9%20des%20Arts>
+        a                   ex:station ;
+        rdfs:label          "André Mazet - Saint-André des Arts" ;
+        dbo:idNumber        "6015" ;
+        ex:availableBikes   4 ;
+        ex:availableStands  44 ;
+        vocab:capacity      52 ;
+        geo:lat             "48.85375581057431" ;
+        geo:lon             "2.3390958085656166" .
+
+<http://ex.com/Charonne%20-%20Robert%20et%20Sonia%20Delauney>
+        a                   ex:station ;
+        rdfs:label          "Charonne - Robert et Sonia Delauney" ;
+        dbo:idNumber        "11104" ;
+        ex:availableBikes   2 ;
+        ex:availableStands  18 ;
+        vocab:capacity      20 ;
+        geo:lat             "48.85590755596891" ;
+        geo:lon             "2.3925706744194035" .
+
+<http://ex.com/Harpe%20-%20Saint-Germain>
+        a                   ex:station ;
+        rdfs:label          "Harpe - Saint-Germain" ;
+        dbo:idNumber        "5001" ;
+        ex:availableBikes   7 ;
+        ex:availableStands  1 ;
+        vocab:capacity      1 ;
+        geo:lat             "48.85151881501689" ;
+        geo:lon             "2.343670316040516" .
+
+<http://ex.com/Jourdan%20-%20Stade%20Charl%C3%A9ty>
+        a                   ex:station ;
+        rdfs:label          "Jourdan - Stade Charléty" ;
+        dbo:idNumber        "14014" ;
+        ex:availableBikes   3 ;
+        ex:availableStands  57 ;
+        vocab:capacity      60 ;
+        geo:lat             "48.81942833336948" ;
+        geo:lon             "2.343335375189781" .
+
+<http://ex.com/Toudouze%20-%20Clauzel>
+        a                   ex:station ;
+        rdfs:label          "Toudouze - Clauzel" ;
+        dbo:idNumber        "9020" ;
+        ex:availableBikes   1 ;
+        ex:availableStands  20 ;
+        vocab:capacity      21 ;
+        geo:lat             "48.87929591733507" ;
+        geo:lon             "2.3373600840568547" .
+
+<http://ex.com/Jouffroy%20d%27Abbans%20-%20Wagram>
+        a                   ex:station ;
+        rdfs:label          "Jouffroy d'Abbans - Wagram" ;
+        dbo:idNumber        "17026" ;
+        ex:availableBikes   2 ;
+        ex:availableStands  0 ;
+        vocab:capacity      0 ;
+        geo:lat             "48.881973298351625" ;
+        geo:lon             "2.301132157444954" .
+
+<http://ex.com/Square%20Boucicaut>
+        a                   ex:station ;
+        rdfs:label          "Square Boucicaut" ;
+        dbo:idNumber        "7003" ;
+        ex:availableBikes   18 ;
+        ex:availableStands  25 ;
+        vocab:capacity      60 ;
+        geo:lat             "48.851296433665276" ;
+        geo:lon             "2.325061820447445" .
+
+<http://ex.com/Mairie%20du%2012%C3%A8me>
+        a                   ex:station ;
+        rdfs:label          "Mairie du 12ème" ;
+        dbo:idNumber        "12109" ;
+        ex:availableBikes   0 ;
+        ex:availableStands  30 ;
+        vocab:capacity      30 ;
+        geo:lat             "48.84085531176338" ;
+        geo:lon             "2.3875549435615544" .
+
+<http://ex.com/Benjamin%20Godard%20-%20Victor%20Hugo>
+        a                   ex:station ;
+        rdfs:label          "Benjamin Godard - Victor Hugo" ;
+        dbo:idNumber        "16107" ;
+        ex:availableBikes   7 ;
+        ex:availableStands  26 ;
+        vocab:capacity      35 ;
+        geo:lat             "48.865983" ;
+        geo:lon             "2.275725" .

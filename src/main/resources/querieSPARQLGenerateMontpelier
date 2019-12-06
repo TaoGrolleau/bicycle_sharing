@@ -1,0 +1,23 @@
+BASE <http://example.com/>
+PREFIX ite: <http://w3id.org/sparql-generate/iter/>
+PREFIX fun: <http://w3id.org/sparql-generate/fn/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ex: <http://example.com/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX vocab: <http://rdf.ontology2.com/vocab#>
+
+GENERATE {
+    <http://ex.com/{?station}> a ex:station;
+            rdfs:label "{?station}" ;
+    		dbo:idNumber ?id;
+  			geo:lat ?lat ;
+    		geo:lon ?lon ;
+    		vocab:capacity ?capacity ;
+  			ex:availableStands ?available_stands ;
+    		ex:availableBikes ?available_bikes ;
+    		ex:bankCard ?cb .
+}
+SOURCE <https://data.montpellier3m.fr/sites/default/files/ressources/TAM_MMM_VELOMAG.xml> AS ?source
+ITERATOR ite:XPath(?source, "/vcs/sl/si", "/si/@na", "/si/@id", "/si/@la", "/si/@lg", "/si/@to", "/si/@fr", "/si/@av", "/si/@cb" ) AS ?work ?station ?id ?lat ?lon ?capacity ?available_stands ?available_bikes ?cb

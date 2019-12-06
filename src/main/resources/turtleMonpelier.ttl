@@ -1,0 +1,605 @@
+
+@base          <http://example.org/> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix ex:    <http://example.com/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix vocab: <http://rdf.ontology2.com/vocab#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ite:   <http://w3id.org/sparql-generate/iter/> .
+@prefix fun:   <http://w3id.org/sparql-generate/fn/> .
+
+<http://ex.com/57%20Saint-Guilhem%20-%20Courreau>
+        a                   ex:station ;
+        rdfs:label          "57 Saint-Guilhem - Courreau" ;
+        dbo:idNumber        "57" ;
+        ex:availableBikes   "8" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "8" ;
+        geo:lat             "43.608996" ;
+        geo:lon             "3.872752" .
+
+<http://ex.com/28%20Saint-Denis>
+        a                   ex:station ;
+        rdfs:label          "28 Saint-Denis" ;
+        dbo:idNumber        "28" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "7" ;
+        vocab:capacity      "8" ;
+        geo:lat             "43.605021" ;
+        geo:lon             "3.875065" .
+
+<http://ex.com/12%20Boutonnet>
+        a                   ex:station ;
+        rdfs:label          "12 Boutonnet" ;
+        dbo:idNumber        "12" ;
+        ex:availableBikes   "7" ;
+        ex:availableStands  "5" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "12" ;
+        geo:lat             "43.622629" ;
+        geo:lon             "3.868375" .
+
+<http://ex.com/15%20Les%20Aubes>
+        a                   ex:station ;
+        rdfs:label          "15 Les Aubes" ;
+        dbo:idNumber        "15" ;
+        ex:availableBikes   "8" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "8" ;
+        geo:lat             "43.618692" ;
+        geo:lon             "3.893844" .
+
+<http://ex.com/34%20Vert%20Bois>
+        a                   ex:station ;
+        rdfs:label          "34 Vert Bois" ;
+        dbo:idNumber        "34" ;
+        ex:availableBikes   "4" ;
+        ex:availableStands  "12" ;
+        vocab:capacity      "16" ;
+        geo:lat             "43.634580" ;
+        geo:lon             "3.868230" .
+
+<http://ex.com/9%20Observatoire>
+        a                   ex:station ;
+        rdfs:label          "9 Observatoire" ;
+        dbo:idNumber        "9" ;
+        ex:availableBikes   "2" ;
+        ex:availableStands  "6" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "8" ;
+        geo:lat             "43.606081" ;
+        geo:lon             "3.876931" .
+
+<http://ex.com/49%20Tonnelles>
+        a                   ex:station ;
+        rdfs:label          "49 Tonnelles" ;
+        dbo:idNumber        "49" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "5" ;
+        vocab:capacity      "8" ;
+        geo:lat             "43.615155" ;
+        geo:lon             "3.839466" .
+
+<http://ex.com/16%20Antigone%20centre>
+        a                   ex:station ;
+        rdfs:label          "16 Antigone centre" ;
+        dbo:idNumber        "16" ;
+        ex:availableBikes   "7" ;
+        ex:availableStands  "9" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "16" ;
+        geo:lat             "43.607942" ;
+        geo:lon             "3.890634" .
+
+<http://ex.com/14%20Beaux-Arts>
+        a                   ex:station ;
+        rdfs:label          "14 Beaux-Arts" ;
+        dbo:idNumber        "14" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "5" ;
+        vocab:capacity      "8" ;
+        geo:lat             "43.616698" ;
+        geo:lon             "3.884981" .
+
+<http://ex.com/8%20Halles%20Castellane>
+        a                   ex:station ;
+        rdfs:label          "8 Halles Castellane" ;
+        dbo:idNumber        "8" ;
+        ex:availableBikes   "8" ;
+        ex:availableStands  "8" ;
+        vocab:capacity      "16" ;
+        geo:lat             "43.609935" ;
+        geo:lon             "3.877208" .
+
+<http://ex.com/56%20Albert%201er%20-%20Cath%C3%AF%C2%BF%C2%BDdrale>
+        a                   ex:station ;
+        rdfs:label          "56 Albert 1er - Cathï¿½drale" ;
+        dbo:idNumber        "56" ;
+        ex:availableBikes   "5" ;
+        ex:availableStands  "7" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "12" ;
+        geo:lat             "43.614005" ;
+        geo:lon             "3.873218" .
+
+<http://ex.com/6%20Place%20Albert%201er%20-%20St%20Charles>
+        a                   ex:station ;
+        rdfs:label          "6 Place Albert 1er - St Charles" ;
+        dbo:idNumber        "6" ;
+        ex:availableBikes   "14" ;
+        ex:availableStands  "17" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "31" ;
+        geo:lat             "43.616768" ;
+        geo:lon             "3.873375" .
+
+<http://ex.com/36%20Occitanie>
+        a                   ex:station ;
+        rdfs:label          "36 Occitanie" ;
+        dbo:idNumber        "36" ;
+        ex:availableBikes   "14" ;
+        ex:availableStands  "18" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "32" ;
+        geo:lat             "43.634242" ;
+        geo:lon             "3.849128" .
+
+<http://ex.com/29%20Richter>
+        a                   ex:station ;
+        rdfs:label          "29 Richter" ;
+        dbo:idNumber        "29" ;
+        ex:availableBikes   "4" ;
+        ex:availableStands  "12" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "16" ;
+        geo:lat             "43.603424" ;
+        geo:lon             "3.899263" .
+
+<http://ex.com/1%20Rue%20Jules%20Ferry%20-%20Gare%20Saint-Roch>
+        a                   ex:station ;
+        rdfs:label          "1 Rue Jules Ferry - Gare Saint-Roch" ;
+        dbo:idNumber        "1" ;
+        ex:availableBikes   "9" ;
+        ex:availableStands  "7" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "16" ;
+        geo:lat             "43.605366" ;
+        geo:lon             "3.881346" .
+
+<http://ex.com/39%20Aiguelongue>
+        a                   ex:station ;
+        rdfs:label          "39 Aiguelongue" ;
+        dbo:idNumber        "39" ;
+        ex:availableBikes   "6" ;
+        ex:availableStands  "2" ;
+        vocab:capacity      "8" ;
+        geo:lat             "43.626163" ;
+        geo:lon             "3.882492" .
+
+<http://ex.com/50%20Parvis%20Jules%20Ferry%20-%20Gare%20Saint-Roch>
+        a                   ex:station ;
+        rdfs:label          "50 Parvis Jules Ferry - Gare Saint-Roch" ;
+        dbo:idNumber        "50" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "5" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "8" ;
+        geo:lat             "43.603889" ;
+        geo:lon             "3.879362" .
+
+<http://ex.com/47%20Place%20Viala>
+        a                   ex:station ;
+        rdfs:label          "47 Place Viala" ;
+        dbo:idNumber        "47" ;
+        ex:availableBikes   "7" ;
+        ex:availableStands  "1" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "8" ;
+        geo:lat             "43.616812" ;
+        geo:lon             "3.855075" .
+
+<http://ex.com/54%20Providence%20-%20Ovalie>
+        a                   ex:station ;
+        rdfs:label          "54 Providence - Ovalie" ;
+        dbo:idNumber        "54" ;
+        ex:availableBikes   "2" ;
+        ex:availableStands  "6" ;
+        vocab:capacity      "8" ;
+        geo:lat             "43.588239" ;
+        geo:lon             "3.853421" .
+
+<http://ex.com/38%20Fac%20de%20Lettres>
+        a                   ex:station ;
+        rdfs:label          "38 Fac de Lettres" ;
+        dbo:idNumber        "38" ;
+        ex:availableBikes   "4" ;
+        ex:availableStands  "12" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "16" ;
+        geo:lat             "43.630665" ;
+        geo:lon             "3.870230" .
+
+<http://ex.com/5%20Corum>
+        a                   ex:station ;
+        rdfs:label          "5 Corum" ;
+        dbo:idNumber        "5" ;
+        ex:availableBikes   "5" ;
+        ex:availableStands  "7" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "12" ;
+        geo:lat             "43.613989" ;
+        geo:lon             "3.881600" .
+
+<http://ex.com/2%20Com%C3%AF%C2%BF%C2%BDdie>
+        a                   ex:station ;
+        rdfs:label          "2 Comï¿½die" ;
+        dbo:idNumber        "2" ;
+        ex:availableBikes   "20" ;
+        ex:availableStands  "4" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "24" ;
+        geo:lat             "43.608148" ;
+        geo:lon             "3.878778" .
+
+<http://ex.com/18%20Nombre%20d%27Or>
+        a                   ex:station ;
+        rdfs:label          "18 Nombre d'Or" ;
+        dbo:idNumber        "18" ;
+        ex:availableBikes   "5" ;
+        ex:availableStands  "11" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "16" ;
+        geo:lat             "43.607859" ;
+        geo:lon             "3.886644" .
+
+<http://ex.com/40%20Jeu%20de%20Mail%20des%20Abb%C3%AF%C2%BF%C2%BDs>
+        a                   ex:station ;
+        rdfs:label          "40 Jeu de Mail des Abbï¿½s" ;
+        dbo:idNumber        "40" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "5" ;
+        vocab:capacity      "8" ;
+        geo:lat             "43.619701" ;
+        geo:lon             "3.883831" .
+
+<http://ex.com/33%20Garcia%20Lorca>
+        a                   ex:station ;
+        rdfs:label          "33 Garcia Lorca" ;
+        dbo:idNumber        "33" ;
+        ex:availableBikes   "5" ;
+        ex:availableStands  "3" ;
+        vocab:capacity      "8" ;
+        geo:lat             "43.590757" ;
+        geo:lon             "3.890616" .
+
+<http://ex.com/17%20M%C3%AF%C2%BF%C2%BDdiath%C3%AF%C2%BF%C2%BDque%20Emile%20Zola>
+        a                   ex:station ;
+        rdfs:label          "17 Mï¿½diathï¿½que Emile Zola" ;
+        dbo:idNumber        "17" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "13" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "16" ;
+        geo:lat             "43.608218" ;
+        geo:lon             "3.893140" .
+
+<http://ex.com/23%20Les%20Arceaux>
+        a                   ex:station ;
+        rdfs:label          "23 Les Arceaux" ;
+        dbo:idNumber        "23" ;
+        ex:availableBikes   "8" ;
+        ex:availableStands  "8" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "16" ;
+        geo:lat             "43.611991" ;
+        geo:lon             "3.867157" .
+
+<http://ex.com/44%20Celleneuve>
+        a                   ex:station ;
+        rdfs:label          "44 Celleneuve" ;
+        dbo:idNumber        "44" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "7" ;
+        vocab:capacity      "8" ;
+        geo:lat             "43.614670" ;
+        geo:lon             "3.832624" .
+
+<http://ex.com/37%20FacdesSciences>
+        a                   ex:station ;
+        rdfs:label          "37 FacdesSciences" ;
+        dbo:idNumber        "37" ;
+        ex:availableBikes   "7" ;
+        ex:availableStands  "17" ;
+        vocab:capacity      "24" ;
+        geo:lat             "43.631018" ;
+        geo:lon             "3.860697" .
+
+<http://ex.com/55%20P%C3%AF%C2%BF%C2%BDrols%20Etang%20de%20l%27Or>
+        a                   ex:station ;
+        rdfs:label          "55 Pï¿½rols Etang de l'Or" ;
+        dbo:idNumber        "55" ;
+        ex:availableBikes   "18" ;
+        ex:availableStands  "50" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "68" ;
+        geo:lat             "43.558351" ;
+        geo:lon             "3.963412" .
+
+<http://ex.com/3%20Esplanade>
+        a                   ex:station ;
+        rdfs:label          "3 Esplanade" ;
+        dbo:idNumber        "3" ;
+        ex:availableBikes   "18" ;
+        ex:availableStands  "14" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "32" ;
+        geo:lat             "43.609478" ;
+        geo:lon             "3.881293" .
+
+<http://ex.com/25%20Nouveau%20Saint-Roch>
+        a                   ex:station ;
+        rdfs:label          "25 Nouveau Saint-Roch" ;
+        dbo:idNumber        "25" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "8" ;
+        vocab:capacity      "8" ;
+        geo:lat             "43.599817" ;
+        geo:lon             "3.875757" .
+
+<http://ex.com/21%20Port%20Marianne>
+        a                   ex:station ;
+        rdfs:label          "21 Port Marianne" ;
+        dbo:idNumber        "21" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "13" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "16" ;
+        geo:lat             "43.600320" ;
+        geo:lon             "3.898510" .
+
+<http://ex.com/11%20Plan%20Cabanes>
+        a                   ex:station ;
+        rdfs:label          "11 Plan Cabanes" ;
+        dbo:idNumber        "11" ;
+        ex:availableBikes   "2" ;
+        ex:availableStands  "10" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "12" ;
+        geo:lat             "43.608491" ;
+        geo:lon             "3.868389" .
+
+<http://ex.com/30%20Charles%20Flahault>
+        a                   ex:station ;
+        rdfs:label          "30 Charles Flahault" ;
+        dbo:idNumber        "30" ;
+        ex:availableBikes   "5" ;
+        ex:availableStands  "3" ;
+        vocab:capacity      "8" ;
+        geo:lat             "43.618762" ;
+        geo:lon             "3.865971" .
+
+<http://ex.com/41%20Eurom%C3%AF%C2%BF%C2%BDdecine>
+        a                   ex:station ;
+        rdfs:label          "41 Euromï¿½decine" ;
+        dbo:idNumber        "41" ;
+        ex:availableBikes   "4" ;
+        ex:availableStands  "4" ;
+        vocab:capacity      "8" ;
+        geo:lat             "43.639119" ;
+        geo:lon             "3.828199" .
+
+<http://ex.com/27%20Odysseum>
+        a                   ex:station ;
+        rdfs:label          "27 Odysseum" ;
+        dbo:idNumber        "27" ;
+        ex:availableBikes   "2" ;
+        ex:availableStands  "6" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "8" ;
+        geo:lat             "43.603727" ;
+        geo:lon             "3.918979" .
+
+<http://ex.com/20%20Gambetta>
+        a                   ex:station ;
+        rdfs:label          "20 Gambetta" ;
+        dbo:idNumber        "20" ;
+        ex:availableBikes   "6" ;
+        ex:availableStands  "2" ;
+        vocab:capacity      "8" ;
+        geo:lat             "43.607106" ;
+        geo:lon             "3.870693" .
+
+<http://ex.com/46%20P%C3%AF%C2%BF%C2%BDre%20Soulas>
+        a                   ex:station ;
+        rdfs:label          "46 Pï¿½re Soulas" ;
+        dbo:idNumber        "46" ;
+        ex:availableBikes   "4" ;
+        ex:availableStands  "4" ;
+        vocab:capacity      "8" ;
+        geo:lat             "43.621983" ;
+        geo:lon             "3.855603" .
+
+<http://ex.com/24%20Cit%C3%AF%C2%BF%C2%BD%20Mion>
+        a                   ex:station ;
+        rdfs:label          "24 Citï¿½ Mion" ;
+        dbo:idNumber        "24" ;
+        ex:availableBikes   "4" ;
+        ex:availableStands  "4" ;
+        vocab:capacity      "8" ;
+        geo:lat             "43.601143" ;
+        geo:lon             "3.884373" .
+
+<http://ex.com/31%20Voltaire>
+        a                   ex:station ;
+        rdfs:label          "31 Voltaire" ;
+        dbo:idNumber        "31" ;
+        ex:availableBikes   "6" ;
+        ex:availableStands  "2" ;
+        vocab:capacity      "8" ;
+        geo:lat             "43.603767" ;
+        geo:lon             "3.888659" .
+
+<http://ex.com/32%20Pr%C3%AF%C2%BF%C2%BDs%20d%27Ar%C3%AF%C2%BF%C2%BDnes>
+        a                   ex:station ;
+        rdfs:label          "32 Prï¿½s d'Arï¿½nes" ;
+        dbo:idNumber        "32" ;
+        ex:availableBikes   "6" ;
+        ex:availableStands  "2" ;
+        vocab:capacity      "8" ;
+        geo:lat             "43.590480" ;
+        geo:lon             "3.884611" .
+
+<http://ex.com/13%20Emile%20Combes>
+        a                   ex:station ;
+        rdfs:label          "13 Emile Combes" ;
+        dbo:idNumber        "13" ;
+        ex:availableBikes   "7" ;
+        ex:availableStands  "1" ;
+        vocab:capacity      "8" ;
+        geo:lat             "43.616742" ;
+        geo:lon             "3.879980" .
+
+<http://ex.com/26%20Renouvier>
+        a                   ex:station ;
+        rdfs:label          "26 Renouvier" ;
+        dbo:idNumber        "26" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "5" ;
+        vocab:capacity      "8" ;
+        geo:lat             "43.603553" ;
+        geo:lon             "3.867884" .
+
+<http://ex.com/4%20H%C3%AF%C2%BF%C2%BDtel%20de%20Ville>
+        a                   ex:station ;
+        rdfs:label          "4 Hï¿½tel de Ville" ;
+        dbo:idNumber        "4" ;
+        ex:availableBikes   "9" ;
+        ex:availableStands  "7" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "16" ;
+        geo:lat             "43.599088" ;
+        geo:lon             "3.894866" .
+
+<http://ex.com/22%20Clemenceau>
+        a                   ex:station ;
+        rdfs:label          "22 Clemenceau" ;
+        dbo:idNumber        "22" ;
+        ex:availableBikes   "10" ;
+        ex:availableStands  "2" ;
+        vocab:capacity      "12" ;
+        geo:lat             "43.603539" ;
+        geo:lon             "3.872394" .
+
+<http://ex.com/53%20Deux%20Ponts%20-%20Gare%20Saint-Roch>
+        a                   ex:station ;
+        rdfs:label          "53 Deux Ponts - Gare Saint-Roch" ;
+        dbo:idNumber        "53" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "5" ;
+        vocab:capacity      "8" ;
+        geo:lat             "43.604319" ;
+        geo:lon             "3.880916" .
+
+<http://ex.com/7%20Foch>
+        a                   ex:station ;
+        rdfs:label          "7 Foch" ;
+        dbo:idNumber        "7" ;
+        ex:availableBikes   "2" ;
+        ex:availableStands  "6" ;
+        vocab:capacity      "8" ;
+        geo:lat             "43.610989" ;
+        geo:lon             "3.873345" .
+
+<http://ex.com/42%20Marie%20Caizergues>
+        a                   ex:station ;
+        rdfs:label          "42 Marie Caizergues" ;
+        dbo:idNumber        "42" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "8" ;
+        vocab:capacity      "8" ;
+        geo:lat             "43.619871" ;
+        geo:lon             "3.873812" .
+
+<http://ex.com/45%20Jardin%20de%20la%20Lironde>
+        a                   ex:station ;
+        rdfs:label          "45 Jardin de la Lironde" ;
+        dbo:idNumber        "45" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "5" ;
+        vocab:capacity      "8" ;
+        geo:lat             "43.605850" ;
+        geo:lon             "3.911576" .
+
+<http://ex.com/35%20Malbosc>
+        a                   ex:station ;
+        rdfs:label          "35 Malbosc" ;
+        dbo:idNumber        "35" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "5" ;
+        vocab:capacity      "8" ;
+        geo:lat             "43.633679" ;
+        geo:lon             "3.832861" .
+
+<http://ex.com/10%20Rondelet>
+        a                   ex:station ;
+        rdfs:label          "10 Rondelet" ;
+        dbo:idNumber        "10" ;
+        ex:availableBikes   "7" ;
+        ex:availableStands  "9" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "16" ;
+        geo:lat             "43.603038" ;
+        geo:lon             "3.875796" .
+
+<http://ex.com/51%20Pont%20de%20Lattes%20-%20Gare%20Saint-Roch>
+        a                   ex:station ;
+        rdfs:label          "51 Pont de Lattes - Gare Saint-Roch" ;
+        dbo:idNumber        "51" ;
+        ex:availableBikes   "9" ;
+        ex:availableStands  "3" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "12" ;
+        geo:lat             "43.606036" ;
+        geo:lon             "3.882393" .
+
+<http://ex.com/43%20Sabines>
+        a                   ex:station ;
+        rdfs:label          "43 Sabines" ;
+        dbo:idNumber        "43" ;
+        ex:availableBikes   "8" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "8" ;
+        geo:lat             "43.584211" ;
+        geo:lon             "3.860031" .
+
+<http://ex.com/48%20H%C3%AF%C2%BF%C2%BDtel%20du%20D%C3%AF%C2%BF%C2%BDpartement>
+        a                   ex:station ;
+        rdfs:label          "48 Hï¿½tel du Dï¿½partement" ;
+        dbo:idNumber        "48" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "5" ;
+        vocab:capacity      "8" ;
+        geo:lat             "43.621682" ;
+        geo:lon             "3.834770" .
+
+<http://ex.com/19%20Louis%20Blanc>
+        a                   ex:station ;
+        rdfs:label          "19 Louis Blanc" ;
+        dbo:idNumber        "19" ;
+        ex:availableBikes   "5" ;
+        ex:availableStands  "11" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "16" ;
+        geo:lat             "43.614642" ;
+        geo:lon             "3.877648" .
+
+<http://ex.com/59%20Sud%20De%20France>
+        a                   ex:station ;
+        rdfs:label          "59 Sud De France" ;
+        dbo:idNumber        "59" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "5" ;
+        vocab:capacity      "8" ;
+        geo:lat             "43.595620" ;
+        geo:lon             "3.923500" .
