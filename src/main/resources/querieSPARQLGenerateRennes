@@ -14,6 +14,7 @@ GENERATE {
     		geo:lon ?lon ;
     		vocab:capacity ?capacity ;
   			ex:availableStands ?available_stands ;
-    		ex:availableBikes ?available_bikes .
+    		ex:availableBikes ?available_bikes ;
+    		geo:location "Rennes" .
 }
 ITERATOR ite:JSONPath(<https://data.rennesmetropole.fr/api/records/1.0/search/?dataset=etat-des-stations-le-velo-star-en-temps-reel>,"records.*.fields", "$.nom", "$.idstation", ".coordonnees[0]", ".coordonnees[1]", "$.nombreemplacementsdisponibles", "$.nombreemplacementsactuels", "$.nombrevelosdisponibles") AS ?work ?station ?id ?lat ?lon ?capacity ?available_stands ?available_bikes

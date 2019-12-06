@@ -15,7 +15,8 @@ GENERATE {
     		geo:lon ?lon ;
     		vocab:capacity ?capacity ;
     		ex:availableStands ?available_stands ;
-    		ex:availableBikes ?available_bikes .
+    		ex:availableBikes ?available_bikes ;
+    		geo:location "Paris" .
 }
 
 ITERATOR ite:JSONPath(<https://opendata.paris.fr/api/records/1.0/search/?dataset=velib-disponibilite-en-temps-reel&facet=overflowactivation&facet=creditcard&facet=kioskstate&facet=station_state>,"records.*", "$.fields.station_name", "$.fields.station_code", ".fields.geo[0]", ".fields.geo.[1]", "$.fields.nbedock", "$.fields.nbfreeedock", "$.fields.nbebike") AS ?work2 ?station ?id ?lat ?lon ?capacity ?available_stands ?available_bikes

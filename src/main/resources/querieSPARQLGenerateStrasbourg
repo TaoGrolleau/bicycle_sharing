@@ -17,7 +17,8 @@ GENERATE {
     		vocab:capacity ?capacity ;
   			ex:availableStands ?available_stands ;
     		ex:availableBikes ?available_bikes ;
-    		ex:bankCard ?cb .
+    		ex:bankCard ?cb ;
+    		geo:location "Strasbourg" .
 }
 SOURCE <http://velhop.strasbourg.eu/tvcstations.xml> AS ?source
 ITERATOR ite:XPath(?source, "/vcs/sl/si", "/si/@na", "/si/@id", "/si/@la", "/si/@lg", "/si/@to", "/si/@fr", "/si/@av", "/si/@cb" ) AS ?work ?station ?id ?lat ?lon ?capacity ?available_stands ?available_bikes ?cb
