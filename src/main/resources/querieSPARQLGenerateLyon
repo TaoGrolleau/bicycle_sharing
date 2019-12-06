@@ -14,6 +14,7 @@ GENERATE {
     		geo:lon ?lon ;
     		vocab:capacity ?capacity ;
   			ex:availableStands ?available_stands ;
-    		ex:availableBikes ?available_bikes .
+    		ex:availableBikes ?available_bikes ;
+    		geo:location "Lyon" .
 }
 ITERATOR ite:JSONPath(<https://download.data.grandlyon.com/wfs/rdata?SERVICE=WFS&VERSION=1.1.0&outputformat=GEOJSON&request=GetFeature&typename=jcd_jcdecaux.jcdvelov&SRSNAME=urn:ogc:def:crs:EPSG::4171>,"features.*.properties", "$.name", "$.number", ".lat", ".lng", "$.bike_stands", "$.available_bike_stands", "$.available_bikes") AS ?work ?station ?id ?lat ?lon ?capacity ?available_stands ?available_bikes
