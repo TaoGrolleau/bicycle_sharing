@@ -1,0 +1,21 @@
+PREFIX ite: <http://w3id.org/sparql-generate/iter/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX ex: <http://example.org/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX vocab: <http://rdf.ontology2.com/vocab#>
+PREFIX fun: <http://w3id.org/sparql-generate/fn/>
+
+GENERATE {
+  <http://ex.com/{?station}> a ex:station;
+            rdfs:label ?station ;
+    		dbo:idNumber "{?id}";
+  			geo:lat ?lat ;
+    		geo:lon ?lon ;
+    		vocab:capacity ?capacity ;
+    		ex:availableStands ?available_stands ;
+    		ex:availableBikes ?available_bikes .
+}
+
+ITERATOR ite:JSONPath(<https://opendata.paris.fr/api/records/1.0/search/?dataset=velib-disponibilite-en-temps-reel&facet=overflowactivation&facet=creditcard&facet=kioskstate&facet=station_state>,"records.*", "$.fields.station_name", "$.fields.station_code", ".fields.geo[0]", ".fields.geo.[1]", "$.fields.nbedock", "$.fields.nbfreeedock", "$.fields.nbebike") AS ?work2 ?station ?id ?lat ?lon ?capacity ?available_stands ?available_bikes

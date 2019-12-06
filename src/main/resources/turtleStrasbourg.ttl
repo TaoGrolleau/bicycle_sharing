@@ -1,0 +1,230 @@
+
+@base          <http://example.org/> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix ex:    <http://example.com/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix vocab: <http://rdf.ontology2.com/vocab#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ite:   <http://w3id.org/sparql-generate/iter/> .
+@prefix fun:   <http://w3id.org/sparql-generate/fn/> .
+
+<http://ex.com/125%20Place%20du%20March%C3%AF%C2%BF%C2%BD%20Neudorf>
+        a                   ex:station ;
+        rdfs:label          "125 Place du Marchï¿½ Neudorf" ;
+        dbo:idNumber        "125" ;
+        ex:availableBikes   "13" ;
+        ex:availableStands  "19" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "32" ;
+        geo:lat             "48.565864" ;
+        geo:lon             "7.759242" .
+
+<http://ex.com/113%20Parking%20Broglie>
+        a                   ex:station ;
+        rdfs:label          "113 Parking Broglie" ;
+        dbo:idNumber        "113" ;
+        ex:availableBikes   "14" ;
+        ex:availableStands  "16" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "30" ;
+        geo:lat             "48.585415" ;
+        geo:lon             "7.749395" .
+
+<http://ex.com/110%20Robertsau%20Boecklin>
+        a                   ex:station ;
+        rdfs:label          "110 Robertsau Boecklin" ;
+        dbo:idNumber        "110" ;
+        ex:availableBikes   "7" ;
+        ex:availableStands  "25" ;
+        vocab:capacity      "32" ;
+        geo:lat             "48.598096" ;
+        geo:lon             "7.777902" .
+
+<http://ex.com/127%20Ostwald%20H%C3%AF%C2%BF%C2%BDtel%20de%20Ville>
+        a                   ex:station ;
+        rdfs:label          "127 Ostwald Hï¿½tel de Ville" ;
+        dbo:idNumber        "127" ;
+        ex:availableBikes   "5" ;
+        ex:availableStands  "11" ;
+        vocab:capacity      "16" ;
+        geo:lat             "48.551032" ;
+        geo:lon             "7.711200" .
+
+<http://ex.com/106%20Gare%20Sud>
+        a                   ex:station ;
+        rdfs:label          "106 Gare Sud" ;
+        dbo:idNumber        "106" ;
+        ex:availableBikes   "21" ;
+        ex:availableStands  "11" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "32" ;
+        geo:lat             "48.584209" ;
+        geo:lon             "7.734519" .
+
+<http://ex.com/123%20Koenigshoffen>
+        a                   ex:station ;
+        rdfs:label          "123 Koenigshoffen" ;
+        dbo:idNumber        "123" ;
+        ex:availableBikes   "7" ;
+        ex:availableStands  "19" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "26" ;
+        geo:lat             "48.579100" ;
+        geo:lon             "7.713481" .
+
+<http://ex.com/108%20Gare%20Nord>
+        a                   ex:station ;
+        rdfs:label          "108 Gare Nord" ;
+        dbo:idNumber        "108" ;
+        ex:availableBikes   "5" ;
+        ex:availableStands  "27" ;
+        vocab:capacity      "32" ;
+        geo:lat             "48.585678" ;
+        geo:lon             "7.733542" .
+
+<http://ex.com/101%20Centre>
+        a                   ex:station ;
+        rdfs:label          "101 Centre" ;
+        dbo:idNumber        "101" ;
+        ex:availableBikes   "22" ;
+        ex:availableStands  "10" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "32" ;
+        geo:lat             "48.578462" ;
+        geo:lon             "7.749776" .
+
+<http://ex.com/112%20Hohwart>
+        a                   ex:station ;
+        rdfs:label          "112 Hohwart" ;
+        dbo:idNumber        "112" ;
+        ex:availableBikes   "7" ;
+        ex:availableStands  "3" ;
+        vocab:capacity      "10" ;
+        geo:lat             "48.549190" ;
+        geo:lon             "7.740754" .
+
+<http://ex.com/126%20Espace%20Europ%C3%AF%C2%BF%C2%BDen%20de%20l%27Entreprise>
+        a                   ex:station ;
+        rdfs:label          "126 Espace Europï¿½en de l'Entreprise" ;
+        dbo:idNumber        "126" ;
+        ex:availableBikes   "8" ;
+        ex:availableStands  "8" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "16" ;
+        geo:lat             "48.612597" ;
+        geo:lon             "7.711630" .
+
+<http://ex.com/114%20Parking%20Austerlitz>
+        a                   ex:station ;
+        rdfs:label          "114 Parking Austerlitz" ;
+        dbo:idNumber        "114" ;
+        ex:availableBikes   "9" ;
+        ex:availableStands  "21" ;
+        vocab:capacity      "30" ;
+        geo:lat             "48.578005" ;
+        geo:lon             "7.751863" .
+
+<http://ex.com/107%20Universit%C3%AF%C2%BF%C2%BD>
+        a                   ex:station ;
+        rdfs:label          "107 Universitï¿½" ;
+        dbo:idNumber        "107" ;
+        ex:availableBikes   "8" ;
+        ex:availableStands  "24" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "32" ;
+        geo:lat             "48.582023" ;
+        geo:lon             "7.766771" .
+
+<http://ex.com/111%20Campus%20d%27Illkirch>
+        a                   ex:station ;
+        rdfs:label          "111 Campus d'Illkirch" ;
+        dbo:idNumber        "111" ;
+        ex:availableBikes   "5" ;
+        ex:availableStands  "25" ;
+        vocab:capacity      "30" ;
+        geo:lat             "48.529616" ;
+        geo:lon             "7.734226" .
+
+<http://ex.com/124%20Auberge%20de%20jeunesse>
+        a                   ex:station ;
+        rdfs:label          "124 Auberge de jeunesse" ;
+        dbo:idNumber        "124" ;
+        ex:availableBikes   "6" ;
+        ex:availableStands  "10" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "16" ;
+        geo:lat             "48.568644" ;
+        geo:lon             "7.795621" .
+
+<http://ex.com/122%20Schiltigheim%20Mairie>
+        a                   ex:station ;
+        rdfs:label          "122 Schiltigheim Mairie" ;
+        dbo:idNumber        "122" ;
+        ex:availableBikes   "7" ;
+        ex:availableStands  "9" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "16" ;
+        geo:lat             "48.606759" ;
+        geo:lon             "7.749183" .
+
+<http://ex.com/102%20Centre%202>
+        a                   ex:station ;
+        rdfs:label          "102 Centre 2" ;
+        dbo:idNumber        "102" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "19" ;
+        vocab:capacity      "20" ;
+        geo:lat             "48.578462" ;
+        geo:lon             "7.749776" .
+
+<http://ex.com/103%20Gare%20de%20Strasbourg>
+        a                   ex:station ;
+        rdfs:label          "103 Gare de Strasbourg" ;
+        dbo:idNumber        "103" ;
+        ex:availableBikes   "10" ;
+        ex:availableStands  "21" ;
+        ex:bankCard         "1" ;
+        vocab:capacity      "31" ;
+        geo:lat             "48.585082" ;
+        geo:lon             "7.735024" .
+
+<http://ex.com/109%20Place%20Arnold>
+        a                   ex:station ;
+        rdfs:label          "109 Place Arnold" ;
+        dbo:idNumber        "109" ;
+        ex:availableBikes   "10" ;
+        ex:availableStands  "18" ;
+        vocab:capacity      "28" ;
+        geo:lat             "48.584504" ;
+        geo:lon             "7.768772" .
+
+<http://ex.com/116%20Place%20Islande>
+        a                   ex:station ;
+        rdfs:label          "116 Place Islande" ;
+        dbo:idNumber        "116" ;
+        ex:availableBikes   "9" ;
+        ex:availableStands  "7" ;
+        vocab:capacity      "16" ;
+        geo:lat             "48.580314" ;
+        geo:lon             "7.776203" .
+
+<http://ex.com/105%20Rotonde>
+        a                   ex:station ;
+        rdfs:label          "105 Rotonde" ;
+        dbo:idNumber        "105" ;
+        ex:availableBikes   "8" ;
+        ex:availableStands  "24" ;
+        vocab:capacity      "32" ;
+        geo:lat             "48.591639" ;
+        geo:lon             "7.725089" .
+
+<http://ex.com/115%20Hoenheim%20Gare>
+        a                   ex:station ;
+        rdfs:label          "115 Hoenheim Gare" ;
+        dbo:idNumber        "115" ;
+        ex:availableBikes   "12" ;
+        ex:availableStands  "4" ;
+        vocab:capacity      "16" ;
+        geo:lat             "48.628353" ;
+        geo:lon             "7.760103" .

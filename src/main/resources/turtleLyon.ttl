@@ -1,0 +1,4017 @@
+
+@base          <http://example.org/> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix ex:    <http://example.org/> .
+@prefix vocab: <http://rdf.ontology2.com/vocab#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ite:   <http://w3id.org/sparql-generate/iter/> .
+@prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<http://ex.com/Ecully%20Mairie>
+        a                   ex:station ;
+        rdfs:label          "Ecully Mairie" ;
+        dbo:idNumber        "24001" ;
+        ex:availableBikes   "2" ;
+        ex:availableStands  "10" ;
+        vocab:capacity      "12" ;
+        geo:lat             "45.7750890702448960" ;
+        geo:lon             "4.7786729160837336" .
+
+<http://ex.com/Saint%20Exup%C3%A9ry>
+        a                   ex:station ;
+        rdfs:label          "Saint Exupéry" ;
+        dbo:idNumber        "10060" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "15" ;
+        vocab:capacity      "15" ;
+        geo:lat             "45.7588589710478640" ;
+        geo:lon             "4.8787495764625985" .
+
+<http://ex.com/Place%20Aristide%20Briand>
+        a                   ex:station ;
+        rdfs:label          "Place Aristide Briand" ;
+        dbo:idNumber        "3029" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "38" ;
+        vocab:capacity      "38" ;
+        geo:lat             "45.7530043530220990" ;
+        geo:lon             "4.8502474272199692" .
+
+<http://ex.com/Andr%C3%A9i%20Sakharov>
+        a                   ex:station ;
+        rdfs:label          "Andréi Sakharov" ;
+        dbo:idNumber        "9051" ;
+        ex:availableBikes   "2" ;
+        ex:availableStands  "9" ;
+        vocab:capacity      "12" ;
+        geo:lat             "45.7865247393491330" ;
+        geo:lon             "4.7970709023310114" .
+
+<http://ex.com/Conservatoire%20bis>
+        a                   ex:station ;
+        rdfs:label          "Conservatoire bis" ;
+        dbo:idNumber        "4001" ;
+        ex:availableBikes   "21" ;
+        ex:availableStands  "1" ;
+        vocab:capacity      "22" ;
+        geo:lat             "45.7703894302220250" ;
+        geo:lon             "4.8142456674237000" .
+
+<http://ex.com/Masaryk%20%2F%20Saint-Cyr>
+        a                   ex:station ;
+        rdfs:label          "Masaryk / Saint-Cyr" ;
+        dbo:idNumber        "9022" ;
+        ex:availableBikes   "9" ;
+        ex:availableStands  "4" ;
+        vocab:capacity      "13" ;
+        geo:lat             "45.7786288989070300" ;
+        geo:lon             "4.8071200280976578" .
+
+<http://ex.com/Place%20Regaud>
+        a                   ex:station ;
+        rdfs:label          "Place Regaud" ;
+        dbo:idNumber        "2016" ;
+        ex:availableBikes   "9" ;
+        ex:availableStands  "3" ;
+        vocab:capacity      "12" ;
+        geo:lat             "45.7630769295669990" ;
+        geo:lon             "4.8342866883470439" .
+
+<http://ex.com/Place%20Valmy>
+        a                   ex:station ;
+        rdfs:label          "Place Valmy" ;
+        dbo:idNumber        "9003" ;
+        ex:availableBikes   "15" ;
+        ex:availableStands  "1" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7756749996432220" ;
+        geo:lon             "4.8053036651209080" .
+
+<http://ex.com/Salengro%20%2F%20Feyssine>
+        a                   ex:station ;
+        rdfs:label          "Salengro / Feyssine" ;
+        dbo:idNumber        "10043" ;
+        ex:availableBikes   "11" ;
+        ex:availableStands  "9" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7830110745978800" ;
+        geo:lon             "4.8905858366251023" .
+
+<http://ex.com/Place%20d%27Arsonval>
+        a                   ex:station ;
+        rdfs:label          "Place d'Arsonval" ;
+        dbo:idNumber        "3007" ;
+        ex:availableBikes   "18" ;
+        ex:availableStands  "13" ;
+        vocab:capacity      "32" ;
+        geo:lat             "45.7434416841709890" ;
+        geo:lon             "4.8789031261753726" .
+
+<http://ex.com/Farge%20%2F%20Ayasse>
+        a                   ex:station ;
+        rdfs:label          "Farge / Ayasse" ;
+        dbo:idNumber        "7007" ;
+        ex:availableBikes   "10" ;
+        ex:availableStands  "10" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7356738897811970" ;
+        geo:lon             "4.8277191559612227" .
+
+<http://ex.com/Place%20Bertone>
+        a                   ex:station ;
+        rdfs:label          "Place Bertone" ;
+        dbo:idNumber        "4005" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "12" ;
+        vocab:capacity      "12" ;
+        geo:lat             "45.7776173765049850" ;
+        geo:lon             "4.8345009421112763" .
+
+<http://ex.com/Cr%C3%A9qui%20%2F%20Lafayette>
+        a                   ex:station ;
+        rdfs:label          "Créqui / Lafayette" ;
+        dbo:idNumber        "6033" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "15" ;
+        vocab:capacity      "15" ;
+        geo:lat             "45.7637960125263280" ;
+        geo:lon             "4.8470620002854572" .
+
+<http://ex.com/Guilloti%C3%A8re%20%2F%20Madeleine>
+        a                   ex:station ;
+        rdfs:label          "Guillotière / Madeleine" ;
+        dbo:idNumber        "7039" ;
+        ex:availableBikes   "4" ;
+        ex:availableStands  "6" ;
+        vocab:capacity      "10" ;
+        geo:lat             "45.7510565465262080" ;
+        geo:lon             "4.8480482303453218" .
+
+<http://ex.com/Th%C3%A9%C3%A2tre%20Romain>
+        a                   ex:station ;
+        rdfs:label          "Théâtre Romain" ;
+        dbo:idNumber        "5050" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "12" ;
+        geo:lat             "45.7583623960292910" ;
+        geo:lon             "4.8210866415482529" .
+
+<http://ex.com/Place%20Puvis%20de%20Chavannes>
+        a                   ex:station ;
+        rdfs:label          "Place Puvis de Chavannes" ;
+        dbo:idNumber        "6012" ;
+        ex:availableBikes   "4" ;
+        ex:availableStands  "6" ;
+        vocab:capacity      "10" ;
+        geo:lat             "45.7717570855733980" ;
+        geo:lon             "4.8446036357483555" .
+
+<http://ex.com/H%C3%B4pital%20Saint-Jean%20de%20Dieu>
+        a                   ex:station ;
+        rdfs:label          "Hôpital Saint-Jean de Dieu" ;
+        dbo:idNumber        "8051" ;
+        ex:availableBikes   "5" ;
+        ex:availableStands  "15" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7242705028889130" ;
+        geo:lon             "4.8541521271275219" .
+
+<http://ex.com/Place%20des%20Archives>
+        a                   ex:station ;
+        rdfs:label          "Place des Archives" ;
+        dbo:idNumber        "2037" ;
+        ex:availableBikes   "36" ;
+        ex:availableStands  "4" ;
+        vocab:capacity      "40" ;
+        geo:lat             "45.7479691410901740" ;
+        geo:lon             "4.8248617280093153" .
+
+<http://ex.com/Clos%20Savaron>
+        a                   ex:station ;
+        rdfs:label          "Clos Savaron" ;
+        dbo:idNumber        "4008" ;
+        ex:availableBikes   "2" ;
+        ex:availableStands  "18" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7826362574796020" ;
+        geo:lon             "4.8255591851847726" .
+
+<http://ex.com/DOUA%20%2F%20Gaston%20Berger>
+        a                   ex:station ;
+        rdfs:label          "DOUA / Gaston Berger" ;
+        dbo:idNumber        "10102" ;
+        ex:availableBikes   "10" ;
+        ex:availableStands  "20" ;
+        vocab:capacity      "30" ;
+        geo:lat             "45.7809444797410170" ;
+        geo:lon             "4.8713269128915702" .
+
+<http://ex.com/Merci%C3%A8re%20%2F%20Ferrandi%C3%A8re>
+        a                   ex:station ;
+        rdfs:label          "Mercière / Ferrandière" ;
+        dbo:idNumber        "2025" ;
+        ex:availableBikes   "9" ;
+        ex:availableStands  "1" ;
+        vocab:capacity      "10" ;
+        geo:lat             "45.7620553014781280" ;
+        geo:lon             "4.8332059556379781" .
+
+<http://ex.com/Paul%20Santy>
+        a                   ex:station ;
+        rdfs:label          "Paul Santy" ;
+        dbo:idNumber        "8021" ;
+        ex:availableBikes   "2" ;
+        ex:availableStands  "14" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7285181510160830" ;
+        geo:lon             "4.8773059343942400" .
+
+<http://ex.com/Mairie%20du%208e>
+        a                   ex:station ;
+        rdfs:label          "Mairie du 8e" ;
+        dbo:idNumber        "8004" ;
+        ex:availableBikes   "21" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "21" ;
+        geo:lat             "45.7351509957904980" ;
+        geo:lon             "4.8728173875360472" .
+
+<http://ex.com/Bouvier>
+        a                   ex:station ;
+        rdfs:label          "Bouvier" ;
+        dbo:idNumber        "10039" ;
+        ex:availableBikes   "9" ;
+        ex:availableStands  "7" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7794499265826080" ;
+        geo:lon             "4.8915008245270393" .
+
+<http://ex.com/R%C3%A9publique>
+        a                   ex:station ;
+        rdfs:label          "République" ;
+        dbo:idNumber        "10061" ;
+        ex:availableBikes   "4" ;
+        ex:availableStands  "13" ;
+        vocab:capacity      "17" ;
+        geo:lat             "45.7707838400683830" ;
+        geo:lon             "4.8729593888672902" .
+
+<http://ex.com/Rillieux%20Loup%20Pendu>
+        a                   ex:station ;
+        rdfs:label          "Rillieux Loup Pendu" ;
+        dbo:idNumber        "30002" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "18" ;
+        vocab:capacity      "18" ;
+        geo:lat             "45.8159701108686620" ;
+        geo:lon             "4.8870434508176661" .
+
+<http://ex.com/Gorge%20de%20Loup>
+        a                   ex:station ;
+        rdfs:label          "Gorge de Loup" ;
+        dbo:idNumber        "9033" ;
+        ex:availableBikes   "22" ;
+        ex:availableStands  "18" ;
+        vocab:capacity      "40" ;
+        geo:lat             "45.7673562652623570" ;
+        geo:lon             "4.8056402801834430" .
+
+<http://ex.com/Voyant%20%2F%20Chambord>
+        a                   ex:station ;
+        rdfs:label          "Voyant / Chambord" ;
+        dbo:idNumber        "10118" ;
+        ex:availableBikes   "6" ;
+        ex:availableStands  "6" ;
+        vocab:capacity      "22" ;
+        geo:lat             "45.7671533127280340" ;
+        geo:lon             "4.9005991607433979" .
+
+<http://ex.com/Albert%20Thomas%20%2F%20Villon>
+        a                   ex:station ;
+        rdfs:label          "Albert Thomas / Villon" ;
+        dbo:idNumber        "8038" ;
+        ex:availableBikes   "13" ;
+        ex:availableStands  "7" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7467163314946890" ;
+        geo:lon             "4.8674286445260062" .
+
+<http://ex.com/Marseille%20%2F%20F%C3%A9lissent>
+        a                   ex:station ;
+        rdfs:label          "Marseille / Félissent" ;
+        dbo:idNumber        "7014" ;
+        ex:availableBikes   "4" ;
+        ex:availableStands  "11" ;
+        vocab:capacity      "15" ;
+        geo:lat             "45.7529863435116080" ;
+        geo:lon             "4.8414152874617793" .
+
+<http://ex.com/Mairie%20du%205e>
+        a                   ex:station ;
+        rdfs:label          "Mairie du 5e" ;
+        dbo:idNumber        "5016" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "13" ;
+        vocab:capacity      "13" ;
+        geo:lat             "45.7561939286588810" ;
+        geo:lon             "4.8027110791690140" .
+
+<http://ex.com/Quai%20Lassagne>
+        a                   ex:station ;
+        rdfs:label          "Quai Lassagne" ;
+        dbo:idNumber        "1035" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "13" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7722014692572260" ;
+        geo:lon             "4.8379117929264730" .
+
+<http://ex.com/P%C3%AAcherie>
+        a                   ex:station ;
+        rdfs:label          "Pêcherie" ;
+        dbo:idNumber        "1016" ;
+        ex:availableBikes   "9" ;
+        ex:availableStands  "8" ;
+        vocab:capacity      "17" ;
+        geo:lat             "45.7659547300349490" ;
+        geo:lon             "4.8311781246444845" .
+
+<http://ex.com/Ch%C3%A2teau%20Gaillard%20%2F%20Bienvenus>
+        a                   ex:station ;
+        rdfs:label          "Château Gaillard / Bienvenus" ;
+        dbo:idNumber        "10083" ;
+        ex:availableBikes   "8" ;
+        ex:availableStands  "5" ;
+        vocab:capacity      "15" ;
+        geo:lat             "45.7778649152535660" ;
+        geo:lon             "4.8842442857728363" .
+
+<http://ex.com/R%C3%A9publique%20%2F%20Ferrandi%C3%A8re>
+        a                   ex:station ;
+        rdfs:label          "République / Ferrandière" ;
+        dbo:idNumber        "2017" ;
+        ex:availableBikes   "25" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "25" ;
+        geo:lat             "45.7621739970214780" ;
+        geo:lon             "4.8359706936868223" .
+
+<http://ex.com/Jaur%C3%A8s%20%2F%20Bollier>
+        a                   ex:station ;
+        rdfs:label          "Jaurès / Bollier" ;
+        dbo:idNumber        "7057" ;
+        ex:availableBikes   "34" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "34" ;
+        geo:lat             "45.7347254902347230" ;
+        geo:lon             "4.8354967607642045" .
+
+<http://ex.com/Sala%20%2F%20Charit%C3%A9>
+        a                   ex:station ;
+        rdfs:label          "Sala / Charité" ;
+        dbo:idNumber        "2041" ;
+        ex:availableBikes   "11" ;
+        ex:availableStands  "5" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7544732763091350" ;
+        geo:lon             "4.8330110846859418" .
+
+<http://ex.com/M%C3%A9nival%20%2F%20Joliot%20Curie>
+        a                   ex:station ;
+        rdfs:label          "Ménival / Joliot Curie" ;
+        dbo:idNumber        "5031" ;
+        ex:availableBikes   "8" ;
+        ex:availableStands  "11" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7546405115265320" ;
+        geo:lon             "4.7881488839855884" .
+
+<http://ex.com/Gare%20de%20Villeurbanne>
+        a                   ex:station ;
+        rdfs:label          "Gare de Villeurbanne" ;
+        dbo:idNumber        "10113" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "19" ;
+        vocab:capacity      "22" ;
+        geo:lat             "45.7557668546375140" ;
+        geo:lon             "4.8914894327085978" .
+
+<http://ex.com/Institut%20Lumi%C3%A8re>
+        a                   ex:station ;
+        rdfs:label          "Institut Lumière" ;
+        dbo:idNumber        "3008" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "17" ;
+        vocab:capacity      "18" ;
+        geo:lat             "45.7458332337286610" ;
+        geo:lon             "4.8706387106502866" .
+
+<http://ex.com/Amp%C3%A8re%20%2F%20Bourse>
+        a                   ex:station ;
+        rdfs:label          "Ampère / Bourse" ;
+        dbo:idNumber        "1012" ;
+        ex:availableBikes   "9" ;
+        ex:availableStands  "17" ;
+        vocab:capacity      "26" ;
+        geo:lat             "45.7658113822040560" ;
+        geo:lon             "4.8368957414205633" .
+
+<http://ex.com/Chazi%C3%A8re>
+        a                   ex:station ;
+        rdfs:label          "Chazière" ;
+        dbo:idNumber        "4025" ;
+        ex:availableBikes   "9" ;
+        ex:availableStands  "11" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7754224668984690" ;
+        geo:lon             "4.8178899295525035" .
+
+<http://ex.com/Place%20de%20la%20paix>
+        a                   ex:station ;
+        rdfs:label          "Place de la paix" ;
+        dbo:idNumber        "10016" ;
+        ex:availableBikes   "4" ;
+        ex:availableStands  "13" ;
+        vocab:capacity      "17" ;
+        geo:lat             "45.7520997282193140" ;
+        geo:lon             "4.9146430086846324" .
+
+<http://ex.com/Part-Dieu%20%2F%20Garibaldi>
+        a                   ex:station ;
+        rdfs:label          "Part-Dieu / Garibaldi" ;
+        dbo:idNumber        "3087" ;
+        ex:availableBikes   "9" ;
+        ex:availableStands  "11" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7627511569952010" ;
+        geo:lon             "4.8524277723450728" .
+
+<http://ex.com/Place%20Henri>
+        a                   ex:station ;
+        rdfs:label          "Place Henri" ;
+        dbo:idNumber        "3051" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "13" ;
+        vocab:capacity      "13" ;
+        geo:lat             "45.7481869061751420" ;
+        geo:lon             "4.8805939581712154" .
+
+<http://ex.com/Quai%20Sarrail>
+        a                   ex:station ;
+        rdfs:label          "Quai Sarrail" ;
+        dbo:idNumber        "6023" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "14" ;
+        vocab:capacity      "14" ;
+        geo:lat             "45.7668296196242750" ;
+        geo:lon             "4.8411393393513276" .
+
+<http://ex.com/Institut%20d%27Art%20contemporain>
+        a                   ex:station ;
+        rdfs:label          "Institut d'Art contemporain" ;
+        dbo:idNumber        "10073" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "10" ;
+        vocab:capacity      "15" ;
+        geo:lat             "45.7614496449619350" ;
+        geo:lon             "4.8724655049634791" .
+
+<http://ex.com/Perrache%20%2F%20Carnot>
+        a                   ex:station ;
+        rdfs:label          "Perrache / Carnot" ;
+        dbo:idNumber        "2004" ;
+        ex:availableBikes   "10" ;
+        ex:availableStands  "8" ;
+        vocab:capacity      "18" ;
+        geo:lat             "45.7500996433260670" ;
+        geo:lon             "4.8280515013551550" .
+
+<http://ex.com/DOUA%20%2F%20Rue%20des%20sports>
+        a                   ex:station ;
+        rdfs:label          "DOUA / Rue des sports" ;
+        dbo:idNumber        "10103" ;
+        ex:availableBikes   "23" ;
+        ex:availableStands  "6" ;
+        vocab:capacity      "30" ;
+        geo:lat             "45.7844851872384310" ;
+        geo:lon             "4.8774042325766302" .
+
+<http://ex.com/Philippe%20de%20Lassalle%20%2F%20Pillement>
+        a                   ex:station ;
+        rdfs:label          "Philippe de Lassalle / Pillement" ;
+        dbo:idNumber        "4014" ;
+        ex:availableBikes   "11" ;
+        ex:availableStands  "2" ;
+        vocab:capacity      "13" ;
+        geo:lat             "45.7774206479390600" ;
+        geo:lon             "4.8205384707114511" .
+
+<http://ex.com/Place%20Saint%20Louis>
+        a                   ex:station ;
+        rdfs:label          "Place Saint Louis" ;
+        dbo:idNumber        "7016" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "12" ;
+        vocab:capacity      "15" ;
+        geo:lat             "45.7490037273034530" ;
+        geo:lon             "4.8476441418616316" .
+
+<http://ex.com/Collonges%20Gare>
+        a                   ex:station ;
+        rdfs:label          "Collonges Gare" ;
+        dbo:idNumber        "27001" ;
+        ex:availableBikes   "2" ;
+        ex:availableStands  "22" ;
+        vocab:capacity      "24" ;
+        geo:lat             "45.8308539622466850" ;
+        geo:lon             "4.8470037538635253" .
+
+<http://ex.com/Albigny%20Gare>
+        a                   ex:station ;
+        rdfs:label          "Albigny Gare" ;
+        dbo:idNumber        "33001" ;
+        ex:availableBikes   "7" ;
+        ex:availableStands  "10" ;
+        vocab:capacity      "18" ;
+        geo:lat             "45.8749934925375340" ;
+        geo:lon             "4.8330021360822784" .
+
+<http://ex.com/Parc%20du%20Centre>
+        a                   ex:station ;
+        rdfs:label          "Parc du Centre" ;
+        dbo:idNumber        "10121" ;
+        ex:availableBikes   "12" ;
+        ex:availableStands  "4" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7719119252490780" ;
+        geo:lon             "4.8790707067819019" .
+
+<http://ex.com/Jean%20Jaur%C3%A8s%20%2F%20Guilloti%C3%A8re>
+        a                   ex:station ;
+        rdfs:label          "Jean Jaurès / Guillotière" ;
+        dbo:idNumber        "7008" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "7" ;
+        vocab:capacity      "10" ;
+        geo:lat             "45.7525809002148800" ;
+        geo:lon             "4.8463206182240945" .
+
+<http://ex.com/Place%20des%20Pavillons>
+        a                   ex:station ;
+        rdfs:label          "Place des Pavillons" ;
+        dbo:idNumber        "7012" ;
+        ex:availableBikes   "11" ;
+        ex:availableStands  "2" ;
+        vocab:capacity      "13" ;
+        geo:lat             "45.7295008043116340" ;
+        geo:lon             "4.8297016085827407" .
+
+<http://ex.com/Birmingham>
+        a                   ex:station ;
+        rdfs:label          "Birmingham" ;
+        dbo:idNumber        "4026" ;
+        ex:availableBikes   "12" ;
+        ex:availableStands  "8" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7746311098016750" ;
+        geo:lon             "4.8134162571603989" .
+
+<http://ex.com/Simon%20%2F%20Leclerc>
+        a                   ex:station ;
+        rdfs:label          "Simon / Leclerc" ;
+        dbo:idNumber        "28001" ;
+        ex:availableBikes   "2" ;
+        ex:availableStands  "18" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.8324657183306240" ;
+        geo:lon             "4.8487792326838308" .
+
+<http://ex.com/Parc%20des%20Berges>
+        a                   ex:station ;
+        rdfs:label          "Parc des Berges" ;
+        dbo:idNumber        "7045" ;
+        ex:availableBikes   "19" ;
+        ex:availableStands  "6" ;
+        vocab:capacity      "25" ;
+        geo:lat             "45.7377409586890170" ;
+        geo:lon             "4.8244875157097109" .
+
+<http://ex.com/Dumont%20%2F%20Jouvet>
+        a                   ex:station ;
+        rdfs:label          "Dumont / Jouvet" ;
+        dbo:idNumber        "8025" ;
+        ex:availableBikes   "7" ;
+        ex:availableStands  "10" ;
+        vocab:capacity      "17" ;
+        geo:lat             "45.7444606289942610" ;
+        geo:lon             "4.8609937736791071" .
+
+<http://ex.com/Libert%C3%A9%20%2F%20Part-Dieu>
+        a                   ex:station ;
+        rdfs:label          "Liberté / Part-Dieu" ;
+        dbo:idNumber        "3016" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "18" ;
+        vocab:capacity      "18" ;
+        geo:lat             "45.7593422663364460" ;
+        geo:lon             "4.8422275870211209" .
+
+<http://ex.com/Lyc%C3%A9e%20Marie%20Curie>
+        a                   ex:station ;
+        rdfs:label          "Lycée Marie Curie" ;
+        dbo:idNumber        "10071" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "12" ;
+        vocab:capacity      "15" ;
+        geo:lat             "45.7615279698755510" ;
+        geo:lon             "4.8956902199613603" .
+
+<http://ex.com/Montgolfier%20%2F%20Ch%C3%A2teau%20Gaillard>
+        a                   ex:station ;
+        rdfs:label          "Montgolfier / Château Gaillard" ;
+        dbo:idNumber        "10092" ;
+        ex:availableBikes   "12" ;
+        ex:availableStands  "5" ;
+        vocab:capacity      "17" ;
+        geo:lat             "45.7715577376675430" ;
+        geo:lon             "4.8903695657718780" .
+
+<http://ex.com/Mangini>
+        a                   ex:station ;
+        rdfs:label          "Mangini" ;
+        dbo:idNumber        "9046" ;
+        ex:availableBikes   "19" ;
+        ex:availableStands  "5" ;
+        vocab:capacity      "24" ;
+        geo:lat             "45.7904088071307310" ;
+        geo:lon             "4.8163493917942377" .
+
+<http://ex.com/R%C3%A9publique%20%2F%20Poulaillerie>
+        a                   ex:station ;
+        rdfs:label          "République / Poulaillerie" ;
+        dbo:idNumber        "2030" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "7" ;
+        geo:lat             "45.7640723503116150" ;
+        geo:lon             "4.8355253578885975" .
+
+<http://ex.com/La%20Mulati%C3%A8re%20Aquarium>
+        a                   ex:station ;
+        rdfs:label          "La Mulatière Aquarium" ;
+        dbo:idNumber        "21001" ;
+        ex:availableBikes   "4" ;
+        ex:availableStands  "20" ;
+        vocab:capacity      "24" ;
+        geo:lat             "45.7273693332767340" ;
+        geo:lon             "4.8146354766198369" .
+
+<http://ex.com/Jean%20Jaur%C3%A8s>
+        a                   ex:station ;
+        rdfs:label          "Jean Jaurès" ;
+        dbo:idNumber        "7009" ;
+        ex:availableBikes   "15" ;
+        ex:availableStands  "1" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7375180973509360" ;
+        geo:lon             "4.8375089199170214" .
+
+<http://ex.com/Saint-Cyr>
+        a                   ex:station ;
+        rdfs:label          "Saint-Cyr" ;
+        dbo:idNumber        "9015" ;
+        ex:availableBikes   "21" ;
+        ex:availableStands  "9" ;
+        vocab:capacity      "30" ;
+        geo:lat             "45.7828282303757130" ;
+        geo:lon             "4.8072963588022786" .
+
+<http://ex.com/Terreaux%20%2F%20Beaux%20Arts>
+        a                   ex:station ;
+        rdfs:label          "Terreaux / Beaux Arts" ;
+        dbo:idNumber        "1021" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "11" ;
+        geo:lat             "45.7670410048109700" ;
+        geo:lon             "4.8342839059717138" .
+
+<http://ex.com/IUT%20%2F%20Feyssine>
+        a                   ex:station ;
+        rdfs:label          "IUT / Feyssine" ;
+        dbo:idNumber        "10001" ;
+        ex:availableBikes   "6" ;
+        ex:availableStands  "23" ;
+        vocab:capacity      "30" ;
+        geo:lat             "45.7856324623544990" ;
+        geo:lon             "4.8824104015349032" .
+
+<http://ex.com/Rue%20de%20la%20Baleine>
+        a                   ex:station ;
+        rdfs:label          "Rue de la Baleine" ;
+        dbo:idNumber        "5026" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "14" ;
+        vocab:capacity      "14" ;
+        geo:lat             "45.7633837102434310" ;
+        geo:lon             "4.8290114774217887" .
+
+<http://ex.com/Servient%20%2F%20Garibaldi>
+        a                   ex:station ;
+        rdfs:label          "Servient / Garibaldi" ;
+        dbo:idNumber        "3015" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "17" ;
+        geo:lat             "45.7607758409992020" ;
+        geo:lon             "4.8526939571425469" .
+
+<http://ex.com/Gr%C3%A9gory%20Coupet>
+        a                   ex:station ;
+        rdfs:label          "Grégory Coupet" ;
+        dbo:idNumber        "4042" ;
+        ex:availableBikes   "15" ;
+        ex:availableStands  "1" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7817001067679500" ;
+        geo:lon             "4.8206000461275869" .
+
+<http://ex.com/Confluence%20%2F%20Darse>
+        a                   ex:station ;
+        rdfs:label          "Confluence / Darse" ;
+        dbo:idNumber        "2010" ;
+        ex:availableBikes   "12" ;
+        ex:availableStands  "10" ;
+        vocab:capacity      "22" ;
+        geo:lat             "45.7434140947079870" ;
+        geo:lon             "4.8158543610390252" .
+
+<http://ex.com/Place%20du%208%20mai%201945>
+        a                   ex:station ;
+        rdfs:label          "Place du 8 mai 1945" ;
+        dbo:idNumber        "8006" ;
+        ex:availableBikes   "14" ;
+        ex:availableStands  "6" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7297663546006700" ;
+        geo:lon             "4.8681665813493629" .
+
+<http://ex.com/Joffre%20%2F%20Vaubecour>
+        a                   ex:station ;
+        rdfs:label          "Joffre / Vaubecour" ;
+        dbo:idNumber        "2042" ;
+        ex:availableBikes   "19" ;
+        ex:availableStands  "1" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7518482427555360" ;
+        geo:lon             "4.8247344893159925" .
+
+<http://ex.com/V%C3%A9nissieux%20Gare>
+        a                   ex:station ;
+        rdfs:label          "Vénissieux Gare" ;
+        dbo:idNumber        "16005" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "25" ;
+        vocab:capacity      "25" ;
+        geo:lat             "45.7063403824794530" ;
+        geo:lon             "4.8886809407000067" .
+
+<http://ex.com/Docteur%20Long%20%2F%20Aub%C3%A9pins>
+        a                   ex:station ;
+        rdfs:label          "Docteur Long / Aubépins" ;
+        dbo:idNumber        "3102" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "15" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7525429085336630" ;
+        geo:lon             "4.8942587457505971" .
+
+<http://ex.com/Bellecour%20%2F%20St%20Exup%C3%A9ry>
+        a                   ex:station ;
+        rdfs:label          "Bellecour / St Exupéry" ;
+        dbo:idNumber        "2002" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7581569109321860" ;
+        geo:lon             "4.8304346949094690" .
+
+<http://ex.com/Garibaldi%20%2F%20Domer>
+        a                   ex:station ;
+        rdfs:label          "Garibaldi / Domer" ;
+        dbo:idNumber        "7062" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "18" ;
+        vocab:capacity      "19" ;
+        geo:lat             "45.7477327368804790" ;
+        geo:lon             "4.8516273700582797" .
+
+<http://ex.com/Laennec%20%2F%20Pinel>
+        a                   ex:station ;
+        rdfs:label          "Laennec / Pinel" ;
+        dbo:idNumber        "8059" ;
+        ex:availableBikes   "7" ;
+        ex:availableStands  "8" ;
+        vocab:capacity      "15" ;
+        geo:lat             "45.7353460225460320" ;
+        geo:lon             "4.8895839762811750" .
+
+<http://ex.com/Place%20du%20Ch%C3%A2teau>
+        a                   ex:station ;
+        rdfs:label          "Place du Château" ;
+        dbo:idNumber        "3012" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "24" ;
+        vocab:capacity      "25" ;
+        geo:lat             "45.7495170788471200" ;
+        geo:lon             "4.8872857232192937" .
+
+<http://ex.com/Th%C3%A9%C3%A2tre%20Nouvelle%20G%C3%A9n%C3%A9ration>
+        a                   ex:station ;
+        rdfs:label          "Théâtre Nouvelle Génération" ;
+        dbo:idNumber        "9006" ;
+        ex:availableBikes   "7" ;
+        ex:availableStands  "9" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7772955373720120" ;
+        geo:lon             "4.8033117445656650" .
+
+<http://ex.com/Gambetta%20%2F%20Garibaldi>
+        a                   ex:station ;
+        rdfs:label          "Gambetta / Garibaldi" ;
+        dbo:idNumber        "7003" ;
+        ex:availableBikes   "7" ;
+        ex:availableStands  "33" ;
+        vocab:capacity      "40" ;
+        geo:lat             "45.7517901355474730" ;
+        geo:lon             "4.8526079660087520" .
+
+<http://ex.com/Cit%C3%A9%20Internationale>
+        a                   ex:station ;
+        rdfs:label          "Cité Internationale" ;
+        dbo:idNumber        "6035" ;
+        ex:availableBikes   "4" ;
+        ex:availableStands  "17" ;
+        vocab:capacity      "21" ;
+        geo:lat             "45.7854214249623790" ;
+        geo:lon             "4.8541240727107642" .
+
+<http://ex.com/Viabert%20%2F%20Thiers>
+        a                   ex:station ;
+        rdfs:label          "Viabert / Thiers" ;
+        dbo:idNumber        "6016" ;
+        ex:availableBikes   "5" ;
+        ex:availableStands  "8" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7659879833823520" ;
+        geo:lon             "4.8620922782007510" .
+
+<http://ex.com/Philom%C3%A8ne%20Magnin>
+        a                   ex:station ;
+        rdfs:label          "Philomène Magnin" ;
+        dbo:idNumber        "3035" ;
+        ex:availableBikes   "10" ;
+        ex:availableStands  "14" ;
+        vocab:capacity      "24" ;
+        geo:lat             "45.7526125818453550" ;
+        geo:lon             "4.8587710033051472" .
+
+<http://ex.com/Desaix>
+        a                   ex:station ;
+        rdfs:label          "Desaix" ;
+        dbo:idNumber        "3084" ;
+        ex:availableBikes   "26" ;
+        ex:availableStands  "2" ;
+        vocab:capacity      "28" ;
+        geo:lat             "45.7572612599251580" ;
+        geo:lon             "4.8552008564228180" .
+
+<http://ex.com/St%20Fons%204%20chemins>
+        a                   ex:station ;
+        rdfs:label          "St Fons 4 chemins" ;
+        dbo:idNumber        "17002" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "10" ;
+        vocab:capacity      "11" ;
+        geo:lat             "45.7084541926180350" ;
+        geo:lon             "4.8547671040719056" .
+
+<http://ex.com/Jaur%C3%A8s%20%2F%20Thibaudi%C3%A8re>
+        a                   ex:station ;
+        rdfs:label          "Jaurès / Thibaudière" ;
+        dbo:idNumber        "7053" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "28" ;
+        vocab:capacity      "28" ;
+        geo:lat             "45.7503447975739450" ;
+        geo:lon             "4.8450482534996375" .
+
+<http://ex.com/Sergent%20Berthet%20%2F%20Gorge%20de%20Loup>
+        a                   ex:station ;
+        rdfs:label          "Sergent Berthet / Gorge de Loup" ;
+        dbo:idNumber        "9049" ;
+        ex:availableBikes   "8" ;
+        ex:availableStands  "7" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7701340720176050" ;
+        geo:lon             "4.8051580030149461" .
+
+<http://ex.com/Place%20d%27Espagne%20%2F%20Stade%20Kruger>
+        a                   ex:station ;
+        rdfs:label          "Place d'Espagne / Stade Kruger" ;
+        dbo:idNumber        "10115" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "21" ;
+        vocab:capacity      "22" ;
+        geo:lat             "45.7541767015908220" ;
+        geo:lon             "4.9052991893735278" .
+
+<http://ex.com/Gerland>
+        a                   ex:station ;
+        rdfs:label          "Gerland" ;
+        dbo:idNumber        "7006" ;
+        ex:availableBikes   "39" ;
+        ex:availableStands  "1" ;
+        vocab:capacity      "40" ;
+        geo:lat             "45.7275732848257230" ;
+        geo:lon             "4.8311974821956261" .
+
+<http://ex.com/Place%20Commandant%20Arnaud>
+        a                   ex:station ;
+        rdfs:label          "Place Commandant Arnaud" ;
+        dbo:idNumber        "4003" ;
+        ex:availableBikes   "5" ;
+        ex:availableStands  "12" ;
+        vocab:capacity      "17" ;
+        geo:lat             "45.7797251519675610" ;
+        geo:lon             "4.8347072824510775" .
+
+<http://ex.com/Place%20Joann%C3%A8s%20Ambre>
+        a                   ex:station ;
+        rdfs:label          "Place Joannès Ambre" ;
+        dbo:idNumber        "4011" ;
+        ex:availableBikes   "8" ;
+        ex:availableStands  "12" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7815755185206110" ;
+        geo:lon             "4.8328577220510196" .
+
+<http://ex.com/Quai%20Paul%20S%C3%A9daillan>
+        a                   ex:station ;
+        rdfs:label          "Quai Paul Sédaillan" ;
+        dbo:idNumber        "9013" ;
+        ex:availableBikes   "9" ;
+        ex:availableStands  "11" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7875097567311830" ;
+        geo:lon             "4.8144211278496751" .
+
+<http://ex.com/Mass%C3%A9na>
+        a                   ex:station ;
+        rdfs:label          "Masséna" ;
+        dbo:idNumber        "6007" ;
+        ex:availableBikes   "2" ;
+        ex:availableStands  "8" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7696721806905060" ;
+        geo:lon             "4.8523652715024763" .
+
+<http://ex.com/Martini%C3%A8re>
+        a                   ex:station ;
+        rdfs:label          "Martinière" ;
+        dbo:idNumber        "1013" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "8" ;
+        vocab:capacity      "11" ;
+        geo:lat             "45.7682183165921970" ;
+        geo:lon             "4.8276217044711549" .
+
+<http://ex.com/Gabriel%20P%C3%A9ri>
+        a                   ex:station ;
+        rdfs:label          "Gabriel Péri" ;
+        dbo:idNumber        "10075" ;
+        ex:availableBikes   "6" ;
+        ex:availableStands  "5" ;
+        vocab:capacity      "12" ;
+        geo:lat             "45.7722995938508110" ;
+        geo:lon             "4.8656992684460585" .
+
+<http://ex.com/4%20Ao%C3%BBt%20%2F%20Racine>
+        a                   ex:station ;
+        rdfs:label          "4 Août / Racine" ;
+        dbo:idNumber        "10019" ;
+        ex:availableBikes   "4" ;
+        ex:availableStands  "26" ;
+        vocab:capacity      "30" ;
+        geo:lat             "45.7644829391731920" ;
+        geo:lon             "4.8779206263003294" .
+
+<http://ex.com/Charmettes%20%2F%20Bellecombe>
+        a                   ex:station ;
+        rdfs:label          "Charmettes / Bellecombe" ;
+        dbo:idNumber        "6044" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "15" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7663703493176260" ;
+        geo:lon             "4.8650841638710620" .
+
+<http://ex.com/Kimmerling%20%2F%20Faure>
+        a                   ex:station ;
+        rdfs:label          "Kimmerling / Faure" ;
+        dbo:idNumber        "3066" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "15" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7543427791886760" ;
+        geo:lon             "4.8633437213905841" .
+
+<http://ex.com/R%C3%A9camier%20%2F%20T%C3%AAte%20d%27Or>
+        a                   ex:station ;
+        rdfs:label          "Récamier / Tête d'Or" ;
+        dbo:idNumber        "6028" ;
+        ex:availableBikes   "8" ;
+        ex:availableStands  "8" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7643336975612060" ;
+        geo:lon             "4.8534921297061953" .
+
+<http://ex.com/Boiron%20Grang%C3%A9>
+        a                   ex:station ;
+        rdfs:label          "Boiron Grangé" ;
+        dbo:idNumber        "10035" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "13" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7631587956905860" ;
+        geo:lon             "4.9004795303651321" .
+
+<http://ex.com/Vaise%20Docks>
+        a                   ex:station ;
+        rdfs:label          "Vaise Docks" ;
+        dbo:idNumber        "9042" ;
+        ex:availableBikes   "17" ;
+        ex:availableStands  "1" ;
+        vocab:capacity      "19" ;
+        geo:lat             "45.7865084443620280" ;
+        geo:lon             "4.8114412174203718" .
+
+<http://ex.com/Place%20de%20l%27Ecole>
+        a                   ex:station ;
+        rdfs:label          "Place de l'Ecole" ;
+        dbo:idNumber        "7046" ;
+        ex:availableBikes   "28" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "28" ;
+        geo:lat             "45.7300799170408610" ;
+        geo:lon             "4.8278229564284700" .
+
+<http://ex.com/Confluence%20%2F%20Docks>
+        a                   ex:station ;
+        rdfs:label          "Confluence / Docks" ;
+        dbo:idNumber        "2009" ;
+        ex:availableBikes   "20" ;
+        ex:availableStands  "5" ;
+        vocab:capacity      "26" ;
+        geo:lat             "45.7396275873331040" ;
+        geo:lon             "4.8150259306438121" .
+
+<http://ex.com/Ecole%20de%20musique>
+        a                   ex:station ;
+        rdfs:label          "Ecole de musique" ;
+        dbo:idNumber        "10028" ;
+        ex:availableBikes   "7" ;
+        ex:availableStands  "15" ;
+        vocab:capacity      "24" ;
+        geo:lat             "45.7675343020076260" ;
+        geo:lon             "4.8739662098689820" .
+
+<http://ex.com/Doua%20%2F%20Avenue%20des%20Arts>
+        a                   ex:station ;
+        rdfs:label          "Doua / Avenue des Arts" ;
+        dbo:idNumber        "10084" ;
+        ex:availableBikes   "17" ;
+        ex:availableStands  "12" ;
+        vocab:capacity      "30" ;
+        geo:lat             "45.7835136793198600" ;
+        geo:lon             "4.8712731104104918" .
+
+<http://ex.com/Oullins%20Mairie>
+        a                   ex:station ;
+        rdfs:label          "Oullins Mairie" ;
+        dbo:idNumber        "20002" ;
+        ex:availableBikes   "7" ;
+        ex:availableStands  "11" ;
+        vocab:capacity      "18" ;
+        geo:lat             "45.7140014190252940" ;
+        geo:lon             "4.8065443341113525" .
+
+<http://ex.com/La%20Rochette>
+        a                   ex:station ;
+        rdfs:label          "La Rochette" ;
+        dbo:idNumber        "11003" ;
+        ex:availableBikes   "9" ;
+        ex:availableStands  "11" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7916701826039940" ;
+        geo:lon             "4.8235970239637442" .
+
+<http://ex.com/Charmettes%20%2F%20Zola>
+        a                   ex:station ;
+        rdfs:label          "Charmettes / Zola" ;
+        dbo:idNumber        "10046" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "24" ;
+        geo:lat             "45.7707297451097760" ;
+        geo:lon             "4.8673418461692233" .
+
+<http://ex.com/Martini%C3%A8re%20%2F%20Monplaisir>
+        a                   ex:station ;
+        rdfs:label          "Martinière / Monplaisir" ;
+        dbo:idNumber        "8054" ;
+        ex:availableBikes   "10" ;
+        ex:availableStands  "10" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7408472643867510" ;
+        geo:lon             "4.8682065451769923" .
+
+<http://ex.com/Ch%C3%A2teau%20Gaillard%20%2F%20Fort>
+        a                   ex:station ;
+        rdfs:label          "Château Gaillard / Fort" ;
+        dbo:idNumber        "10091" ;
+        ex:availableBikes   "4" ;
+        ex:availableStands  "9" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7747507993117250" ;
+        geo:lon             "4.8880387408797779" .
+
+<http://ex.com/Verdun%20%2F%20Desgrand>
+        a                   ex:station ;
+        rdfs:label          "Verdun / Desgrand" ;
+        dbo:idNumber        "10122" ;
+        ex:availableBikes   "6" ;
+        ex:availableStands  "14" ;
+        vocab:capacity      "21" ;
+        geo:lat             "45.7840513436847370" ;
+        geo:lon             "4.8970859241187767" .
+
+<http://ex.com/Part-Dieu%20%2F%20Cuirassiers>
+        a                   ex:station ;
+        rdfs:label          "Part-Dieu / Cuirassiers" ;
+        dbo:idNumber        "3011" ;
+        ex:availableBikes   "50" ;
+        ex:availableStands  "8" ;
+        vocab:capacity      "59" ;
+        geo:lat             "45.7598976512354200" ;
+        geo:lon             "4.8575730314142138" .
+
+<http://ex.com/Claude%20Bernard%20Lyon%20I>
+        a                   ex:station ;
+        rdfs:label          "Claude Bernard Lyon I" ;
+        dbo:idNumber        "8003" ;
+        ex:availableBikes   "9" ;
+        ex:availableStands  "7" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7381400560294940" ;
+        geo:lon             "4.8868803087115333" .
+
+<http://ex.com/Cit%C3%A9%20Internationale%20%2F%20Cin%C3%A9ma>
+        a                   ex:station ;
+        rdfs:label          "Cité Internationale / Cinéma" ;
+        dbo:idNumber        "6043" ;
+        ex:availableBikes   "16" ;
+        ex:availableStands  "16" ;
+        vocab:capacity      "32" ;
+        geo:lat             "45.7847015036764230" ;
+        geo:lon             "4.8519081064540366" .
+
+<http://ex.com/La%20P%C3%A9rrali%C3%A8re>
+        a                   ex:station ;
+        rdfs:label          "La Pérralière" ;
+        dbo:idNumber        "10117" ;
+        ex:availableBikes   "4" ;
+        ex:availableStands  "18" ;
+        vocab:capacity      "22" ;
+        geo:lat             "45.7645636665294120" ;
+        geo:lon             "4.8923336071821142" .
+
+<http://ex.com/Part-Dieu%20%2F%20Francfort>
+        a                   ex:station ;
+        rdfs:label          "Part-Dieu / Francfort" ;
+        dbo:idNumber        "3081" ;
+        ex:availableBikes   "17" ;
+        ex:availableStands  "10" ;
+        vocab:capacity      "28" ;
+        geo:lat             "45.7606085556441120" ;
+        geo:lon             "4.8630862498286334" .
+
+<http://ex.com/Paul%20Bert%20%2F%20Garibaldi>
+        a                   ex:station ;
+        rdfs:label          "Paul Bert / Garibaldi" ;
+        dbo:idNumber        "3037" ;
+        ex:availableBikes   "14" ;
+        ex:availableStands  "6" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7571028581681740" ;
+        geo:lon             "4.8534807971166600" .
+
+<http://ex.com/Parc%20de%20Gerland>
+        a                   ex:station ;
+        rdfs:label          "Parc de Gerland" ;
+        dbo:idNumber        "7020" ;
+        ex:availableBikes   "26" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "26" ;
+        geo:lat             "45.7243483551230130" ;
+        geo:lon             "4.8268214305884181" .
+
+<http://ex.com/Patinoire%20Baraban>
+        a                   ex:station ;
+        rdfs:label          "Patinoire Baraban" ;
+        dbo:idNumber        "3101" ;
+        ex:availableBikes   "6" ;
+        ex:availableStands  "14" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7620516689039150" ;
+        geo:lon             "4.8685003507160687" .
+
+<http://ex.com/Croix%20Rousse%20%2F%20Perfetti>
+        a                   ex:station ;
+        rdfs:label          "Croix Rousse / Perfetti" ;
+        dbo:idNumber        "1023" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "19" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7722538415304920" ;
+        geo:lon             "4.8194608620100041" .
+
+<http://ex.com/Bourse%20du%20travail>
+        a                   ex:station ;
+        rdfs:label          "Bourse du travail" ;
+        dbo:idNumber        "3004" ;
+        ex:availableBikes   "18" ;
+        ex:availableStands  "2" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7596382324954690" ;
+        geo:lon             "4.8480846921356076" .
+
+<http://ex.com/Rockfeller%20%2F%20Esquirol>
+        a                   ex:station ;
+        rdfs:label          "Rockfeller / Esquirol" ;
+        dbo:idNumber        "3024" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "16" ;
+        vocab:capacity      "19" ;
+        geo:lat             "45.7414231127129510" ;
+        geo:lon             "4.8853771979328720" .
+
+<http://ex.com/Place%20Cr%C3%A9pu>
+        a                   ex:station ;
+        rdfs:label          "Place Crépu" ;
+        dbo:idNumber        "5040" ;
+        ex:availableBikes   "11" ;
+        ex:availableStands  "9" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7578416796382400" ;
+        geo:lon             "4.8261054516922881" .
+
+<http://ex.com/L%27Ile%20Barbe>
+        a                   ex:station ;
+        rdfs:label          "L'Ile Barbe" ;
+        dbo:idNumber        "9008" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "15" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7974121962714450" ;
+        geo:lon             "4.8290463533634593" .
+
+<http://ex.com/4%20ao%C3%BBt%201789>
+        a                   ex:station ;
+        rdfs:label          "4 août 1789" ;
+        dbo:idNumber        "10064" ;
+        ex:availableBikes   "5" ;
+        ex:availableStands  "5" ;
+        vocab:capacity      "10" ;
+        geo:lat             "45.7648217045185530" ;
+        geo:lon             "4.8843189291137268" .
+
+<http://ex.com/Stade%20Vuillermet>
+        a                   ex:station ;
+        rdfs:label          "Stade Vuillermet" ;
+        dbo:idNumber        "8061" ;
+        ex:availableBikes   "16" ;
+        ex:availableStands  "1" ;
+        vocab:capacity      "18" ;
+        geo:lat             "45.7254037172007980" ;
+        geo:lon             "4.8812948922096577" .
+
+<http://ex.com/11%20novembre%20%2F%20Gaston%20Berger>
+        a                   ex:station ;
+        rdfs:label          "11 novembre / Gaston Berger" ;
+        dbo:idNumber        "10056" ;
+        ex:availableBikes   "27" ;
+        ex:availableStands  "6" ;
+        vocab:capacity      "35" ;
+        geo:lat             "45.7790639863242460" ;
+        geo:lon             "4.8714964631896152" .
+
+<http://ex.com/Vinatier>
+        a                   ex:station ;
+        rdfs:label          "Vinatier" ;
+        dbo:idNumber        "3090" ;
+        ex:availableBikes   "18" ;
+        ex:availableStands  "2" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7419208619871470" ;
+        geo:lon             "4.8939627777052399" .
+
+<http://ex.com/Salengro%20%2F%20Descartes>
+        a                   ex:station ;
+        rdfs:label          "Salengro / Descartes" ;
+        dbo:idNumber        "10120" ;
+        ex:availableBikes   "8" ;
+        ex:availableStands  "6" ;
+        vocab:capacity      "15" ;
+        geo:lat             "45.7762517515064500" ;
+        geo:lon             "4.8716291781443655" .
+
+<http://ex.com/Place%20Adrien%20Godien>
+        a                   ex:station ;
+        rdfs:label          "Place Adrien Godien" ;
+        dbo:idNumber        "4012" ;
+        ex:availableBikes   "7" ;
+        ex:availableStands  "22" ;
+        vocab:capacity      "30" ;
+        geo:lat             "45.7786706157080870" ;
+        geo:lon             "4.8410134096251811" .
+
+<http://ex.com/Pressens%C3%A9>
+        a                   ex:station ;
+        rdfs:label          "Pressensé" ;
+        dbo:idNumber        "10049" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "13" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7691684753850790" ;
+        geo:lon             "4.8967695846255017" .
+
+<http://ex.com/M%C3%A9moire%20et%20Soci%C3%A9t%C3%A9>
+        a                   ex:station ;
+        rdfs:label          "Mémoire et Société" ;
+        dbo:idNumber        "10110" ;
+        ex:availableBikes   "5" ;
+        ex:availableStands  "11" ;
+        vocab:capacity      "18" ;
+        geo:lat             "45.7595776564178540" ;
+        geo:lon             "4.8827081207421843" .
+
+<http://ex.com/Cusset>
+        a                   ex:station ;
+        rdfs:label          "Cusset" ;
+        dbo:idNumber        "10013" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "19" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7650422669277150" ;
+        geo:lon             "4.9011328928202982" .
+
+<http://ex.com/Mus%C3%A9e%20des%20Confluences>
+        a                   ex:station ;
+        rdfs:label          "Musée des Confluences" ;
+        dbo:idNumber        "2020" ;
+        ex:availableBikes   "14" ;
+        ex:availableStands  "6" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7333083359277880" ;
+        geo:lon             "4.8189203135366743" .
+
+<http://ex.com/Saint-Paul>
+        a                   ex:station ;
+        rdfs:label          "Saint-Paul" ;
+        dbo:idNumber        "5005" ;
+        ex:availableBikes   "11" ;
+        ex:availableStands  "12" ;
+        vocab:capacity      "23" ;
+        geo:lat             "45.7662717372985600" ;
+        geo:lon             "4.8274321226910386" .
+
+<http://ex.com/Patinoire%20Charlemagne>
+        a                   ex:station ;
+        rdfs:label          "Patinoire Charlemagne" ;
+        dbo:idNumber        "2007" ;
+        ex:availableBikes   "37" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "37" ;
+        geo:lat             "45.7426115005543960" ;
+        geo:lon             "4.8204716703055039" .
+
+<http://ex.com/Marseille%20%2F%20Universit%C3%A9>
+        a                   ex:station ;
+        rdfs:label          "Marseille / Université" ;
+        dbo:idNumber        "7035" ;
+        ex:availableBikes   "12" ;
+        ex:availableStands  "28" ;
+        vocab:capacity      "40" ;
+        geo:lat             "45.7509549511840560" ;
+        geo:lon             "4.8392671207183300" .
+
+<http://ex.com/Baldassini%20%2F%20Gerland>
+        a                   ex:station ;
+        rdfs:label          "Baldassini / Gerland" ;
+        dbo:idNumber        "7026" ;
+        ex:availableBikes   "13" ;
+        ex:availableStands  "7" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7276967807767180" ;
+        geo:lon             "4.8373820902736711" .
+
+<http://ex.com/Croix%20Luizet>
+        a                   ex:station ;
+        rdfs:label          "Croix Luizet" ;
+        dbo:idNumber        "10031" ;
+        ex:availableBikes   "9" ;
+        ex:availableStands  "12" ;
+        vocab:capacity      "22" ;
+        geo:lat             "45.7807198477544190" ;
+        geo:lon             "4.8834995751426700" .
+
+<http://ex.com/Bancel%20%2F%20Chevreul>
+        a                   ex:station ;
+        rdfs:label          "Bancel / Chevreul" ;
+        dbo:idNumber        "7024" ;
+        ex:availableBikes   "8" ;
+        ex:availableStands  "13" ;
+        vocab:capacity      "21" ;
+        geo:lat             "45.7485202867305600" ;
+        geo:lon             "4.8405245716725132" .
+
+<http://ex.com/Poudrette%20%2F%20La%20Soie>
+        a                   ex:station ;
+        rdfs:label          "Poudrette / La Soie" ;
+        dbo:idNumber        "12002" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "18" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7644003130587790" ;
+        geo:lon             "4.9192757859473666" .
+
+<http://ex.com/Gambetta%20%2F%20Ferry>
+        a                   ex:station ;
+        rdfs:label          "Gambetta / Ferry" ;
+        dbo:idNumber        "28002" ;
+        ex:availableBikes   "6" ;
+        ex:availableStands  "14" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.8354059997715170" ;
+        geo:lon             "4.8457000001885611" .
+
+<http://ex.com/Place%20du%20Lac>
+        a                   ex:station ;
+        rdfs:label          "Place du Lac" ;
+        dbo:idNumber        "3058" ;
+        ex:availableBikes   "15" ;
+        ex:availableStands  "4" ;
+        vocab:capacity      "19" ;
+        geo:lat             "45.7588856223001270" ;
+        geo:lon             "4.8537678938544726" .
+
+<http://ex.com/Conservatoire>
+        a                   ex:station ;
+        rdfs:label          "Conservatoire" ;
+        dbo:idNumber        "9011" ;
+        ex:availableBikes   "10" ;
+        ex:availableStands  "8" ;
+        vocab:capacity      "19" ;
+        geo:lat             "45.7697822121574090" ;
+        geo:lon             "4.8126762195854047" .
+
+<http://ex.com/Zola%20%2F%20France>
+        a                   ex:station ;
+        rdfs:label          "Zola / France" ;
+        dbo:idNumber        "10012" ;
+        ex:availableBikes   "14" ;
+        ex:availableStands  "2" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7680704202145780" ;
+        geo:lon             "4.8871237200591935" .
+
+<http://ex.com/Berthelot%20%2F%20Villon>
+        a                   ex:station ;
+        rdfs:label          "Berthelot / Villon" ;
+        dbo:idNumber        "8034" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "13" ;
+        vocab:capacity      "13" ;
+        geo:lat             "45.7382725902588940" ;
+        geo:lon             "4.8626987923823561" .
+
+<http://ex.com/Terreaux%20%2F%20Terme>
+        a                   ex:station ;
+        rdfs:label          "Terreaux / Terme" ;
+        dbo:idNumber        "1001" ;
+        ex:availableBikes   "5" ;
+        ex:availableStands  "10" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7677346863698560" ;
+        geo:lon             "4.8321350621908303" .
+
+<http://ex.com/Vaillant%20%2F%20Perroncel>
+        a                   ex:station ;
+        rdfs:label          "Vaillant / Perroncel" ;
+        dbo:idNumber        "10080" ;
+        ex:availableBikes   "14" ;
+        ex:availableStands  "3" ;
+        vocab:capacity      "17" ;
+        geo:lat             "45.7753988102813590" ;
+        geo:lon             "4.8802630912578131" .
+
+<http://ex.com/Augagneur%20%2F%20Fosse%20aux%20Ours>
+        a                   ex:station ;
+        rdfs:label          "Augagneur / Fosse aux Ours" ;
+        dbo:idNumber        "3097" ;
+        ex:availableBikes   "17" ;
+        ex:availableStands  "23" ;
+        vocab:capacity      "40" ;
+        geo:lat             "45.7571997023265380" ;
+        geo:lon             "4.8404991375424880" .
+
+<http://ex.com/Lumi%C3%A8re%20%2F%20Trouilhet>
+        a                   ex:station ;
+        rdfs:label          "Lumière / Trouilhet" ;
+        dbo:idNumber        "8053" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "15" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7435720690503300" ;
+        geo:lon             "4.8701059691417319" .
+
+<http://ex.com/Buyer%20%2F%20Apollinaire>
+        a                   ex:station ;
+        rdfs:label          "Buyer / Apollinaire" ;
+        dbo:idNumber        "5055" ;
+        ex:availableBikes   "17" ;
+        ex:availableStands  "5" ;
+        vocab:capacity      "22" ;
+        geo:lat             "45.7620132943614020" ;
+        geo:lon             "4.8027598903443769" .
+
+<http://ex.com/Docteur%20Damidot>
+        a                   ex:station ;
+        rdfs:label          "Docteur Damidot" ;
+        dbo:idNumber        "10034" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "8" ;
+        vocab:capacity      "10" ;
+        geo:lat             "45.7617882849687090" ;
+        geo:lon             "4.8861572848566013" .
+
+<http://ex.com/St%20Priest%20Cit%C3%A9%20Berliet>
+        a                   ex:station ;
+        rdfs:label          "St Priest Cité Berliet" ;
+        dbo:idNumber        "15002" ;
+        ex:availableBikes   "10" ;
+        ex:availableStands  "10" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7059819724876420" ;
+        geo:lon             "4.9009848506091007" .
+
+<http://ex.com/INSA>  a     ex:station ;
+        rdfs:label          "INSA" ;
+        dbo:idNumber        "10002" ;
+        ex:availableBikes   "2" ;
+        ex:availableStands  "38" ;
+        vocab:capacity      "40" ;
+        geo:lat             "45.7821896441245850" ;
+        geo:lon             "4.8768799244436716" .
+
+<http://ex.com/Jacques%20Brel>
+        a                   ex:station ;
+        rdfs:label          "Jacques Brel" ;
+        dbo:idNumber        "10072" ;
+        ex:availableBikes   "7" ;
+        ex:availableStands  "15" ;
+        vocab:capacity      "23" ;
+        geo:lat             "45.7742255397182520" ;
+        geo:lon             "4.8642860657508757" .
+
+<http://ex.com/Place%20Mend%C3%A8s%20France>
+        a                   ex:station ;
+        rdfs:label          "Place Mendès France" ;
+        dbo:idNumber        "8010" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "20" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7399270587134770" ;
+        geo:lon             "4.8595210870362999" .
+
+<http://ex.com/Gailleton>
+        a                   ex:station ;
+        rdfs:label          "Gailleton" ;
+        dbo:idNumber        "2012" ;
+        ex:availableBikes   "12" ;
+        ex:availableStands  "4" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7534549142114390" ;
+        geo:lon             "4.8333538439572381" .
+
+<http://ex.com/Mus%C3%A9e%20Guimet>
+        a                   ex:station ;
+        rdfs:label          "Musée Guimet" ;
+        dbo:idNumber        "6020" ;
+        ex:availableBikes   "13" ;
+        ex:availableStands  "2" ;
+        vocab:capacity      "15" ;
+        geo:lat             "45.7745048729892690" ;
+        geo:lon             "4.8484771018513761" .
+
+<http://ex.com/Jaur%C3%A8s%20%2F%20Gerland>
+        a                   ex:station ;
+        rdfs:label          "Jaurès / Gerland" ;
+        dbo:idNumber        "7031" ;
+        ex:availableBikes   "10" ;
+        ex:availableStands  "10" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7398132348896810" ;
+        geo:lon             "4.8403073886228567" .
+
+<http://ex.com/Rouville>
+        a                   ex:station ;
+        rdfs:label          "Rouville" ;
+        dbo:idNumber        "1024" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "15" ;
+        vocab:capacity      "17" ;
+        geo:lat             "45.7696644422938020" ;
+        geo:lon             "4.8246123488633987" .
+
+<http://ex.com/Mus%C3%A9e%20d%27art%20contemporain>
+        a                   ex:station ;
+        rdfs:label          "Musée d'art contemporain" ;
+        dbo:idNumber        "6036" ;
+        ex:availableBikes   "9" ;
+        ex:availableStands  "14" ;
+        vocab:capacity      "23" ;
+        geo:lat             "45.7838816142830540" ;
+        geo:lon             "4.8521404034163993" .
+
+<http://ex.com/Place%20Amp%C3%A8re>
+        a                   ex:station ;
+        rdfs:label          "Place Ampère" ;
+        dbo:idNumber        "2003" ;
+        ex:availableBikes   "2" ;
+        ex:availableStands  "7" ;
+        vocab:capacity      "10" ;
+        geo:lat             "45.7530437074095100" ;
+        geo:lon             "4.8282672826226927" .
+
+<http://ex.com/Place%20de%20Trion>
+        a                   ex:station ;
+        rdfs:label          "Place de Trion" ;
+        dbo:idNumber        "5007" ;
+        ex:availableBikes   "9" ;
+        ex:availableStands  "7" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7579063089064060" ;
+        geo:lon             "4.8131349528107474" .
+
+<http://ex.com/Tronchet%20%2F%20Anatole%20France>
+        a                   ex:station ;
+        rdfs:label          "Tronchet / Anatole France" ;
+        dbo:idNumber        "6024" ;
+        ex:availableBikes   "2" ;
+        ex:availableStands  "8" ;
+        vocab:capacity      "10" ;
+        geo:lat             "45.7707371546228860" ;
+        geo:lon             "4.8567521774675422" .
+
+<http://ex.com/Bel%20Air%20%2F%20Les%20Brosses>
+        a                   ex:station ;
+        rdfs:label          "Bel Air / Les Brosses" ;
+        dbo:idNumber        "10114" ;
+        ex:availableBikes   "12" ;
+        ex:availableStands  "8" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7579070732360900" ;
+        geo:lon             "4.9108067086686678" .
+
+<http://ex.com/Marietton%20Ouest>
+        a                   ex:station ;
+        rdfs:label          "Marietton Ouest" ;
+        dbo:idNumber        "9043" ;
+        ex:availableBikes   "16" ;
+        ex:availableStands  "4" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7760850428762750" ;
+        geo:lon             "4.7997376609700089" .
+
+<http://ex.com/Champvert>
+        a                   ex:station ;
+        rdfs:label          "Champvert" ;
+        dbo:idNumber        "5044" , "5054" ;
+        ex:availableBikes   "18" , "5" ;
+        ex:availableStands  "13" , "2" ;
+        vocab:capacity      "18" , "20" ;
+        geo:lat             "45.7597959541759560" , "45.7638977674247510" ;
+        geo:lon             "4.7927143081079864" , "4.7965641858696300" .
+
+<http://ex.com/Bron%20Centre%20Nautique>
+        a                   ex:station ;
+        rdfs:label          "Bron Centre Nautique" ;
+        dbo:idNumber        "14001" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "13" ;
+        vocab:capacity      "13" ;
+        geo:lat             "45.7429072853314480" ;
+        geo:lon             "4.9086250104223286" .
+
+<http://ex.com/H%C3%B4pital%20Neurologique>
+        a                   ex:station ;
+        rdfs:label          "Hôpital Neurologique" ;
+        dbo:idNumber        "3091" ;
+        ex:availableBikes   "13" ;
+        ex:availableStands  "7" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7481832938431690" ;
+        geo:lon             "4.8969570575460013" .
+
+<http://ex.com/L%27Homme%20de%20la%20Roche>
+        a                   ex:station ;
+        rdfs:label          "L'Homme de la Roche" ;
+        dbo:idNumber        "5041" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "20" ;
+        vocab:capacity      "21" ;
+        geo:lat             "45.7665803442908090" ;
+        geo:lon             "4.8202302422982601" .
+
+<http://ex.com/Place%20Mar%C3%A9chal%20Lyautey>
+        a                   ex:station ;
+        rdfs:label          "Place Maréchal Lyautey" ;
+        dbo:idNumber        "6022" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "20" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7693730577565390" ;
+        geo:lon             "4.8423179538871635" .
+
+<http://ex.com/Terreaux%20%2F%20Chenavard>
+        a                   ex:station ;
+        rdfs:label          "Terreaux / Chenavard" ;
+        dbo:idNumber        "1020" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "18" ;
+        geo:lat             "45.7667671045630020" ;
+        geo:lon             "4.8329314879659684" .
+
+<http://ex.com/Vivier%20Merle%20%2F%20Paul%20Bert>
+        a                   ex:station ;
+        rdfs:label          "Vivier Merle / Paul Bert" ;
+        dbo:idNumber        "3038" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "40" ;
+        geo:lat             "45.7573307386789660" ;
+        geo:lon             "4.8589349649959805" .
+
+<http://ex.com/Mairie%20du%207e>
+        a                   ex:station ;
+        rdfs:label          "Mairie du 7e" ;
+        dbo:idNumber        "7004" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "27" ;
+        vocab:capacity      "30" ;
+        geo:lat             "45.7465601730305520" ;
+        geo:lon             "4.8423412580916123" .
+
+<http://ex.com/Primat%20%2F%20Decorps>
+        a                   ex:station ;
+        rdfs:label          "Primat / Decorps" ;
+        dbo:idNumber        "10032" ;
+        ex:availableBikes   "9" ;
+        ex:availableStands  "4" ;
+        vocab:capacity      "13" ;
+        geo:lat             "45.7571560146472440" ;
+        geo:lon             "4.8999652194279451" .
+
+<http://ex.com/Clinique%20Montplaisir>
+        a                   ex:station ;
+        rdfs:label          "Clinique Montplaisir" ;
+        dbo:idNumber        "8052" ;
+        ex:availableBikes   "7" ;
+        ex:availableStands  "9" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7470967140946740" ;
+        geo:lon             "4.8601437036179034" .
+
+<http://ex.com/Bron%20Mairie>
+        a                   ex:station ;
+        rdfs:label          "Bron Mairie" ;
+        dbo:idNumber        "14004" ;
+        ex:availableBikes   "8" ;
+        ex:availableStands  "15" ;
+        vocab:capacity      "23" ;
+        geo:lat             "45.7339455296300700" ;
+        geo:lon             "4.9087206818679405" .
+
+<http://ex.com/Mairie%20du%204e>
+        a                   ex:station ;
+        rdfs:label          "Mairie du 4e" ;
+        dbo:idNumber        "4002" ;
+        ex:availableBikes   "4" ;
+        ex:availableStands  "15" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7742004406999570" ;
+        geo:lon             "4.8277652218641753" .
+
+<http://ex.com/m%C3%A9tro%20Flachet>
+        a                   ex:station ;
+        rdfs:label          "métro Flachet" ;
+        dbo:idNumber        "10058" ;
+        ex:availableBikes   "9" ;
+        ex:availableStands  "13" ;
+        vocab:capacity      "22" ;
+        geo:lat             "45.7670909450657110" ;
+        geo:lon             "4.8924286413845515" .
+
+<http://ex.com/Avenue%20Verguin>
+        a                   ex:station ;
+        rdfs:label          "Avenue Verguin" ;
+        dbo:idNumber        "6003" ;
+        ex:availableBikes   "16" ;
+        ex:availableStands  "3" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7729113974482830" ;
+        geo:lon             "4.8563267813588187" .
+
+<http://ex.com/Place%20de%20la%20Paix>
+        a                   ex:station ;
+        rdfs:label          "Place de la Paix" ;
+        dbo:idNumber        "1031" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "19" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7680236126546520" ;
+        geo:lon             "4.8317412517184160" .
+
+<http://ex.com/Maisons%20Neuves>
+        a                   ex:station ;
+        rdfs:label          "Maisons Neuves" ;
+        dbo:idNumber        "10024" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "23" ;
+        vocab:capacity      "23" ;
+        geo:lat             "45.7559510292356110" ;
+        geo:lon             "4.8773464298740201" .
+
+<http://ex.com/Charcot%20%2F%20R%C3%A9sidence%20universitaire>
+        a                   ex:station ;
+        rdfs:label          "Charcot / Résidence universitaire" ;
+        dbo:idNumber        "5030" ;
+        ex:availableBikes   "19" ;
+        ex:availableStands  "13" ;
+        vocab:capacity      "32" ;
+        geo:lat             "45.7550310886452610" ;
+        geo:lon             "4.8077850541519442" .
+
+<http://ex.com/Sisley%20%2F%20Dauphin%C3%A9>
+        a                   ex:station ;
+        rdfs:label          "Sisley / Dauphiné" ;
+        dbo:idNumber        "3100" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "16" ;
+        vocab:capacity      "17" ;
+        geo:lat             "45.7528275113150610" ;
+        geo:lon             "4.8687687708041860" .
+
+<http://ex.com/Bron%20Place%20Curial>
+        a                   ex:station ;
+        rdfs:label          "Bron Place Curial" ;
+        dbo:idNumber        "14003" ;
+        ex:availableBikes   "13" ;
+        ex:availableStands  "12" ;
+        vocab:capacity      "25" ;
+        geo:lat             "45.7366744242415280" ;
+        geo:lon             "4.9171004856320097" .
+
+<http://ex.com/Place%20Bir-Hakeim>
+        a                   ex:station ;
+        rdfs:label          "Place Bir-Hakeim" ;
+        dbo:idNumber        "3039" ;
+        ex:availableBikes   "14" ;
+        ex:availableStands  "5" ;
+        vocab:capacity      "19" ;
+        geo:lat             "45.7525921437139620" ;
+        geo:lon             "4.8557101486887975" .
+
+<http://ex.com/Place%20Gabriel%20P%C3%A9ri>
+        a                   ex:station ;
+        rdfs:label          "Place Gabriel Péri" ;
+        dbo:idNumber        "7001" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "19" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7548790164649190" ;
+        geo:lon             "4.8436750818920178" .
+
+<http://ex.com/Masset%20%2F%20Saint-Pierre%20de%20Vaise>
+        a                   ex:station ;
+        rdfs:label          "Masset / Saint-Pierre de Vaise" ;
+        dbo:idNumber        "9044" ;
+        ex:availableBikes   "12" ;
+        ex:availableStands  "3" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7704769200645740" ;
+        geo:lon             "4.8009004832411426" .
+
+<http://ex.com/Garibaldi%20%2F%20Pensionnat>
+        a                   ex:station ;
+        rdfs:label          "Garibaldi / Pensionnat" ;
+        dbo:idNumber        "3034" ;
+        ex:availableBikes   "2" ;
+        ex:availableStands  "28" ;
+        vocab:capacity      "30" ;
+        geo:lat             "45.7547065642496240" ;
+        geo:lon             "4.8534044474099280" .
+
+<http://ex.com/Pr%C3%A9fecture%20%2F%20Sarrail>
+        a                   ex:station ;
+        rdfs:label          "Préfecture / Sarrail" ;
+        dbo:idNumber        "6032" ;
+        ex:availableBikes   "6" ;
+        ex:availableStands  "12" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7648582723532300" ;
+        geo:lon             "4.8415654714910223" .
+
+<http://ex.com/St%20Fons%20Th%C3%A9atre>
+        a                   ex:station ;
+        rdfs:label          "St Fons Théatre" ;
+        dbo:idNumber        "17003" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "18" ;
+        vocab:capacity      "18" ;
+        geo:lat             "45.7079860163389780" ;
+        geo:lon             "4.8601564934850359" .
+
+<http://ex.com/Bataille%20%2F%20Kr%C3%BCger>
+        a                   ex:station ;
+        rdfs:label          "Bataille / Krüger" ;
+        dbo:idNumber        "8050" ;
+        ex:availableBikes   "6" ;
+        ex:availableStands  "12" ;
+        vocab:capacity      "18" ;
+        geo:lat             "45.7362395960067330" ;
+        geo:lon             "4.8798418411853790" .
+
+<http://ex.com/Berthelot%20%2F%20Route%20de%20Vienne>
+        a                   ex:station ;
+        rdfs:label          "Berthelot / Route de Vienne" ;
+        dbo:idNumber        "7023" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "14" ;
+        vocab:capacity      "15" ;
+        geo:lat             "45.7426537617282920" ;
+        geo:lon             "4.8505369714596656" .
+
+<http://ex.com/Place%20Bahadourian>
+        a                   ex:station ;
+        rdfs:label          "Place Bahadourian" ;
+        dbo:idNumber        "3082" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "18" ;
+        geo:lat             "45.7576229228584170" ;
+        geo:lon             "4.8451085953553852" .
+
+<http://ex.com/Lherminier%20%2F%20Pressens%C3%A9>
+        a                   ex:station ;
+        rdfs:label          "Lherminier / Pressensé" ;
+        dbo:idNumber        "10047" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "12" ;
+        vocab:capacity      "15" ;
+        geo:lat             "45.7711232449440570" ;
+        geo:lon             "4.8850235984658994" .
+
+<http://ex.com/Pont%20Masaryk>
+        a                   ex:station ;
+        rdfs:label          "Pont Masaryk" ;
+        dbo:idNumber        "4023" ;
+        ex:availableBikes   "14" ;
+        ex:availableStands  "8" ;
+        vocab:capacity      "22" ;
+        geo:lat             "45.7782780129806140" ;
+        geo:lon             "4.8106317576202677" .
+
+<http://ex.com/St%20Fons%20Arsenal>
+        a                   ex:station ;
+        rdfs:label          "St Fons Arsenal" ;
+        dbo:idNumber        "17001" ;
+        ex:availableBikes   "6" ;
+        ex:availableStands  "21" ;
+        vocab:capacity      "27" ;
+        geo:lat             "45.7123448014944390" ;
+        geo:lon             "4.8552741231339969" .
+
+<http://ex.com/Saxe%20%2F%20Gambetta>
+        a                   ex:station ;
+        rdfs:label          "Saxe / Gambetta" ;
+        dbo:idNumber        "3005" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "19" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7537858652435570" ;
+        geo:lon             "4.8480424261036825" .
+
+<http://ex.com/Moulin%20%C3%A0%20Vent>
+        a                   ex:station ;
+        rdfs:label          "Moulin à Vent" ;
+        dbo:idNumber        "8020" ;
+        ex:availableBikes   "4" ;
+        ex:availableStands  "18" ;
+        vocab:capacity      "22" ;
+        geo:lat             "45.7296761340645830" ;
+        geo:lon             "4.8541819412364093" .
+
+<http://ex.com/Sainte-Ir%C3%A9n%C3%A9e>
+        a                   ex:station ;
+        rdfs:label          "Sainte-Irénée" ;
+        dbo:idNumber        "5008" ;
+        ex:availableBikes   "7" ;
+        ex:availableStands  "13" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7549458810740010" ;
+        geo:lon             "4.8124212248457434" .
+
+<http://ex.com/Place%20Guichard>
+        a                   ex:station ;
+        rdfs:label          "Place Guichard" ;
+        dbo:idNumber        "3088" ;
+        ex:availableBikes   "2" ;
+        ex:availableStands  "14" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7588252495330470" ;
+        geo:lon             "4.8465386095114376" .
+
+<http://ex.com/Cit%C3%A9%20Scolaire%20Internationale>
+        a                   ex:station ;
+        rdfs:label          "Cité Scolaire Internationale" ;
+        dbo:idNumber        "7049" ;
+        ex:availableBikes   "24" ;
+        ex:availableStands  "1" ;
+        vocab:capacity      "25" ;
+        geo:lat             "45.7279188576411290" ;
+        geo:lon             "4.8235600814059092" .
+
+<http://ex.com/Quai%20Romain%20Rolland>
+        a                   ex:station ;
+        rdfs:label          "Quai Romain Rolland" ;
+        dbo:idNumber        "5006" ;
+        ex:availableBikes   "8" ;
+        ex:availableStands  "9" ;
+        vocab:capacity      "17" ;
+        geo:lat             "45.7620370806926720" ;
+        geo:lon             "4.8288896824580405" .
+
+<http://ex.com/Lyon%20M%C3%A9tropole>
+        a                   ex:station ;
+        rdfs:label          "Lyon Métropole" ;
+        dbo:idNumber        "4024" ;
+        ex:availableBikes   "13" ;
+        ex:availableStands  "11" ;
+        vocab:capacity      "25" ;
+        geo:lat             "45.7881700188236560" ;
+        geo:lon             "4.8185602866725281" .
+
+<http://ex.com/Halle%20Tony%20Garnier>
+        a                   ex:station ;
+        rdfs:label          "Halle Tony Garnier" ;
+        dbo:idNumber        "7013" ;
+        ex:availableBikes   "18" ;
+        ex:availableStands  "2" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7308422388673180" ;
+        geo:lon             "4.8237404067653964" .
+
+<http://ex.com/H%C3%A9non>
+        a                   ex:station ;
+        rdfs:label          "Hénon" ;
+        dbo:idNumber        "4004" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "22" ;
+        vocab:capacity      "22" ;
+        geo:lat             "45.7797553671142550" ;
+        geo:lon             "4.8276484010879557" .
+
+<http://ex.com/Place%20Stalingard>
+        a                   ex:station ;
+        rdfs:label          "Place Stalingard" ;
+        dbo:idNumber        "7038" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "13" ;
+        vocab:capacity      "13" ;
+        geo:lat             "45.7495788810534310" ;
+        geo:lon             "4.8529655050157778" .
+
+<http://ex.com/Place%20Rouget%20de%20L%27Isle>
+        a                   ex:station ;
+        rdfs:label          "Place Rouget de L'Isle" ;
+        dbo:idNumber        "3043" ;
+        ex:availableBikes   "5" ;
+        ex:availableStands  "11" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7539631929670630" ;
+        geo:lon             "4.8673532946259153" .
+
+<http://ex.com/Place%20Varillon%20%28funiculaire%20Saint-Just%29>
+        a                   ex:station ;
+        rdfs:label          "Place Varillon (funiculaire Saint-Just)" ;
+        dbo:idNumber        "5001" ;
+        ex:availableBikes   "8" ;
+        ex:availableStands  "15" ;
+        vocab:capacity      "23" ;
+        geo:lat             "45.7573003219205030" ;
+        geo:lon             "4.8150900113095236" .
+
+<http://ex.com/Hachette>
+        a                   ex:station ;
+        rdfs:label          "Hachette" ;
+        dbo:idNumber        "3067" ;
+        ex:availableBikes   "7" ;
+        ex:availableStands  "8" ;
+        vocab:capacity      "15" ;
+        geo:lat             "45.7529160218789240" ;
+        geo:lon             "4.8638526893825507" .
+
+<http://ex.com/Centre%20Berthelot>
+        a                   ex:station ;
+        rdfs:label          "Centre Berthelot" ;
+        dbo:idNumber        "7010" ;
+        ex:availableBikes   "9" ;
+        ex:availableStands  "10" ;
+        vocab:capacity      "19" ;
+        geo:lat             "45.7473561743230870" ;
+        geo:lon             "4.8359996982041684" .
+
+<http://ex.com/Anatole%20France>
+        a                   ex:station ;
+        rdfs:label          "Anatole France" ;
+        dbo:idNumber        "10086" ;
+        ex:availableBikes   "8" ;
+        ex:availableStands  "1" ;
+        vocab:capacity      "10" ;
+        geo:lat             "45.7698360005897630" ;
+        geo:lon             "4.8895260857893161" .
+
+<http://ex.com/Bourbonnais>
+        a                   ex:station ;
+        rdfs:label          "Bourbonnais" ;
+        dbo:idNumber        "9020" ;
+        ex:availableBikes   "9" ;
+        ex:availableStands  "3" ;
+        vocab:capacity      "12" ;
+        geo:lat             "45.7734645659819610" ;
+        geo:lon             "4.8002879293936394" .
+
+<http://ex.com/Place%20Gerson>
+        a                   ex:station ;
+        rdfs:label          "Place Gerson" ;
+        dbo:idNumber        "5029" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "16" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7670544551410640" ;
+        geo:lon             "4.8270475070640995" .
+
+<http://ex.com/Etats-Unis%20%2F%20L%C3%A9vigne>
+        a                   ex:station ;
+        rdfs:label          "Etats-Unis / Lévigne" ;
+        dbo:idNumber        "8029" ;
+        ex:availableBikes   "17" ;
+        ex:availableStands  "3" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7322180106596860" ;
+        geo:lon             "4.8651415367367150" .
+
+<http://ex.com/Place%20Edgar%20Quinet>
+        a                   ex:station ;
+        rdfs:label          "Place Edgar Quinet" ;
+        dbo:idNumber        "6005" ;
+        ex:availableBikes   "4" ;
+        ex:availableStands  "16" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7657655924629200" ;
+        geo:lon             "4.8447318928504437" .
+
+<http://ex.com/Place%20des%20Compagnons%20de%20la%20chanson>
+        a                   ex:station ;
+        rdfs:label          "Place des Compagnons de la chanson" ;
+        dbo:idNumber        "5002" ;
+        ex:availableBikes   "7" ;
+        ex:availableStands  "11" ;
+        vocab:capacity      "18" ;
+        geo:lat             "45.7565273368783990" ;
+        geo:lon             "4.7966121788894247" .
+
+<http://ex.com/Charit%C3%A9%20%2F%20R%C3%A9camier>
+        a                   ex:station ;
+        rdfs:label          "Charité / Récamier" ;
+        dbo:idNumber        "2039" ;
+        ex:availableBikes   "10" ;
+        ex:availableStands  "7" ;
+        vocab:capacity      "17" ;
+        geo:lat             "45.7492533954913870" ;
+        geo:lon             "4.8298441257520306" .
+
+<http://ex.com/Villette%20%2F%20Saint-Antoine>
+        a                   ex:station ;
+        rdfs:label          "Villette / Saint-Antoine" ;
+        dbo:idNumber        "3006" ;
+        ex:availableBikes   "16" ;
+        ex:availableStands  "6" ;
+        vocab:capacity      "23" ;
+        geo:lat             "45.7628598508923400" ;
+        geo:lon             "4.8622869000871978" .
+
+<http://ex.com/Gambetta%20%2F%20Jusserand>
+        a                   ex:station ;
+        rdfs:label          "Gambetta / Jusserand" ;
+        dbo:idNumber        "3053" ;
+        ex:availableBikes   "2" ;
+        ex:availableStands  "11" ;
+        vocab:capacity      "13" ;
+        geo:lat             "45.7511124102764410" ;
+        geo:lon             "4.8555850883006508" .
+
+<http://ex.com/Les%20Halles>
+        a                   ex:station ;
+        rdfs:label          "Les Halles" ;
+        dbo:idNumber        "6040" , "3083" ;
+        ex:availableBikes   "12" , "1" ;
+        ex:availableStands  "14" , "6" ;
+        vocab:capacity      "18" , "15" ;
+        geo:lat             "45.7640576127189080" , "45.7615189274364060" ;
+        geo:lon             "4.8499305460757522" , "4.8504862573912657" .
+
+<http://ex.com/Charles%20Hernu>
+        a                   ex:station ;
+        rdfs:label          "Charles Hernu" ;
+        dbo:idNumber        "10111" ;
+        ex:availableBikes   "5" ;
+        ex:availableStands  "10" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7703105281291940" ;
+        geo:lon             "4.8620024989211670" .
+
+<http://ex.com/Delore%20%2F%20Audibert%20et%20Lavirotte>
+        a                   ex:station ;
+        rdfs:label          "Delore / Audibert et Lavirotte" ;
+        dbo:idNumber        "8056" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "19" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7357952320592890" ;
+        geo:lon             "4.8568128186711998" .
+
+<http://ex.com/Vaulx%20Biblioth%C3%A8que>
+        a                   ex:station ;
+        rdfs:label          "Vaulx Bibliothèque" ;
+        dbo:idNumber        "12003" ;
+        ex:availableBikes   "2" ;
+        ex:availableStands  "13" ;
+        vocab:capacity      "15" ;
+        geo:lat             "45.7570697600648660" ;
+        geo:lon             "4.9273216112656586" .
+
+<http://ex.com/Part-Dieu%20%2F%20Villette>
+        a                   ex:station ;
+        rdfs:label          "Part-Dieu / Villette" ;
+        dbo:idNumber        "3080" ;
+        ex:availableBikes   "26" ;
+        ex:availableStands  "4" ;
+        vocab:capacity      "30" ;
+        geo:lat             "45.7600550578148390" ;
+        geo:lon             "4.8616738805899402" .
+
+<http://ex.com/Lafayette%20%2F%20Inkermann>
+        a                   ex:station ;
+        rdfs:label          "Lafayette / Inkermann" ;
+        dbo:idNumber        "6017" ;
+        ex:availableBikes   "11" ;
+        ex:availableStands  "18" ;
+        vocab:capacity      "30" ;
+        geo:lat             "45.7640561265724840" ;
+        geo:lon             "4.8660225365162342" .
+
+<http://ex.com/Saint-Jean>
+        a                   ex:station ;
+        rdfs:label          "Saint-Jean" ;
+        dbo:idNumber        "5004" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "39" ;
+        geo:lat             "45.7604837438977800" ;
+        geo:lon             "4.8265650503972601" .
+
+<http://ex.com/Boulevard%20des%20Belges>
+        a                   ex:station ;
+        rdfs:label          "Boulevard des Belges" ;
+        dbo:idNumber        "6006" ;
+        ex:availableBikes   "2" ;
+        ex:availableStands  "12" ;
+        vocab:capacity      "15" ;
+        geo:lat             "45.7733270382747510" ;
+        geo:lon             "4.8519894989151782" .
+
+<http://ex.com/Palais%20des%20Sports>
+        a                   ex:station ;
+        rdfs:label          "Palais des Sports" ;
+        dbo:idNumber        "12004" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "30" ;
+        geo:lat             "45.7782973092579720" ;
+        geo:lon             "4.9207001064103109" .
+
+<http://ex.com/Saxe%20%2F%20Dunoir>
+        a                   ex:station ;
+        rdfs:label          "Saxe / Dunoir" ;
+        dbo:idNumber        "3017" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "36" ;
+        vocab:capacity      "37" ;
+        geo:lat             "45.7609483816605830" ;
+        geo:lon             "4.8452325958943723" .
+
+<http://ex.com/Jacquart%20%2F%20Denfert-Rochereau>
+        a                   ex:station ;
+        rdfs:label          "Jacquart / Denfert-Rochereau" ;
+        dbo:idNumber        "4009" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "12" ;
+        vocab:capacity      "14" ;
+        geo:lat             "45.7758995112138360" ;
+        geo:lon             "4.8253789620711203" .
+
+<http://ex.com/R%C3%A9publique%20%2F%20Stella>
+        a                   ex:station ;
+        rdfs:label          "République / Stella" ;
+        dbo:idNumber        "2015" ;
+        ex:availableBikes   "27" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "27" ;
+        geo:lat             "45.7607097863131220" ;
+        geo:lon             "4.8362889729420431" .
+
+<http://ex.com/Brotteaux%20%2F%20Vauban>
+        a                   ex:station ;
+        rdfs:label          "Brotteaux / Vauban" ;
+        dbo:idNumber        "6045" ;
+        ex:availableBikes   "12" ;
+        ex:availableStands  "3" ;
+        vocab:capacity      "15" ;
+        geo:lat             "45.7663673112669610" ;
+        geo:lon             "4.8570018759142295" .
+
+<http://ex.com/Place%20Antoinette>
+        a                   ex:station ;
+        rdfs:label          "Place Antoinette" ;
+        dbo:idNumber        "3013" ;
+        ex:availableBikes   "2" ;
+        ex:availableStands  "19" ;
+        vocab:capacity      "21" ;
+        geo:lat             "45.7536448445955490" ;
+        geo:lon             "4.8892685574130930" .
+
+<http://ex.com/Beauvoir%20%2F%20Marot>
+        a                   ex:station ;
+        rdfs:label          "Beauvoir / Marot" ;
+        dbo:idNumber        "7017" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "20" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7373071313228510" ;
+        geo:lon             "4.8329916088585998" .
+
+<http://ex.com/Universit%C3%A9%20Lyon%20III>
+        a                   ex:station ;
+        rdfs:label          "Université Lyon III" ;
+        dbo:idNumber        "8001" ;
+        ex:availableBikes   "15" ;
+        ex:availableStands  "11" ;
+        vocab:capacity      "26" ;
+        geo:lat             "45.7485395662598650" ;
+        geo:lon             "4.8615417793642548" .
+
+<http://ex.com/Piaton%20%2F%20Condorcet>
+        a                   ex:station ;
+        rdfs:label          "Piaton / Condorcet" ;
+        dbo:idNumber        "10007" ;
+        ex:availableBikes   "5" ;
+        ex:availableStands  "14" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7742151784181320" ;
+        geo:lon             "4.8675042131350823" .
+
+<http://ex.com/Jean%20XXIII>
+        a                   ex:station ;
+        rdfs:label          "Jean XXIII" ;
+        dbo:idNumber        "8015" ;
+        ex:availableBikes   "8" ;
+        ex:availableStands  "8" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7403259296418700" ;
+        geo:lon             "4.8741942706838781" .
+
+<http://ex.com/Sala%20%2F%20Rue%20du%20Plat>
+        a                   ex:station ;
+        rdfs:label          "Sala / Rue du Plat" ;
+        dbo:idNumber        "2011" ;
+        ex:availableBikes   "14" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "15" ;
+        geo:lat             "45.7568084876169440" ;
+        geo:lon             "4.8283743801395120" .
+
+<http://ex.com/Ambroise%20Par%C3%A9>
+        a                   ex:station ;
+        rdfs:label          "Ambroise Paré" ;
+        dbo:idNumber        "8040" ;
+        ex:availableBikes   "15" ;
+        ex:availableStands  "9" ;
+        vocab:capacity      "24" ;
+        geo:lat             "45.7362404944940690" ;
+        geo:lon             "4.8837368262130560" .
+
+<http://ex.com/Anatole%20France%20%2F%20Barbusse>
+        a                   ex:station ;
+        rdfs:label          "Anatole France / Barbusse" ;
+        dbo:idNumber        "10079" ;
+        ex:availableBikes   "12" ;
+        ex:availableStands  "8" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7681304002299290" ;
+        geo:lon             "4.8791614891381103" .
+
+<http://ex.com/Cit%C3%A9%20Internationale%20%2F%20T%C3%AAte%20d%27Or%20nord>
+        a                   ex:station ;
+        rdfs:label          "Cité Internationale / Tête d'Or nord" ;
+        dbo:idNumber        "6041" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "18" ;
+        vocab:capacity      "22" ;
+        geo:lat             "45.7846110498866350" ;
+        geo:lon             "4.8596391471386804" .
+
+<http://ex.com/Place%20du%20Port%20Mouton>
+        a                   ex:station ;
+        rdfs:label          "Place du Port Mouton" ;
+        dbo:idNumber        "9032" ;
+        ex:availableBikes   "11" ;
+        ex:availableStands  "6" ;
+        vocab:capacity      "18" ;
+        geo:lat             "45.7738201179439200" ;
+        geo:lon             "4.8095603029641687" .
+
+<http://ex.com/Cit%C3%A9%20Internationale%20%2F%20Interpol>
+        a                   ex:station ;
+        rdfs:label          "Cité Internationale / Interpol" ;
+        dbo:idNumber        "6037" ;
+        ex:availableBikes   "21" ;
+        ex:availableStands  "6" ;
+        vocab:capacity      "27" ;
+        geo:lat             "45.7823061128328350" ;
+        geo:lon             "4.8493439808167293" .
+
+<http://ex.com/Porte%20des%20Enfants%20du%20Rh%C3%B4ne>
+        a                   ex:station ;
+        rdfs:label          "Porte des Enfants du Rhône" ;
+        dbo:idNumber        "6002" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "40" ;
+        geo:lat             "45.7774932959538890" ;
+        geo:lon             "4.8448707260176658" .
+
+<http://ex.com/Vienne%20%20%2F%20Montagny>
+        a                   ex:station ;
+        rdfs:label          "Vienne  / Montagny" ;
+        dbo:idNumber        "8057" ;
+        ex:availableBikes   "8" ;
+        ex:availableStands  "12" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7323603634356320" ;
+        geo:lon             "4.8534202156019024" .
+
+<http://ex.com/CROUS>
+        a                   ex:station ;
+        rdfs:label          "CROUS" ;
+        dbo:idNumber        "7064" ;
+        ex:availableBikes   "7" ;
+        ex:availableStands  "10" ;
+        vocab:capacity      "17" ;
+        geo:lat             "45.7454305152808020" ;
+        geo:lon             "4.8477802774631007" .
+
+<http://ex.com/Garibaldi%20%2F%20Vauban>
+        a                   ex:station ;
+        rdfs:label          "Garibaldi / Vauban" ;
+        dbo:idNumber        "6039" ;
+        ex:availableBikes   "9" ;
+        ex:availableStands  "11" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7666921938824130" ;
+        geo:lon             "4.8520859812468151" .
+
+<http://ex.com/Anatole%20France%20%2F%20Zola>
+        a                   ex:station ;
+        rdfs:label          "Anatole France / Zola" ;
+        dbo:idNumber        "10059" ;
+        ex:availableBikes   "11" ;
+        ex:availableStands  "2" ;
+        vocab:capacity      "13" ;
+        geo:lat             "45.7688763179066740" ;
+        geo:lon             "4.8842415132426114" .
+
+<http://ex.com/Aveyron>
+        a                   ex:station ;
+        rdfs:label          "Aveyron" ;
+        dbo:idNumber        "1036" ;
+        ex:availableBikes   "10" ;
+        ex:availableStands  "7" ;
+        vocab:capacity      "17" ;
+        geo:lat             "45.7743716157555480" ;
+        geo:lon             "4.8328150087604627" .
+
+<http://ex.com/St%20Genis%20L.%20M%C3%A9diath%C3%A8que>
+        a                   ex:station ;
+        rdfs:label          "St Genis L. Médiathèque" ;
+        dbo:idNumber        "19001" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "12" ;
+        vocab:capacity      "12" ;
+        geo:lat             "45.6989616754135780" ;
+        geo:lon             "4.8079078030331805" .
+
+<http://ex.com/Foch>  a     ex:station ;
+        rdfs:label          "Foch" ;
+        dbo:idNumber        "6004" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "19" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7688513697593610" ;
+        geo:lon             "4.8447649388425829" .
+
+<http://ex.com/Berthelot%20%2F%20Garibaldi>
+        a                   ex:station ;
+        rdfs:label          "Berthelot / Garibaldi" ;
+        dbo:idNumber        "7011" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "10" ;
+        vocab:capacity      "10" ;
+        geo:lat             "45.7437195253426760" ;
+        geo:lon             "4.8472752679987110" .
+
+<http://ex.com/F%C3%A9lix%20Faure%20%2F%20Vivier%20Merle>
+        a                   ex:station ;
+        rdfs:label          "Félix Faure / Vivier Merle" ;
+        dbo:idNumber        "3036" ;
+        ex:availableBikes   "28" ;
+        ex:availableStands  "7" ;
+        vocab:capacity      "35" ;
+        geo:lat             "45.7538149056220500" ;
+        geo:lon             "4.8598558941293657" .
+
+<http://ex.com/Tonkin>
+        a                   ex:station ;
+        rdfs:label          "Tonkin" ;
+        dbo:idNumber        "10004" ;
+        ex:availableBikes   "6" ;
+        ex:availableStands  "3" ;
+        vocab:capacity      "10" ;
+        geo:lat             "45.7762210147081350" ;
+        geo:lon             "4.8626475813297994" .
+
+<http://ex.com/Neuville%20Quai%20Pasteur>
+        a                   ex:station ;
+        rdfs:label          "Neuville Quai Pasteur" ;
+        dbo:idNumber        "34001" ;
+        ex:availableBikes   "9" ;
+        ex:availableStands  "11" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.8766089913122170" ;
+        geo:lon             "4.8386237264875973" .
+
+<http://ex.com/Greuze>
+        a                   ex:station ;
+        rdfs:label          "Greuze" ;
+        dbo:idNumber        "10030" ;
+        ex:availableBikes   "7" ;
+        ex:availableStands  "8" ;
+        vocab:capacity      "18" ;
+        geo:lat             "45.7738436681981610" ;
+        geo:lon             "4.8938480167143412" .
+
+<http://ex.com/Tolsto%C3%AF%20%2F%20Florian>
+        a                   ex:station ;
+        rdfs:label          "Tolstoï / Florian" ;
+        dbo:idNumber        "10018" ;
+        ex:availableBikes   "12" ;
+        ex:availableStands  "9" ;
+        vocab:capacity      "21" ;
+        geo:lat             "45.7618051903302860" ;
+        geo:lon             "4.8807224046277389" .
+
+<http://ex.com/Quartier%20G%C3%A9n%C3%A9ral%20Fr%C3%A8re>
+        a                   ex:station ;
+        rdfs:label          "Quartier Général Frère" ;
+        dbo:idNumber        "7030" ;
+        ex:availableBikes   "19" ;
+        ex:availableStands  "10" ;
+        vocab:capacity      "30" ;
+        geo:lat             "45.7432217977239400" ;
+        geo:lon             "4.8342510240081396" .
+
+<http://ex.com/Place%20Raspail>
+        a                   ex:station ;
+        rdfs:label          "Place Raspail" ;
+        dbo:idNumber        "7056" ;
+        ex:availableBikes   "9" ;
+        ex:availableStands  "13" ;
+        vocab:capacity      "22" ;
+        geo:lat             "45.7557747699610790" ;
+        geo:lon             "4.8407411543374979" .
+
+<http://ex.com/Piscine%20de%20Vaise>
+        a                   ex:station ;
+        rdfs:label          "Piscine de Vaise" ;
+        dbo:idNumber        "9010" ;
+        ex:availableBikes   "18" ;
+        ex:availableStands  "1" ;
+        vocab:capacity      "19" ;
+        geo:lat             "45.7710182884515080" ;
+        geo:lon             "4.7964503487575509" .
+
+<http://ex.com/Balmont>
+        a                   ex:station ;
+        rdfs:label          "Balmont" ;
+        dbo:idNumber        "9052" ;
+        ex:availableBikes   "5" ;
+        ex:availableStands  "6" ;
+        vocab:capacity      "12" ;
+        geo:lat             "45.7893151875845130" ;
+        geo:lon             "4.7991603409726267" .
+
+<http://ex.com/Mermoz%20%2F%20Michelet>
+        a                   ex:station ;
+        rdfs:label          "Mermoz / Michelet" ;
+        dbo:idNumber        "8024" ;
+        ex:availableBikes   "8" ;
+        ex:availableStands  "4" ;
+        vocab:capacity      "12" ;
+        geo:lat             "45.7332717801443990" ;
+        geo:lon             "4.8786008569623753" .
+
+<http://ex.com/Perrin%20%2F%20Jean%20Jaur%C3%A8s>
+        a                   ex:station ;
+        rdfs:label          "Perrin / Jean Jaurès" ;
+        dbo:idNumber        "10063" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "28" ;
+        vocab:capacity      "34" ;
+        geo:lat             "45.7583918194315590" ;
+        geo:lon             "4.8856094344245129" .
+
+<http://ex.com/Carret%20%2F%20S%C3%A9daillan>
+        a                   ex:station ;
+        rdfs:label          "Carret / Sédaillan" ;
+        dbo:idNumber        "9041" ;
+        ex:availableBikes   "15" ;
+        ex:availableStands  "3" ;
+        vocab:capacity      "18" ;
+        geo:lat             "45.7924777385859370" ;
+        geo:lon             "4.8205782575315625" .
+
+<http://ex.com/Confluence%20H%C3%B4tel%20de%20R%C3%A9gion>
+        a                   ex:station ;
+        rdfs:label          "Confluence Hôtel de Région" ;
+        dbo:idNumber        "2005" ;
+        ex:availableBikes   "26" ;
+        ex:availableStands  "5" ;
+        vocab:capacity      "32" ;
+        geo:lat             "45.7405383152039140" ;
+        geo:lon             "4.8191795184368047" .
+
+<http://ex.com/La%20Soie>
+        a                   ex:station ;
+        rdfs:label          "La Soie" ;
+        dbo:idNumber        "12001" ;
+        ex:availableBikes   "15" ;
+        ex:availableStands  "10" ;
+        vocab:capacity      "25" ;
+        geo:lat             "45.7608131946829250" ;
+        geo:lon             "4.9206039456886055" .
+
+<http://ex.com/Universit%C3%A9s%20Lyon%20III%20%2F%20Lyon%20II>
+        a                   ex:station ;
+        rdfs:label          "Universités Lyon III / Lyon II" ;
+        dbo:idNumber        "7002" ;
+        ex:availableBikes   "18" ;
+        ex:availableStands  "22" ;
+        vocab:capacity      "40" ;
+        geo:lat             "45.7514132273513000" ;
+        geo:lon             "4.8363931815987780" .
+
+<http://ex.com/Neuville%20Stade>
+        a                   ex:station ;
+        rdfs:label          "Neuville Stade" ;
+        dbo:idNumber        "34002" ;
+        ex:availableBikes   "6" ;
+        ex:availableStands  "7" ;
+        vocab:capacity      "15" ;
+        geo:lat             "45.8717091470933910" ;
+        geo:lon             "4.8397485150123112" .
+
+<http://ex.com/M%C3%A9nival%20%2F%20Eisenhower>
+        a                   ex:station ;
+        rdfs:label          "Ménival / Eisenhower" ;
+        dbo:idNumber        "5032" ;
+        ex:availableBikes   "11" ;
+        ex:availableStands  "1" ;
+        vocab:capacity      "12" ;
+        geo:lat             "45.7567027351715510" ;
+        geo:lon             "4.7831510682805529" .
+
+<http://ex.com/R%C3%A9publique%20%2F%20Maupin>
+        a                   ex:station ;
+        rdfs:label          "République / Maupin" ;
+        dbo:idNumber        "2024" ;
+        ex:availableBikes   "14" ;
+        ex:availableStands  "1" ;
+        vocab:capacity      "25" ;
+        geo:lat             "45.7587390821938480" ;
+        geo:lon             "4.8340765154131455" .
+
+<http://ex.com/Europe%20%2F%20Voltaire>
+        a                   ex:station ;
+        rdfs:label          "Europe / Voltaire" ;
+        dbo:idNumber        "18001" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "15" ;
+        vocab:capacity      "15" ;
+        geo:lat             "45.7032558571012330" ;
+        geo:lon             "4.8212003761276776" .
+
+<http://ex.com/Salengro%20%2F%20Vaillant>
+        a                   ex:station ;
+        rdfs:label          "Salengro / Vaillant" ;
+        dbo:idNumber        "10008" ;
+        ex:availableBikes   "12" ;
+        ex:availableStands  "10" ;
+        vocab:capacity      "24" ;
+        geo:lat             "45.7783682080048780" ;
+        geo:lon             "4.8796732813004162" .
+
+<http://ex.com/Villeurbanne%20Saint-Jean>
+        a                   ex:station ;
+        rdfs:label          "Villeurbanne Saint-Jean" ;
+        dbo:idNumber        "10119" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "10" ;
+        vocab:capacity      "12" ;
+        geo:lat             "45.7804458217109410" ;
+        geo:lon             "4.9044888457892961" .
+
+<http://ex.com/Carm%C3%A9lites>
+        a                   ex:station ;
+        rdfs:label          "Carmélites" ;
+        dbo:idNumber        "1034" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "13" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7700015740910830" ;
+        geo:lon             "4.8292695053207497" .
+
+<http://ex.com/Debourg>
+        a                   ex:station ;
+        rdfs:label          "Debourg" ;
+        dbo:idNumber        "7005" ;
+        ex:availableBikes   "18" ;
+        ex:availableStands  "2" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7317535548177500" ;
+        geo:lon             "4.8339617941232040" .
+
+<http://ex.com/Pizay>
+        a                   ex:station ;
+        rdfs:label          "Pizay" ;
+        dbo:idNumber        "1032" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "22" ;
+        geo:lat             "45.7672004172203160" ;
+        geo:lon             "4.8363916853563289" .
+
+<http://ex.com/Garibaldi>
+        a                   ex:station ;
+        rdfs:label          "Garibaldi" ;
+        dbo:idNumber        "6021" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "11" ;
+        vocab:capacity      "11" ;
+        geo:lat             "45.7706974838463410" ;
+        geo:lon             "4.8499357293643790" .
+
+<http://ex.com/Cr%C3%A9qui%20%2F%20Voltaire>
+        a                   ex:station ;
+        rdfs:label          "Créqui / Voltaire" ;
+        dbo:idNumber        "3018" ;
+        ex:availableBikes   "4" ;
+        ex:availableStands  "25" ;
+        vocab:capacity      "30" ;
+        geo:lat             "45.7566983441751920" ;
+        geo:lon             "4.8484034857557150" .
+
+<http://ex.com/Saint%20Pierre%20de%20Vaise>
+        a                   ex:station ;
+        rdfs:label          "Saint Pierre de Vaise" ;
+        dbo:idNumber        "9029" ;
+        ex:availableBikes   "8" ;
+        ex:availableStands  "7" ;
+        vocab:capacity      "15" ;
+        geo:lat             "45.7730995725331480" ;
+        geo:lon             "4.8078137222645942" .
+
+<http://ex.com/Longefer%20%2F%20Kruger>
+        a                   ex:station ;
+        rdfs:label          "Longefer / Kruger" ;
+        dbo:idNumber        "8058" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "16" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7386678839509320" ;
+        geo:lon             "4.8781309055528315" .
+
+<http://ex.com/Mairie%20de%20Villeurbanne>
+        a                   ex:station ;
+        rdfs:label          "Mairie de Villeurbanne" ;
+        dbo:idNumber        "10027" ;
+        ex:availableBikes   "19" ;
+        ex:availableStands  "6" ;
+        vocab:capacity      "26" ;
+        geo:lat             "45.7668306064525150" ;
+        geo:lon             "4.8798938672774597" .
+
+<http://ex.com/Trarieux%20%2F%20Lacassagne>
+        a                   ex:station ;
+        rdfs:label          "Trarieux / Lacassagne" ;
+        dbo:idNumber        "3089" ;
+        ex:availableBikes   "6" ;
+        ex:availableStands  "18" ;
+        vocab:capacity      "24" ;
+        geo:lat             "45.7453145927333720" ;
+        geo:lon             "4.8889645723972111" .
+
+<http://ex.com/Jacobins>
+        a                   ex:station ;
+        rdfs:label          "Jacobins" ;
+        dbo:idNumber        "2014" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "26" ;
+        geo:lat             "45.7607516950581540" ;
+        geo:lon             "4.8343042285358893" .
+
+<http://ex.com/La%C3%ABnnec>
+        a                   ex:station ;
+        rdfs:label          "Laënnec" ;
+        dbo:idNumber        "8030" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "14" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7413737377965570" ;
+        geo:lon             "4.8797369306165574" .
+
+<http://ex.com/Quai%20du%20Commerce>
+        a                   ex:station ;
+        rdfs:label          "Quai du Commerce" ;
+        dbo:idNumber        "9014" ;
+        ex:availableBikes   "21" ;
+        ex:availableStands  "1" ;
+        vocab:capacity      "23" ;
+        geo:lat             "45.7834856612731400" ;
+        geo:lon             "4.8114878428420669" .
+
+<http://ex.com/Fr%C3%A8res%20Lumi%C3%A8re>
+        a                   ex:station ;
+        rdfs:label          "Frères Lumière" ;
+        dbo:idNumber        "8007" ;
+        ex:availableBikes   "13" ;
+        ex:availableStands  "2" ;
+        vocab:capacity      "15" ;
+        geo:lat             "45.7450174320831950" ;
+        geo:lon             "4.8664523172668295" .
+
+<http://ex.com/Einstein%20%2F%2011%20novembre%201918>
+        a                   ex:station ;
+        rdfs:label          "Einstein / 11 novembre 1918" ;
+        dbo:idNumber        "10101" ;
+        ex:availableBikes   "13" ;
+        ex:availableStands  "20" ;
+        vocab:capacity      "34" ;
+        geo:lat             "45.7794214867087280" ;
+        geo:lon             "4.8740757995838857" .
+
+<http://ex.com/La%20Salette>
+        a                   ex:station ;
+        rdfs:label          "La Salette" ;
+        dbo:idNumber        "5036" ;
+        ex:availableBikes   "13" ;
+        ex:availableStands  "2" ;
+        vocab:capacity      "15" ;
+        geo:lat             "45.7496868148719000" ;
+        geo:lon             "4.7956106152696716" .
+
+<http://ex.com/Sacr%C3%A9%20Coeur>
+        a                   ex:station ;
+        rdfs:label          "Sacré Coeur" ;
+        dbo:idNumber        "3085" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "13" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7578296698746030" ;
+        geo:lon             "4.8683950401971430" .
+
+<http://ex.com/Ste%20Foy%20Place%20Saint-Luc>
+        a                   ex:station ;
+        rdfs:label          "Ste Foy Place Saint-Luc" ;
+        dbo:idNumber        "22001" ;
+        ex:availableBikes   "8" ;
+        ex:availableStands  "7" ;
+        vocab:capacity      "15" ;
+        geo:lat             "45.7495654052048620" ;
+        geo:lon             "4.8008960240920420" .
+
+<http://ex.com/Place%20Antonin%20Poncet>
+        a                   ex:station ;
+        rdfs:label          "Place Antonin Poncet" ;
+        dbo:idNumber        "2008" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "40" ;
+        geo:lat             "45.7567623213032210" ;
+        geo:lon             "4.8339273966533849" .
+
+<http://ex.com/Place%20de%20la%20Ferrandi%C3%A8re>
+        a                   ex:station ;
+        rdfs:label          "Place de la Ferrandière" ;
+        dbo:idNumber        "3021" ;
+        ex:availableBikes   "7" ;
+        ex:availableStands  "12" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7594733965948140" ;
+        geo:lon             "4.8693428966594272" .
+
+<http://ex.com/Quai%20Augagneur>
+        a                   ex:station ;
+        rdfs:label          "Quai Augagneur" ;
+        dbo:idNumber        "3044" ;
+        ex:availableBikes   "8" ;
+        ex:availableStands  "11" ;
+        vocab:capacity      "19" ;
+        geo:lat             "45.7619651301154850" ;
+        geo:lon             "4.8410534307662090" .
+
+<http://ex.com/Santy%20%2F%20Beauvisage>
+        a                   ex:station ;
+        rdfs:label          "Santy / Beauvisage" ;
+        dbo:idNumber        "8060" ;
+        ex:availableBikes   "14" ;
+        ex:availableStands  "3" ;
+        vocab:capacity      "17" ;
+        geo:lat             "45.7316833148738980" ;
+        geo:lon             "4.8741275326105118" .
+
+<http://ex.com/Gare%20des%20Brotteaux>
+        a                   ex:station ;
+        rdfs:label          "Gare des Brotteaux" ;
+        dbo:idNumber        "6001" ;
+        ex:availableBikes   "11" ;
+        ex:availableStands  "5" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7669095802662650" ;
+        geo:lon             "4.8589921673125618" .
+
+<http://ex.com/Lyc%C3%A9e%20Louise%20Lab%C3%A9>
+        a                   ex:station ;
+        rdfs:label          "Lycée Louise Labé" ;
+        dbo:idNumber        "7018" ;
+        ex:availableBikes   "14" ;
+        ex:availableStands  "5" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7402806526508460" ;
+        geo:lon             "4.8320593704251733" .
+
+<http://ex.com/Feuillat%20%2F%20Lacassagne>
+        a                   ex:station ;
+        rdfs:label          "Feuillat / Lacassagne" ;
+        dbo:idNumber        "3086" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "16" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7495627067970790" ;
+        geo:lon             "4.8759334029685046" .
+
+<http://ex.com/V%C3%A9nissieux%20Levy%20%2F%20Vienne>
+        a                   ex:station ;
+        rdfs:label          "Vénissieux Levy / Vienne" ;
+        dbo:idNumber        "16002" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "18" ;
+        vocab:capacity      "18" ;
+        geo:lat             "45.7193988058185000" ;
+        geo:lon             "4.8548015762351051" .
+
+<http://ex.com/Mairie%20du%209e>
+        a                   ex:station ;
+        rdfs:label          "Mairie du 9e" ;
+        dbo:idNumber        "9002" ;
+        ex:availableBikes   "13" ;
+        ex:availableStands  "14" ;
+        vocab:capacity      "27" ;
+        geo:lat             "45.7742408280787810" ;
+        geo:lon             "4.8056660114147771" .
+
+<http://ex.com/Cazeneuve>
+        a                   ex:station ;
+        rdfs:label          "Cazeneuve" ;
+        dbo:idNumber        "8037" ;
+        ex:availableBikes   "18" ;
+        ex:availableStands  "1" ;
+        vocab:capacity      "19" ;
+        geo:lat             "45.7340200917966370" ;
+        geo:lon             "4.8629023792941544" .
+
+<http://ex.com/Lacour%20%2F%20Artillerie>
+        a                   ex:station ;
+        rdfs:label          "Lacour / Artillerie" ;
+        dbo:idNumber        "7025" ;
+        ex:availableBikes   "20" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7294969995972310" ;
+        geo:lon             "4.8439379996052212" .
+
+<http://ex.com/Meissonier>
+        a                   ex:station ;
+        rdfs:label          "Meissonier" ;
+        dbo:idNumber        "1005" ;
+        ex:availableBikes   "16" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7660850668591980" ;
+        geo:lon             "4.8328335830568179" .
+
+<http://ex.com/Mairie%20du%206e>
+        a                   ex:station ;
+        rdfs:label          "Mairie du 6e" ;
+        dbo:idNumber        "6011" ;
+        ex:availableBikes   "9" ;
+        ex:availableStands  "13" ;
+        vocab:capacity      "23" ;
+        geo:lat             "45.7684041683728250" ;
+        geo:lon             "4.8494967237845854" .
+
+<http://ex.com/Place%20Ennemond%20Fousseret>
+        a                   ex:station ;
+        rdfs:label          "Place Ennemond Fousseret" ;
+        dbo:idNumber        "5009" ;
+        ex:availableBikes   "5" ;
+        ex:availableStands  "11" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7646815056712270" ;
+        geo:lon             "4.8289833265225157" .
+
+<http://ex.com/Fulchiron>
+        a                   ex:station ;
+        rdfs:label          "Fulchiron" ;
+        dbo:idNumber        "5015" ;
+        ex:availableBikes   "15" ;
+        ex:availableStands  "4" ;
+        vocab:capacity      "19" ;
+        geo:lat             "45.7520011769432880" ;
+        geo:lon             "4.8216617983516281" .
+
+<http://ex.com/Gare%20de%20Vaise>
+        a                   ex:station ;
+        rdfs:label          "Gare de Vaise" ;
+        dbo:idNumber        "9004" ;
+        ex:availableBikes   "18" ;
+        ex:availableStands  "1" ;
+        vocab:capacity      "22" ;
+        geo:lat             "45.7797819839255380" ;
+        geo:lon             "4.8046653309593905" .
+
+<http://ex.com/11%20novembre>
+        a                   ex:station ;
+        rdfs:label          "11 novembre" ;
+        dbo:idNumber        "10005" ;
+        ex:availableBikes   "19" ;
+        ex:availableStands  "16" ;
+        vocab:capacity      "35" ;
+        geo:lat             "45.7797016132489390" ;
+        geo:lon             "4.8599911609956870" .
+
+<http://ex.com/Rossellini%20%2F%2011%20Novembre>
+        a                   ex:station ;
+        rdfs:label          "Rossellini / 11 Novembre" ;
+        dbo:idNumber        "10053" ;
+        ex:availableBikes   "15" ;
+        ex:availableStands  "4" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7794083136080090" ;
+        geo:lon             "4.8629021690287688" .
+
+<http://ex.com/Place%20Marengo>
+        a                   ex:station ;
+        rdfs:label          "Place Marengo" ;
+        dbo:idNumber        "10048" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "24" ;
+        vocab:capacity      "27" ;
+        geo:lat             "45.7591435230511510" ;
+        geo:lon             "4.8759935561091980" .
+
+<http://ex.com/Totem>
+        a                   ex:station ;
+        rdfs:label          "Totem" ;
+        dbo:idNumber        "10025" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "13" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7636407030234980" ;
+        geo:lon             "4.8731410878807795" .
+
+<http://ex.com/Jaur%C3%A8s%20%2F%20Lagrange>
+        a                   ex:station ;
+        rdfs:label          "Jaurès / Lagrange" ;
+        dbo:idNumber        "7022" ;
+        ex:availableBikes   "19" ;
+        ex:availableStands  "11" ;
+        vocab:capacity      "30" ;
+        geo:lat             "45.7439256046218220" ;
+        geo:lon             "4.8415220893002839" .
+
+<http://ex.com/Valdo%20%2F%20Rivet>
+        a                   ex:station ;
+        rdfs:label          "Valdo / Rivet" ;
+        dbo:idNumber        "5045" ;
+        ex:availableBikes   "5" ;
+        ex:availableStands  "13" ;
+        vocab:capacity      "18" ;
+        geo:lat             "45.7504814834310240" ;
+        geo:lon             "4.7887741211031214" .
+
+<http://ex.com/Servant%20%2F%20Jaboulay>
+        a                   ex:station ;
+        rdfs:label          "Servant / Jaboulay" ;
+        dbo:idNumber        "7055" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "13" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7467662258473740" ;
+        geo:lon             "4.8420506993495058" .
+
+<http://ex.com/Subsistances>
+        a                   ex:station ;
+        rdfs:label          "Subsistances" ;
+        dbo:idNumber        "1006" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "3" ;
+        vocab:capacity      "22" ;
+        geo:lat             "45.7678957694769370" ;
+        geo:lon             "4.8198166574203691" .
+
+<http://ex.com/Colin%20%2F%20Perroncel>
+        a                   ex:station ;
+        rdfs:label          "Colin / Perroncel" ;
+        dbo:idNumber        "10089" ;
+        ex:availableBikes   "6" ;
+        ex:availableStands  "9" ;
+        vocab:capacity      "15" ;
+        geo:lat             "45.7744984646734280" ;
+        geo:lon             "4.8740523266943319" .
+
+<http://ex.com/R%C3%A9publique%20%2F%20Paufique>
+        a                   ex:station ;
+        rdfs:label          "République / Paufique" ;
+        dbo:idNumber        "2026" ;
+        ex:availableBikes   "27" ;
+        ex:availableStands  "1" ;
+        vocab:capacity      "28" ;
+        geo:lat             "45.7593809563465260" ;
+        geo:lon             "4.8353992022816499" .
+
+<http://ex.com/Place%20Sainte%20Anne>
+        a                   ex:station ;
+        rdfs:label          "Place Sainte Anne" ;
+        dbo:idNumber        "3099" ;
+        ex:availableBikes   "11" ;
+        ex:availableStands  "7" ;
+        vocab:capacity      "18" ;
+        geo:lat             "45.7569549747275200" ;
+        geo:lon             "4.8654416591953460" .
+
+<http://ex.com/Saint-Just>
+        a                   ex:station ;
+        rdfs:label          "Saint-Just" ;
+        dbo:idNumber        "5053" ;
+        ex:availableBikes   "8" ;
+        ex:availableStands  "10" ;
+        vocab:capacity      "18" ;
+        geo:lat             "45.7559666422450850" ;
+        geo:lon             "4.8189064482919699" .
+
+<http://ex.com/Place%20Carnot>
+        a                   ex:station ;
+        rdfs:label          "Place Carnot" ;
+        dbo:idNumber        "2022" ;
+        ex:availableBikes   "23" ;
+        ex:availableStands  "6" ;
+        vocab:capacity      "30" ;
+        geo:lat             "45.7512303840983710" ;
+        geo:lon             "4.8268909446731270" .
+
+<http://ex.com/Mus%C3%A9e%20Africain>
+        a                   ex:station ;
+        rdfs:label          "Musée Africain" ;
+        dbo:idNumber        "3009" ;
+        ex:availableBikes   "4" ;
+        ex:availableStands  "18" ;
+        vocab:capacity      "22" ;
+        geo:lat             "45.7502533119060360" ;
+        geo:lon             "4.8579250300630621" .
+
+<http://ex.com/Saint-Romain%20%2F%20Berliet>
+        a                   ex:station ;
+        rdfs:label          "Saint-Romain / Berliet" ;
+        dbo:idNumber        "8055" ;
+        ex:availableBikes   "7" ;
+        ex:availableStands  "13" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7423325983951800" ;
+        geo:lon             "4.8603433259917148" .
+
+<http://ex.com/Gryphe%20%2F%20Montesquieu>
+        a                   ex:station ;
+        rdfs:label          "Gryphe / Montesquieu" ;
+        dbo:idNumber        "7036" ;
+        ex:availableBikes   "9" ;
+        ex:availableStands  "16" ;
+        vocab:capacity      "25" ;
+        geo:lat             "45.7519114393107320" ;
+        geo:lon             "4.8437864046911105" .
+
+<http://ex.com/Pierre%20Delore>
+        a                   ex:station ;
+        rdfs:label          "Pierre Delore" ;
+        dbo:idNumber        "8039" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "20" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7387410923419680" ;
+        geo:lon             "4.8522860109415236" .
+
+<http://ex.com/Op%C3%A9ra>
+        a                   ex:station ;
+        rdfs:label          "Opéra" ;
+        dbo:idNumber        "1002" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "41" ;
+        geo:lat             "45.7675693270001890" ;
+        geo:lon             "4.8363352069947023" .
+
+<http://ex.com/Joliot%20Curie%20%2F%20Sembat>
+        a                   ex:station ;
+        rdfs:label          "Joliot Curie / Sembat" ;
+        dbo:idNumber        "16003" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "25" ;
+        vocab:capacity      "25" ;
+        geo:lat             "45.7154529520501360" ;
+        geo:lon             "4.8782350614798364" .
+
+<http://ex.com/Place%20Sathonay>
+        a                   ex:station ;
+        rdfs:label          "Place Sathonay" ;
+        dbo:idNumber        "1003" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "13" ;
+        vocab:capacity      "15" ;
+        geo:lat             "45.7692658462512870" ;
+        geo:lon             "4.8300797887695630" .
+
+<http://ex.com/Alb%C3%A9ric%20Pont>
+        a                   ex:station ;
+        rdfs:label          "Albéric Pont" ;
+        dbo:idNumber        "5047" ;
+        ex:availableBikes   "8" ;
+        ex:availableStands  "7" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7534443435600410" ;
+        geo:lon             "4.8044009888454049" .
+
+<http://ex.com/Jaur%C3%A8s%20%2F%20Universit%C3%A9>
+        a                   ex:station ;
+        rdfs:label          "Jaurès / Université" ;
+        dbo:idNumber        "7061" ;
+        ex:availableBikes   "11" ;
+        ex:availableStands  "9" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7485374331787540" ;
+        geo:lon             "4.8432493337468063" .
+
+<http://ex.com/Childebert%20%2F%20Rivi%C3%A8re>
+        a                   ex:station ;
+        rdfs:label          "Childebert / Rivière" ;
+        dbo:idNumber        "2035" ;
+        ex:availableBikes   "22" ;
+        ex:availableStands  "1" ;
+        vocab:capacity      "23" ;
+        geo:lat             "45.7598862786474210" ;
+        geo:lon             "4.8357987999345911" .
+
+<http://ex.com/Charpennes>
+        a                   ex:station ;
+        rdfs:label          "Charpennes" ;
+        dbo:idNumber        "10006" ;
+        ex:availableBikes   "36" ;
+        ex:availableStands  "9" ;
+        vocab:capacity      "46" ;
+        geo:lat             "45.7702267691493530" ;
+        geo:lon             "4.8631327223602243" .
+
+<http://ex.com/Beauvisage%20%2F%20Pr%C3%A9ssens%C3%A9>
+        a                   ex:station ;
+        rdfs:label          "Beauvisage / Préssensé" ;
+        dbo:idNumber        "8008" ;
+        ex:availableBikes   "14" ;
+        ex:availableStands  "3" ;
+        vocab:capacity      "17" ;
+        geo:lat             "45.7278718558835000" ;
+        geo:lon             "4.8634420589052638" .
+
+<http://ex.com/Corneille%20%2F%20Servient>
+        a                   ex:station ;
+        rdfs:label          "Corneille / Servient" ;
+        dbo:idNumber        "3031" ;
+        ex:availableBikes   "5" ;
+        ex:availableStands  "8" ;
+        vocab:capacity      "13" ;
+        geo:lat             "45.7599305258836110" ;
+        geo:lon             "4.8445159039671504" .
+
+<http://ex.com/Sans%20Souci>
+        a                   ex:station ;
+        rdfs:label          "Sans Souci" ;
+        dbo:idNumber        "8035" ;
+        ex:availableBikes   "16" ;
+        ex:availableStands  "4" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7472487338214580" ;
+        geo:lon             "4.8652857830315162" .
+
+<http://ex.com/Challemel%20Lacour%20%2F%20Gerland>
+        a                   ex:station ;
+        rdfs:label          "Challemel Lacour / Gerland" ;
+        dbo:idNumber        "7021" ;
+        ex:availableBikes   "12" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "12" ;
+        geo:lat             "45.7298058652087600" ;
+        geo:lon             "4.8381384383404171" .
+
+<http://ex.com/Oullins%20Gare>
+        a                   ex:station ;
+        rdfs:label          "Oullins Gare" ;
+        dbo:idNumber        "20001" ;
+        ex:availableBikes   "25" ;
+        ex:availableStands  "15" ;
+        vocab:capacity      "40" ;
+        geo:lat             "45.7170299434914180" ;
+        geo:lon             "4.8141359805783805" .
+
+<http://ex.com/Place%20de%20la%20Reconnaissance>
+        a                   ex:station ;
+        rdfs:label          "Place de la Reconnaissance" ;
+        dbo:idNumber        "10112" ;
+        ex:availableBikes   "2" ;
+        ex:availableStands  "28" ;
+        vocab:capacity      "32" ;
+        geo:lat             "45.7544402430766440" ;
+        geo:lon             "4.8853489189380230" .
+
+<http://ex.com/Cit%C3%A9%20Internationale%20%2F%20R%C3%A9sidence%20h%C3%B4teli%C3%A8re>
+        a                   ex:station ;
+        rdfs:label          "Cité Internationale / Résidence hôtelière" ;
+        dbo:idNumber        "6042" ;
+        ex:availableBikes   "16" ;
+        ex:availableStands  "12" ;
+        vocab:capacity      "28" ;
+        geo:lat             "45.7848181552653910" ;
+        geo:lon             "4.8565116142349005" .
+
+<http://ex.com/All%C3%A9e%20de%20l%27Europe>
+        a                   ex:station ;
+        rdfs:label          "Allée de l'Europe" ;
+        dbo:idNumber        "9050" ;
+        ex:availableBikes   "7" ;
+        ex:availableStands  "5" ;
+        vocab:capacity      "12" ;
+        geo:lat             "45.7836371650547920" ;
+        geo:lon             "4.7945253084995629" .
+
+<http://ex.com/Piscine%20du%20Rh%C3%B4ne>
+        a                   ex:station ;
+        rdfs:label          "Piscine du Rhône" ;
+        dbo:idNumber        "7034" ;
+        ex:availableBikes   "21" ;
+        ex:availableStands  "9" ;
+        vocab:capacity      "31" ;
+        geo:lat             "45.7536107053595200" ;
+        geo:lon             "4.8382209724032039" .
+
+<http://ex.com/Place%20Jules%20Ferry>
+        a                   ex:station ;
+        rdfs:label          "Place Jules Ferry" ;
+        dbo:idNumber        "6008" ;
+        ex:availableBikes   "17" ;
+        ex:availableStands  "3" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7684122613764610" ;
+        geo:lon             "4.8590705567383443" .
+
+<http://ex.com/Place%20Louise>
+        a                   ex:station ;
+        rdfs:label          "Place Louise" ;
+        dbo:idNumber        "3079" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "16" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7512052508819170" ;
+        geo:lon             "4.8848204636500698" .
+
+<http://ex.com/Place%20Flammarion>
+        a                   ex:station ;
+        rdfs:label          "Place Flammarion" ;
+        dbo:idNumber        "4007" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "15" ;
+        vocab:capacity      "18" ;
+        geo:lat             "45.7793264516606800" ;
+        geo:lon             "4.8203031984414517" .
+
+<http://ex.com/Domer%20%2F%20Chevreul>
+        a                   ex:station ;
+        rdfs:label          "Domer / Chevreul" ;
+        dbo:idNumber        "7041" ;
+        ex:availableBikes   "4" ;
+        ex:availableStands  "8" ;
+        vocab:capacity      "12" ;
+        geo:lat             "45.7466748285384950" ;
+        geo:lon             "4.8444434656856057" .
+
+<http://ex.com/Place%20Tolozan>
+        a                   ex:station ;
+        rdfs:label          "Place Tolozan" ;
+        dbo:idNumber        "1022" ;
+        ex:availableBikes   "21" ;
+        ex:availableStands  "14" ;
+        vocab:capacity      "36" ;
+        geo:lat             "45.7696005888254260" ;
+        geo:lon             "4.8376084367310748" .
+
+<http://ex.com/Condorcet%20%2F%20Galline>
+        a                   ex:station ;
+        rdfs:label          "Condorcet / Galline" ;
+        dbo:idNumber        "10055" ;
+        ex:availableBikes   "13" ;
+        ex:availableStands  "2" ;
+        vocab:capacity      "15" ;
+        geo:lat             "45.7764535731413250" ;
+        geo:lon             "4.8671149219928846" .
+
+<http://ex.com/Stalingrad>
+        a                   ex:station ;
+        rdfs:label          "Stalingrad" ;
+        dbo:idNumber        "10036" ;
+        ex:availableBikes   "4" ;
+        ex:availableStands  "11" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7743568286995240" ;
+        geo:lon             "4.8591545857608356" .
+
+<http://ex.com/Place%20Lebret>
+        a                   ex:station ;
+        rdfs:label          "Place Lebret" ;
+        dbo:idNumber        "8011" ;
+        ex:availableBikes   "7" ;
+        ex:availableStands  "7" ;
+        vocab:capacity      "14" ;
+        geo:lat             "45.7356139906482110" ;
+        geo:lon             "4.8529965568657403" .
+
+<http://ex.com/Rillieux%20Canellas>
+        a                   ex:station ;
+        rdfs:label          "Rillieux Canellas" ;
+        dbo:idNumber        "30001" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "12" ;
+        vocab:capacity      "12" ;
+        geo:lat             "45.8050913402650010" ;
+        geo:lon             "4.8847438731991382" .
+
+<http://ex.com/Oullins%20Pont%20Blanc>
+        a                   ex:station ;
+        rdfs:label          "Oullins Pont Blanc" ;
+        dbo:idNumber        "20003" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "24" ;
+        vocab:capacity      "24" ;
+        geo:lat             "45.7201577769260510" ;
+        geo:lon             "4.7983317319214027" .
+
+<http://ex.com/4%20ao%C3%BBt%201789%20%2F%20Pressens%C3%A9>
+        a                   ex:station ;
+        rdfs:label          "4 août 1789 / Pressensé" ;
+        dbo:idNumber        "10088" ;
+        ex:availableBikes   "6" ;
+        ex:availableStands  "13" ;
+        vocab:capacity      "19" ;
+        geo:lat             "45.7660587436588950" ;
+        geo:lon             "4.8987031427962373" .
+
+<http://ex.com/Stalingrad%20%2F%20Meli%C3%A8s>
+        a                   ex:station ;
+        rdfs:label          "Stalingrad / Meliès" ;
+        dbo:idNumber        "10054" ;
+        ex:availableBikes   "24" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "24" ;
+        geo:lat             "45.7767057578019490" ;
+        geo:lon             "4.8595233537915794" .
+
+<http://ex.com/C%C3%A9lestins>
+        a                   ex:station ;
+        rdfs:label          "Célestins" ;
+        dbo:idNumber        "2013" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "22" ;
+        geo:lat             "45.7599398325897230" ;
+        geo:lon             "4.8320716113863762" .
+
+<http://ex.com/Dauphin%C3%A9%20%2F%20Saint-Maximin>
+        a                   ex:station ;
+        rdfs:label          "Dauphiné / Saint-Maximin" ;
+        dbo:idNumber        "3069" ;
+        ex:availableBikes   "9" ;
+        ex:availableStands  "21" ;
+        vocab:capacity      "30" ;
+        geo:lat             "45.7499462288418290" ;
+        geo:lon             "4.8646503841216662" .
+
+<http://ex.com/Passerelle%20de%20la%20Paix>
+        a                   ex:station ;
+        rdfs:label          "Passerelle de la Paix" ;
+        dbo:idNumber        "11005" ;
+        ex:availableBikes   "12" ;
+        ex:availableStands  "13" ;
+        vocab:capacity      "25" ;
+        geo:lat             "45.7879516402910550" ;
+        geo:lon             "4.8530543333992187" .
+
+<http://ex.com/GrandCl%C3%A9ment>
+        a                   ex:station ;
+        rdfs:label          "GrandClément" ;
+        dbo:idNumber        "10021" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "18" ;
+        vocab:capacity      "19" ;
+        geo:lat             "45.7597183207295690" ;
+        geo:lon             "4.8899469363178758" .
+
+<http://ex.com/Tabareau>
+        a                   ex:station ;
+        rdfs:label          "Tabareau" ;
+        dbo:idNumber        "4021" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "7" ;
+        vocab:capacity      "10" ;
+        geo:lat             "45.7740806705343890" ;
+        geo:lon             "4.8251597121983645" .
+
+<http://ex.com/Place%20de%20la%20Croix-Rousse>
+        a                   ex:station ;
+        rdfs:label          "Place de la Croix-Rousse" ;
+        dbo:idNumber        "4022" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "20" ;
+        vocab:capacity      "21" ;
+        geo:lat             "45.7760751390863940" ;
+        geo:lon             "4.8325539207543908" .
+
+<http://ex.com/Saint-Clair>
+        a                   ex:station ;
+        rdfs:label          "Saint-Clair" ;
+        dbo:idNumber        "11002" ;
+        ex:availableBikes   "5" ;
+        ex:availableStands  "15" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7854707644412220" ;
+        geo:lon             "4.8478421222935548" .
+
+<http://ex.com/Mermoz%20%2F%20Pinel>
+        a                   ex:station ;
+        rdfs:label          "Mermoz / Pinel" ;
+        dbo:idNumber        "8023" ;
+        ex:availableBikes   "12" ;
+        ex:availableStands  "11" ;
+        vocab:capacity      "23" ;
+        geo:lat             "45.7307938036109430" ;
+        geo:lon             "4.8874632602485164" .
+
+<http://ex.com/Friche%20RVI>
+        a                   ex:station ;
+        rdfs:label          "Friche RVI" ;
+        dbo:idNumber        "3050" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "20" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7483207051236600" ;
+        geo:lon             "4.8759239595508284" .
+
+<http://ex.com/Gare%20de%20Cuire>
+        a                   ex:station ;
+        rdfs:label          "Gare de Cuire" ;
+        dbo:idNumber        "11001" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "18" ;
+        vocab:capacity      "18" ;
+        geo:lat             "45.7857755308468410" ;
+        geo:lon             "4.8337134215891258" .
+
+<http://ex.com/Saint-Luc%20%2F%20Saint-Joseph>
+        a                   ex:station ;
+        rdfs:label          "Saint-Luc / Saint-Joseph" ;
+        dbo:idNumber        "7033" ;
+        ex:availableBikes   "16" ;
+        ex:availableStands  "12" ;
+        vocab:capacity      "28" ;
+        geo:lat             "45.7494176952947240" ;
+        geo:lon             "4.8347520047111061" .
+
+<http://ex.com/Part-Dieu%20%2F%20Deruelle>
+        a                   ex:station ;
+        rdfs:label          "Part-Dieu / Deruelle" ;
+        dbo:idNumber        "3003" ;
+        ex:availableBikes   "11" ;
+        ex:availableStands  "19" ;
+        vocab:capacity      "30" ;
+        geo:lat             "45.7629790120815440" ;
+        geo:lon             "4.8550066229887996" .
+
+<http://ex.com/Berthelot%20%2F%20Cazeneuve>
+        a                   ex:station ;
+        rdfs:label          "Berthelot / Cazeneuve" ;
+        dbo:idNumber        "8033" ;
+        ex:availableBikes   "13" ;
+        ex:availableStands  "7" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7373162879662940" ;
+        geo:lon             "4.8655284896846744" .
+
+<http://ex.com/Baratin>
+        a                   ex:station ;
+        rdfs:label          "Baratin" ;
+        dbo:idNumber        "10087" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "8" ;
+        vocab:capacity      "12" ;
+        geo:lat             "45.7606037573681730" ;
+        geo:lon             "4.9006969683209185" .
+
+<http://ex.com/Place%20d%27Helv%C3%A9tie>
+        a                   ex:station ;
+        rdfs:label          "Place d'Helvétie" ;
+        dbo:idNumber        "6025" ;
+        ex:availableBikes   "9" ;
+        ex:availableStands  "21" ;
+        vocab:capacity      "30" ;
+        geo:lat             "45.7731863072103170" ;
+        geo:lon             "4.8419593354412900" .
+
+<http://ex.com/Zola%20%2F%20Passage%20Rey>
+        a                   ex:station ;
+        rdfs:label          "Zola / Passage Rey" ;
+        dbo:idNumber        "10074" ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "18" ;
+        vocab:capacity      "19" ;
+        geo:lat             "45.7700978432658230" ;
+        geo:lon             "4.8766904175328012" .
+
+<http://ex.com/Place%20de%20l%27Hippodrome>
+        a                   ex:station ;
+        rdfs:label          "Place de l'Hippodrome" ;
+        dbo:idNumber        "2006" ;
+        ex:availableBikes   "20" ;
+        ex:availableStands  "4" ;
+        vocab:capacity      "24" ;
+        geo:lat             "45.7455815521804820" ;
+        geo:lon             "4.8235326732363086" .
+
+<http://ex.com/Laurent%20Bonnevay%20-%20Astroballe>
+        a                   ex:station ;
+        rdfs:label          "Laurent Bonnevay - Astroballe" ;
+        dbo:idNumber        "10014" ;
+        ex:availableBikes   "6" ;
+        ex:availableStands  "20" ;
+        vocab:capacity      "29" ;
+        geo:lat             "45.7651240553553580" ;
+        geo:lon             "4.9098182197044347" .
+
+<http://ex.com/Boussange%20%2F%20Austerlitz>
+        a                   ex:station ;
+        rdfs:label          "Boussange / Austerlitz" ;
+        dbo:idNumber        "4041" ;
+        ex:availableBikes   "7" ;
+        ex:availableStands  "11" ;
+        vocab:capacity      "18" ;
+        geo:lat             "45.7755023590485810" ;
+        geo:lon             "4.8350625452914064" .
+
+<http://ex.com/Place%20Ambroise%20Courtois>
+        a                   ex:station ;
+        rdfs:label          "Place Ambroise Courtois" ;
+        dbo:idNumber        "8002" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "20" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7452926164534970" ;
+        geo:lon             "4.8716789632578008" .
+
+<http://ex.com/Techsud>
+        a                   ex:station ;
+        rdfs:label          "Techsud" ;
+        dbo:idNumber        "7015" ;
+        ex:availableBikes   "10" ;
+        ex:availableStands  "2" ;
+        vocab:capacity      "12" ;
+        geo:lat             "45.7227999997408930" ;
+        geo:lon             "4.8427060003576159" .
+
+<http://ex.com/Condorcet>
+        a                   ex:station ;
+        rdfs:label          "Condorcet" ;
+        dbo:idNumber        "10038" ;
+        ex:availableBikes   "8" ;
+        ex:availableStands  "4" ;
+        vocab:capacity      "12" ;
+        geo:lat             "45.7790457737185790" ;
+        geo:lon             "4.8667783280240924" .
+
+<http://ex.com/Place%20Danton>
+        a                   ex:station ;
+        rdfs:label          "Place Danton" ;
+        dbo:idNumber        "3103" ;
+        ex:availableBikes   "10" ;
+        ex:availableStands  "8" ;
+        vocab:capacity      "18" ;
+        geo:lat             "45.7548124485154370" ;
+        geo:lon             "4.8575743726010305" .
+
+<http://ex.com/Jean%20XXIII%20%2F%20Mermoz>
+        a                   ex:station ;
+        rdfs:label          "Jean XXIII / Mermoz" ;
+        dbo:idNumber        "8009" ;
+        ex:availableBikes   "16" ;
+        ex:availableStands  "1" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7364796056891410" ;
+        geo:lon             "4.8698054320071753" .
+
+<http://ex.com/Anatole%20France%20%2F%20Alsace>
+        a                   ex:station ;
+        rdfs:label          "Anatole France / Alsace" ;
+        dbo:idNumber        "10045" ;
+        ex:availableBikes   "" ;
+        ex:availableStands  "" ;
+        vocab:capacity      "" ;
+        geo:lat             "45.7670823153311870" ;
+        geo:lon             "4.8706390455761799" .
+
+<http://ex.com/Berlioz%20%2F%20Chalinel>
+        a                   ex:station ;
+        rdfs:label          "Berlioz / Chalinel" ;
+        dbo:idNumber        "9009" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "15" ;
+        vocab:capacity      "15" ;
+        geo:lat             "45.8011198081158210" ;
+        geo:lon             "4.8252725616689833" .
+
+<http://ex.com/Bayard%20%2F%20Rambaud>
+        a                   ex:station ;
+        rdfs:label          "Bayard / Rambaud" ;
+        dbo:idNumber        "2021" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "30" ;
+        vocab:capacity      "30" ;
+        geo:lat             "45.7459165775636120" ;
+        geo:lon             "4.8171736085201431" .
+
+<http://ex.com/Bellecour%20%2F%20R%C3%A9publique>
+        a                   ex:station ;
+        rdfs:label          "Bellecour / République" ;
+        dbo:idNumber        "2001" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "18" ;
+        geo:lat             "45.7579850990088130" ;
+        geo:lon             "4.8345938219838454" .
+
+<http://ex.com/Gratte-Ciel>
+        a                   ex:station ;
+        rdfs:label          "Gratte-Ciel" ;
+        dbo:idNumber        "10011" ;
+        ex:availableBikes   "8" ;
+        ex:availableStands  "8" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7692274364669060" ;
+        geo:lon             "4.8804622522382601" .
+
+<http://ex.com/Francis%20de%20Pressenss%C3%A9>
+        a                   ex:station ;
+        rdfs:label          "Francis de Pressenssé" ;
+        dbo:idNumber        "8042" ;
+        ex:availableBikes   "9" ;
+        ex:availableStands  "13" ;
+        vocab:capacity      "22" ;
+        geo:lat             "45.7314272671117620" ;
+        geo:lon             "4.8600379663129871" .
+
+<http://ex.com/Villette>
+        a                   ex:station ;
+        rdfs:label          "Villette" ;
+        dbo:idNumber        "3094" ;
+        ex:availableBikes   "25" ;
+        ex:availableStands  "11" ;
+        vocab:capacity      "38" ;
+        geo:lat             "45.7577645564235310" ;
+        geo:lon             "4.8614965859401122" .
+
+<http://ex.com/Philippe%20de%20Lassalle>
+        a                   ex:station ;
+        rdfs:label          "Philippe de Lassalle" ;
+        dbo:idNumber        "4006" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "22" ;
+        geo:lat             "45.7737230904642590" ;
+        geo:lon             "4.8213019761705525" .
+
+<http://ex.com/Blum%20%2F%20Fa%C3%BFs>
+        a                   ex:station ;
+        rdfs:label          "Blum / Faÿs" ;
+        dbo:idNumber        "10116" ;
+        ex:availableBikes   "7" ;
+        ex:availableStands  "9" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7605212388028870" ;
+        geo:lon             "4.9059454396164748" .
+
+<http://ex.com/Sainte-Blandine>
+        a                   ex:station ;
+        rdfs:label          "Sainte-Blandine" ;
+        dbo:idNumber        "2028" ;
+        ex:availableBikes   "16" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7444223014223040" ;
+        geo:lon             "4.8221428704396105" .
+
+<http://ex.com/Place%20Antonin%20Gourju>
+        a                   ex:station ;
+        rdfs:label          "Place Antonin Gourju" ;
+        dbo:idNumber        "2036" ;
+        ex:availableBikes   "19" ;
+        ex:availableStands  "11" ;
+        vocab:capacity      "30" ;
+        geo:lat             "45.7594863490351000" ;
+        geo:lon             "4.8301699554160633" .
+
+<http://ex.com/Etats-Unis%20%2F%20Viviani>
+        a                   ex:station ;
+        rdfs:label          "Etats-Unis / Viviani" ;
+        dbo:idNumber        "8041" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "20" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7247162655050090" ;
+        geo:lon             "4.8708316547687760" .
+
+<http://ex.com/Place%20des%20tapis>
+        a                   ex:station ;
+        rdfs:label          "Place des tapis" ;
+        dbo:idNumber        "4017" ;
+        ex:availableBikes   "2" ;
+        ex:availableStands  "15" ;
+        vocab:capacity      "17" ;
+        geo:lat             "45.7760264913711410" ;
+        geo:lon             "4.8296210962258828" .
+
+<http://ex.com/Lafayette%20%2F%20Corneille>
+        a                   ex:station ;
+        rdfs:label          "Lafayette / Corneille" ;
+        dbo:idNumber        "6031" ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "10" ;
+        vocab:capacity      "13" ;
+        geo:lat             "45.7637594783418750" ;
+        geo:lon             "4.8437773405191873" .
+
+<http://ex.com/Rebatel%20%2F%20Saint-Maximin>
+        a                   ex:station ;
+        rdfs:label          "Rebatel / Saint-Maximin" ;
+        dbo:idNumber        "3070" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "30" ;
+        geo:lat             "45.7481611482948340" ;
+        geo:lon             "4.8727958633548161" .
+
+<http://ex.com/Place%20de%20la%20Rhodiac%C3%A9ta>
+        a                   ex:station ;
+        rdfs:label          "Place de la Rhodiacéta" ;
+        dbo:idNumber        "9040" ;
+        ex:availableBikes   "11" ;
+        ex:availableStands  "1" ;
+        vocab:capacity      "12" ;
+        geo:lat             "45.7709906411448560" ;
+        geo:lon             "4.8075804142518948" .
+
+<http://ex.com/BioParc>
+        a                   ex:station ;
+        rdfs:label          "BioParc" ;
+        dbo:idNumber        "3071" ;
+        ex:availableBikes   "7" ;
+        ex:availableStands  "13" ;
+        vocab:capacity      "20" ;
+        geo:lat             "45.7404830910258650" ;
+        geo:lon             "4.8880858101360474" .
+
+<http://ex.com/Paul%20Bert%20%2F%20Vivier%20Merle>
+        a                   ex:station ;
+        rdfs:label          "Paul Bert / Vivier Merle" ;
+        dbo:idNumber        "3033" ;
+        ex:availableBikes   "16" ;
+        ex:availableStands  "5" ;
+        vocab:capacity      "21" ;
+        geo:lat             "45.7571477697522010" ;
+        geo:lon             "4.8580904354818850" .
+
+<http://ex.com/Parc%20Blandan>
+        a                   ex:station ;
+        rdfs:label          "Parc Blandan" ;
+        dbo:idNumber        "7052" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "25" ;
+        vocab:capacity      "25" ;
+        geo:lat             "45.7459637288850090" ;
+        geo:lon             "4.8511961077823749" .
+
+<http://ex.com/Promenade%20Tuileries>
+        a                   ex:station ;
+        rdfs:label          "Promenade Tuileries" ;
+        dbo:idNumber        "23001" ;
+        ex:availableBikes   "2" ;
+        ex:availableStands  "10" ;
+        vocab:capacity      "12" ;
+        geo:lat             "45.7632560325953860" ;
+        geo:lon             "4.7786100656705530" .
+
+<http://ex.com/Kimmerling>
+        a                   ex:station ;
+        rdfs:label          "Kimmerling" ;
+        dbo:idNumber        "10041" ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "15" ;
+        vocab:capacity      "16" ;
+        geo:lat             "45.7529723995867810" ;
+        geo:lon             "4.8988656628976361" .

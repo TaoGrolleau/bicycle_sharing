@@ -1,0 +1,17 @@
+PREFIX ite: <http://w3id.org/sparql-generate/iter/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX ex: <http://example.org/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX vocab: <http://rdf.ontology2.com/vocab#>
+
+GENERATE {
+  <http://ex.com/{?station}> a ex:station;
+            rdfs:label ?station ;
+    		dbo:idNumber "{?id}";
+  			geo:lat ?lat ;
+    		geo:lon ?lon ;
+    		vocab:capacity ?capacity.
+}
+ITERATOR ite:JSONPath(<https://saint-etienne-gbfs.klervi.net/gbfs/en/station_information.json>,"data.stations.*", "$.name", "$.station_id", ".lat", ".lon", "$.capacity") AS ?work ?station ?id ?lat ?lon ?capacity

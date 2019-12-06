@@ -1,0 +1,109 @@
+
+@base          <http://example.org/> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix ex:    <http://example.org/> .
+@prefix vocab: <http://rdf.ontology2.com/vocab#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ite:   <http://w3id.org/sparql-generate/iter/> .
+@prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<http://ex.com/Plaine%20de%20Baud>
+        a                   ex:station ;
+        rdfs:label          "Plaine de Baud" ;
+        dbo:idNumber        "5546" ;
+        ex:availableBikes   14 ;
+        ex:availableStands  24 ;
+        vocab:capacity      10 ;
+        geo:lat             "48.112461" ;
+        geo:lon             "-1.643674" .
+
+<http://ex.com/La%20Poterie>
+        a                   ex:station ;
+        rdfs:label          "La Poterie" ;
+        dbo:idNumber        "5582" ;
+        ex:availableBikes   7 ;
+        ex:availableStands  27 ;
+        vocab:capacity      20 ;
+        geo:lat             "48.087282" ;
+        geo:lon             "-1.644121" .
+
+<http://ex.com/La%20Cri%C3%A9e>
+        a                   ex:station ;
+        rdfs:label          "La Criée" ;
+        dbo:idNumber        "5521" ;
+        ex:availableBikes   15 ;
+        ex:availableStands  24 ;
+        vocab:capacity      9 ;
+        geo:lat             "48.107626" ;
+        geo:lon             "-1.680085" .
+
+<http://ex.com/Painlev%C3%A9>
+        a                   ex:station ;
+        rdfs:label          "Painlevé" ;
+        dbo:idNumber        "5580" ;
+        ex:availableBikes   11 ;
+        ex:availableStands  18 ;
+        vocab:capacity      7 ;
+        geo:lat             "48.122994" ;
+        geo:lon             "-1.660547" .
+
+<http://ex.com/Marbeuf>
+        a                   ex:station ;
+        rdfs:label          "Marbeuf" ;
+        dbo:idNumber        "5538" ;
+        ex:availableBikes   16 ;
+        ex:availableStands  20 ;
+        vocab:capacity      4 ;
+        geo:lat             "48.111749" ;
+        geo:lon             "-1.702077" .
+
+<http://ex.com/Gros-Ch%C3%AAne>
+        a                   ex:station ;
+        rdfs:label          "Gros-Chêne" ;
+        dbo:idNumber        "5578" ;
+        ex:availableBikes   9 ;
+        ex:availableStands  18 ;
+        vocab:capacity      9 ;
+        geo:lat             "48.126795" ;
+        geo:lon             "-1.665101" .
+
+<http://ex.com/Champs%20Libres>
+        a                   ex:station ;
+        rdfs:label          "Champs Libres" ;
+        dbo:idNumber        "5516" ;
+        ex:availableBikes   7 ;
+        ex:availableStands  23 ;
+        vocab:capacity      16 ;
+        geo:lat             "48.105537" ;
+        geo:lon             "-1.674328" .
+
+<http://ex.com/Turmel>
+        a                   ex:station ;
+        rdfs:label          "Turmel" ;
+        dbo:idNumber        "5581" ;
+        ex:availableBikes   14 ;
+        ex:availableStands  16 ;
+        vocab:capacity      2 ;
+        geo:lat             "48.122147" ;
+        geo:lon             "-1.650808" .
+
+<http://ex.com/Brest%20-%20Verdun>
+        a                   ex:station ;
+        rdfs:label          "Brest - Verdun" ;
+        dbo:idNumber        "5534" ;
+        ex:availableBikes   14 ;
+        ex:availableStands  24 ;
+        vocab:capacity      10 ;
+        geo:lat             "48.113009" ;
+        geo:lon             "-1.693264" .
+
+<http://ex.com/Mus%C3%A9e%20Beaux-Arts>
+        a                   ex:station ;
+        rdfs:label          "Musée Beaux-Arts" ;
+        dbo:idNumber        "5510" ;
+        ex:availableBikes   12 ;
+        ex:availableStands  16 ;
+        vocab:capacity      4 ;
+        geo:lat             "48.109601" ;
+        geo:lon             "-1.67408" .
