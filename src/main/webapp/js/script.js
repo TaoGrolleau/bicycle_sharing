@@ -1,6 +1,10 @@
 var villes = {
-	 "Centre 2": { "lat": 45.42342, "lon": 4.392292 },
-	 "St François": {"lat": 45.439538, "lon": 4.403407}
+	 "Saint-Etienne": { "lat": 45.439695, "lon": 4.3871779},
+	 "Lyon": {"lat": 45.75, "lon": 4.85},
+	 "Montpellier": {"lat": 43.62505, "lon": 3.862038},
+	 "Rennes": {"lat": 48.0833 , "lon": -1.6833},
+	 "Strasbourg": {"lat": 48.5833, "lon": 7.75},
+	 "Paris": {"lat": 48.8534, "lon": 2.3488}
 };
 
 var lat = 48.852969;
