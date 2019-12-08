@@ -7,9 +7,13 @@
 <body>
     <table>
         <tr th:each="stat : ${stations}">
-            <td th:text="${stat.station_id}">Loupé</td>
+            <td th:text="${stat.station_name}">Nom de la station</td>
+            <td th:text="${stat.station_lon}">Longitude</td>
+            <td th:text="${stat.station_lat}">Latitude</td>
+            <td th:text="${stat.station_available_bikes}">Vélos disponibles</td>
+            <td th:text="${stat.station_used_bikes}">Vélos utilisés</td>
+            <td th:text="${stat.station_total_bikes}">Total de vélos</td>
         </tr>
     </table>
-    <p>Test de refresh</p>
 </body>
 </html>
