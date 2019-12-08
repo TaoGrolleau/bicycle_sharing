@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" >
+    <title>Strasbourg</title>
+</head>
+<body>
+    <table>
+        <tr th:each="stat : ${stations}">
+            <td th:text="${stat.station_id}">Loupé</td>
+        </tr>
+    </table>
+    <p>Test de refresh</p>
+</body>
+</html>

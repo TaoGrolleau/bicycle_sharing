@@ -30,7 +30,7 @@ Lyon, Rennes et Saint-Etienne sont au format JSON.
 - Site Web (Spring) permettant de choisir des villes
 - Réponse en RDFa
 - (Créer itinéraire)
-- Javascript pour les cartes (OpenStreetMap) et leaflet 
+- Javascript pour les cartes (OpenStreetMap) et [leaflet](https://nouvelle-techno.fr/actualites/2018/05/11/pas-a-pas-inserer-une-carte-openstreetmap-sur-votre-site) 
 
 ## Infos supplémentaires
 
