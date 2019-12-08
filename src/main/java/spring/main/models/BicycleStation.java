@@ -2,8 +2,16 @@ package spring.main.models;
 
 import lombok.Data;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 @Data
+@Entity
 public class BicycleStation {
+    @Id
+    @GeneratedValue
+    private Long id;
     private String station_name;
     private String station_id;
     private String station_lon;

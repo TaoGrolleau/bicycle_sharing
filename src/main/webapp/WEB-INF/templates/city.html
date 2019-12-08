@@ -5,7 +5,11 @@
     <title>Strasbourg</title>
 </head>
 <body>
-    <p th:text="${station.station_id}">Loupé</p>
+    <table>
+        <tr th:each="stat : ${stations}">
+            <td th:text="${stat.station_id}">Loupé</td>
+        </tr>
+    </table>
     <p>Test de refresh</p>
 </body>
 </html>
