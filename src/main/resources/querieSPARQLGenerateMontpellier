@@ -18,7 +18,7 @@ GENERATE {
   			ex:availableStands ?available_stands ;
     		ex:availableBikes ?available_bikes ;
     		ex:bankCard ?cb ;
-    		geo:location "Montpelier" .
+    		geo:location "Montpellier" .
 }
 SOURCE <https://data.montpellier3m.fr/sites/default/files/ressources/TAM_MMM_VELOMAG.xml> AS ?source
 ITERATOR ite:XPath(?source, "/vcs/sl/si", "/si/@na", "/si/@id", "/si/@la", "/si/@lg", "/si/@to", "/si/@fr", "/si/@av", "/si/@cb" ) AS ?work ?station ?id ?lat ?lon ?capacity ?available_stands ?available_bikes ?cb

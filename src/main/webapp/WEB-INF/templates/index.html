@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8">
     <title>Bicycle Sharing</title>
@@ -49,39 +49,39 @@
         <div class="col-lg-2 bg-light">
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">
+                    <a class="nav-link active" th:href="@{/city(name='Saint-Etienne')}">
                         <span data-feather="home"></span>
                         Saint-Étienne <span class="sr-only">(current)</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" th:href="@{/city(name='Strasbourg')}">
                         <span data-feather="file"></span>
                         Strasbourg
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" th:href="@{/city(name='Lyon')}">
                         <span data-feather="shopping-cart"></span>
                         Lyon
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" th:href="@{/city(name='Paris')}">
                         <span data-feather="users"></span>
                         Paris
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" th:href="@{/city(name='Rennes')}">
                         <span data-feather="bar-chart-2"></span>
                         Rennes
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" th:href="@{/city(name='Montpellier')}">
                         <span data-feather="layers"></span>
-                        Montpelier
+                        Montpellier
                     </a>
                 </li>
             </ul>
@@ -92,7 +92,7 @@
             </div>
         </div>
         <div class="col-lg-2 bg-light">
-            Infos sur les stations
+            <!--- Infos sur les stations --->
         </div>
     </div>
 </div>
