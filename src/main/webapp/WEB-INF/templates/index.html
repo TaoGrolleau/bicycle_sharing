@@ -9,19 +9,29 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
           integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
           crossorigin=""/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <style type="text/css">
             html,body {
-                height:100vh;
-            }
-            #map{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
-                position:relative;
                 height:100%;
+                width:100%;
+            }
+
+            .full-screen{
+                height:100%;
+                overflow: hidden;
+            }
+
+            .footer{
+                position:absolute;
+                top:100%;
+                bottom: 0px;
+            }
+
+            #map{
+                height: 100%;
                 max-height:100%;
             }
-
-
-
-
     </style>
 
 
@@ -31,16 +41,16 @@
     <div class="navbar navbar-dark bg-dark shadow-sm">
         <div class="container d-flex justify-content-between">
             <a href="#" class="navbar-brand d-flex align-items-center">
-                <strong>Bicycle sharing</strong>
+                <i class="fas fa-bicycle"></i> <strong> Bicycle sharing</strong>
             </a>
         </div>
     </div>
 </header>
-<div class="container-fluid">
-    <div class="row">
-        <nav class="col-lg-2 d-none d-md-block bg-light sidebar">
-            <div class="sidebar-sticky">
-                <ul class="nav flex-column">
+<div class="full-screen">
+    <div class="container-fluid">
+        <div class="row full-screen">
+            <div class="col-lg-2 bg-light full-screen">
+                <ul class="nav flex-column full-screen">
                     <li class="nav-item">
                         <a class="nav-link active" href="#">
                             <span data-feather="home"></span>
@@ -78,13 +88,19 @@
                         </a>
                     </li>
                 </ul>
+                <ul class="footer">
+                    <li>salut</li>
+                </ul>
             </div>
-        </nav>
-        <nav class="col-lg-10">
-            <div id="map">
-                <!-- Ici s'affichera la carte -->
+            <div class="col-lg-8 bg-light">
+                <div id="map">
+                    <!-- Ici s'affichera la carte -->
+                </div>
             </div>
-        </nav>
+            <div class="col-lg-2 bg-light">
+                Infos sur les stations
+            </div>
+        </div>
     </div>
 </div>
 
@@ -128,6 +144,11 @@ function initMap() {
 		// Fonction d'initialisation qui s'exécute lorsque le DOM est chargé
 		initMap();
             };
+
+
+
+
+
 </script>
 </body>
 </html>
