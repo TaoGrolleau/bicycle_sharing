@@ -15,4 +15,4 @@ GENERATE {
     		vocab:capacity ?capacity ;
     		geo:location "Saint-Etienne" .
 }
-ITERATOR ite:JSONPath(<https://saint-etienne-gbfs.klervi.net/gbfs/en/station_information.json>,"data.stations.*", "$.name", "$.station_id", ".lat", ".lon", "$.capacity") AS ?work ?station ?id ?lat ?lon ?capacity
+ITERATOR ite:JSONPath(<https://saint-etienne-gbfs.klervi.net/gbfs/en/station_information.json>,"data.stations.*", "$.name", "$.station_id", ".lat", ".lon", ".capacity") AS ?work ?station ?id ?lat ?lon ?capacity

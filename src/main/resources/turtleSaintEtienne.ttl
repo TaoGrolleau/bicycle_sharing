@@ -12,7 +12,7 @@
         a               ex:station ;
         rdfs:label      "Centre 2" ;
         dbo:idNumber    "113" ;
-        vocab:capacity  24 ;
+        vocab:capacity  "24" ;
         geo:lat         "45.42342" ;
         geo:location    "Saint-Etienne" ;
         geo:lon         "4.392292" .
@@ -21,7 +21,7 @@
         a               ex:station ;
         rdfs:label      "St Francois" ;
         dbo:idNumber    "120" ;
-        vocab:capacity  16 ;
+        vocab:capacity  "16" ;
         geo:lat         "45.439538" ;
         geo:location    "Saint-Etienne" ;
         geo:lon         "4.403407" .
@@ -30,7 +30,7 @@
         a               ex:station ;
         rdfs:label      "Jacquard" ;
         dbo:idNumber    "104" ;
-        vocab:capacity  12 ;
+        vocab:capacity  "12" ;
         geo:lat         "45.441888" ;
         geo:location    "Saint-Etienne" ;
         geo:lon         "4.382492" .
@@ -39,7 +39,7 @@
         a               ex:station ;
         rdfs:label      "A. France" ;
         dbo:idNumber    "110" ;
-        vocab:capacity  16 ;
+        vocab:capacity  "16" ;
         geo:lat         "45.43065" ;
         geo:location    "Saint-Etienne" ;
         geo:lon         "4.389752" .
@@ -48,7 +48,7 @@
         a               ex:station ;
         rdfs:label      "Tréfilerie" ;
         dbo:idNumber    "112" ;
-        vocab:capacity  24 ;
+        vocab:capacity  "24" ;
         geo:lat         "45.427296" ;
         geo:location    "Saint-Etienne" ;
         geo:lon         "4.390669" .
@@ -57,7 +57,7 @@
         a               ex:station ;
         rdfs:label      "Bellevue" ;
         dbo:idNumber    "114" ;
-        vocab:capacity  24 ;
+        vocab:capacity  "24" ;
         geo:lat         "45.415579" ;
         geo:location    "Saint-Etienne" ;
         geo:lon         "4.393322" .
@@ -66,7 +66,7 @@
         a               ex:station ;
         rdfs:label      "Dorian" ;
         dbo:idNumber    "106" ;
-        vocab:capacity  32 ;
+        vocab:capacity  "32" ;
         geo:lat         "45.43836" ;
         geo:location    "Saint-Etienne" ;
         geo:lon         "4.388435" .
@@ -75,7 +75,7 @@
         a               ex:station ;
         rdfs:label      "J. Moulin" ;
         dbo:idNumber    "118" ;
-        vocab:capacity  16 ;
+        vocab:capacity  "16" ;
         geo:lat         "45.437404" ;
         geo:location    "Saint-Etienne" ;
         geo:lon         "4.392469" .
@@ -84,7 +84,7 @@
         a               ex:station ;
         rdfs:label      "Congrès" ;
         dbo:idNumber    "115" ;
-        vocab:capacity  24 ;
+        vocab:capacity  "24" ;
         geo:lat         "45.426972" ;
         geo:location    "Saint-Etienne" ;
         geo:lon         "4.404048" .
@@ -93,7 +93,7 @@
         a               ex:station ;
         rdfs:label      "Jaures" ;
         dbo:idNumber    "105" ;
-        vocab:capacity  32 ;
+        vocab:capacity  "32" ;
         geo:lat         "45.440725" ;
         geo:location    "Saint-Etienne" ;
         geo:lon         "4.387295" .
@@ -102,7 +102,7 @@
         a               ex:station ;
         rdfs:label      "Chaléassiere" ;
         dbo:idNumber    "102" ;
-        vocab:capacity  16 ;
+        vocab:capacity  "16" ;
         geo:lat         "45.453601" ;
         geo:location    "Saint-Etienne" ;
         geo:lon         "4.383062" .
@@ -111,7 +111,7 @@
         a               ex:station ;
         rdfs:label      "Clapier" ;
         dbo:idNumber    "107" ;
-        vocab:capacity  16 ;
+        vocab:capacity  "16" ;
         geo:lat         "45.436903" ;
         geo:location    "Saint-Etienne" ;
         geo:lon         "4.378789" .
@@ -120,7 +120,7 @@
         a               ex:station ;
         rdfs:label      "Peuple" ;
         dbo:idNumber    "108" ;
-        vocab:capacity  32 ;
+        vocab:capacity  "32" ;
         geo:lat         "45.436265" ;
         geo:location    "Saint-Etienne" ;
         geo:lon         "4.387539" .
@@ -129,7 +129,7 @@
         a               ex:station ;
         rdfs:label      "Hôp. Nord" ;
         dbo:idNumber    "126" ;
-        vocab:capacity  32 ;
+        vocab:capacity  "32" ;
         geo:lat         "45.479487" ;
         geo:location    "Saint-Etienne" ;
         geo:lon         "4.362541" .
@@ -138,7 +138,7 @@
         a               ex:station ;
         rdfs:label      "Soleil" ;
         dbo:idNumber    "125" ;
-        vocab:capacity  16 ;
+        vocab:capacity  "16" ;
         geo:lat         "45.450533" ;
         geo:location    "Saint-Etienne" ;
         geo:lon         "4.403566" .
@@ -147,7 +147,7 @@
         a               ex:station ;
         rdfs:label      "J. Marc" ;
         dbo:idNumber    "127" ;
-        vocab:capacity  24 ;
+        vocab:capacity  "24" ;
         geo:lat         "45.4732778" ;
         geo:location    "Saint-Etienne" ;
         geo:lon         "4.3665277" .
@@ -156,7 +156,7 @@
         a               ex:station ;
         rdfs:label      "Chavanelle" ;
         dbo:idNumber    "117" ;
-        vocab:capacity  24 ;
+        vocab:capacity  "24" ;
         geo:lat         "45.435109" ;
         geo:location    "Saint-Etienne" ;
         geo:lon         "4.391962" .
@@ -165,7 +165,7 @@
         a               ex:station ;
         rdfs:label      "Tardy" ;
         dbo:idNumber    "111" ;
-        vocab:capacity  12 ;
+        vocab:capacity  "12" ;
         geo:lat         "45.427396" ;
         geo:location    "Saint-Etienne" ;
         geo:lon         "4.386718" .
@@ -174,7 +174,7 @@
         a               ex:station ;
         rdfs:label      "Villeboeuf" ;
         dbo:idNumber    "116" ;
-        vocab:capacity  16 ;
+        vocab:capacity  "16" ;
         geo:lat         "45.431808" ;
         geo:location    "Saint-Etienne" ;
         geo:lon         "4.395127" .
@@ -183,7 +183,7 @@
         a               ex:station ;
         rdfs:label      "Bicentenaire" ;
         dbo:idNumber    "130" ;
-        vocab:capacity  16 ;
+        vocab:capacity  "16" ;
         geo:lat         "45.420286" ;
         geo:location    "Saint-Etienne" ;
         geo:lon         "4.392776" .
@@ -192,7 +192,7 @@
         a               ex:station ;
         rdfs:label      "Fourneyron" ;
         dbo:idNumber    "119" ;
-        vocab:capacity  24 ;
+        vocab:capacity  "24" ;
         geo:lat         "45.4395" ;
         geo:location    "Saint-Etienne" ;
         geo:lon         "4.395669" .
@@ -200,7 +200,7 @@
 <http://ex.com/Marx>  a  ex:station ;
                       rdfs:label      "Marx" ;
                       dbo:idNumber    "123" ;
-                      vocab:capacity  16 ;
+                      vocab:capacity  "16" ;
                       geo:lat         "45.422732" ;
                       geo:location    "Saint-Etienne" ;
                       geo:lon         "4.409376" .
@@ -209,7 +209,7 @@
         a               ex:station ;
         rdfs:label      "A. Thomas" ;
         dbo:idNumber    "109" ;
-        vocab:capacity  16 ;
+        vocab:capacity  "16" ;
         geo:lat         "45.4328" ;
         geo:location    "Saint-Etienne" ;
         geo:lon         "4.388035" .
@@ -218,7 +218,7 @@
         a               ex:station ;
         rdfs:label      "Technopole" ;
         dbo:idNumber    "128" ;
-        vocab:capacity  16 ;
+        vocab:capacity  "16" ;
         geo:lat         "45.457" ;
         geo:location    "Saint-Etienne" ;
         geo:lon         "4.39241" .
@@ -227,7 +227,7 @@
         a               ex:station ;
         rdfs:label      "Châteaucreux" ;
         dbo:idNumber    "101" ;
-        vocab:capacity  32 ;
+        vocab:capacity  "32" ;
         geo:lat         "45.442972" ;
         geo:location    "Saint-Etienne" ;
         geo:lon         "4.398855" .
@@ -236,7 +236,7 @@
         a               ex:station ;
         rdfs:label      "Roannelle" ;
         dbo:idNumber    "129" ;
-        vocab:capacity  16 ;
+        vocab:capacity  "16" ;
         geo:lat         "45.4357171" ;
         geo:location    "Saint-Etienne" ;
         geo:lon         "4.3829931" .
@@ -245,7 +245,7 @@
         a               ex:station ;
         rdfs:label      "Janin" ;
         dbo:idNumber    "124" ;
-        vocab:capacity  16 ;
+        vocab:capacity  "16" ;
         geo:lat         "45.448458" ;
         geo:location    "Saint-Etienne" ;
         geo:lon         "4.39492" .
@@ -254,7 +254,7 @@
         a               ex:station ;
         rdfs:label      "Carnot" ;
         dbo:idNumber    "103" ;
-        vocab:capacity  24 ;
+        vocab:capacity  "24" ;
         geo:lat         "45.447093" ;
         geo:location    "Saint-Etienne" ;
         geo:lon         "4.385487" .
@@ -263,7 +263,7 @@
         a               ex:station ;
         rdfs:label      "Terrasse" ;
         dbo:idNumber    "122" ;
-        vocab:capacity  16 ;
+        vocab:capacity  "16" ;
         geo:lat         "45.46502" ;
         geo:location    "Saint-Etienne" ;
         geo:lon         "4.37874" .

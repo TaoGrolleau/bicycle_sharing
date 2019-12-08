@@ -13,9 +13,9 @@
         a                   ex:station ;
         rdfs:label          "Faubourg Du Temple - Republique" ;
         dbo:idNumber        "11037" ;
-        ex:availableBikes   2 ;
-        ex:availableStands  36 ;
-        vocab:capacity      38 ;
+        ex:availableBikes   "2" ;
+        ex:availableStands  "35" ;
+        vocab:capacity      "38" ;
         geo:lat             "48.867872484748744" ;
         geo:location        "Paris" ;
         geo:lon             "2.3648982158072323" .
@@ -24,9 +24,9 @@
         a                   ex:station ;
         rdfs:label          "André Mazet - Saint-André des Arts" ;
         dbo:idNumber        "6015" ;
-        ex:availableBikes   3 ;
-        ex:availableStands  49 ;
-        vocab:capacity      52 ;
+        ex:availableBikes   "6" ;
+        ex:availableStands  "39" ;
+        vocab:capacity      "52" ;
         geo:lat             "48.85375581057431" ;
         geo:location        "Paris" ;
         geo:lon             "2.3390958085656166" .
@@ -35,9 +35,9 @@
         a                   ex:station ;
         rdfs:label          "Charonne - Robert et Sonia Delauney" ;
         dbo:idNumber        "11104" ;
-        ex:availableBikes   0 ;
-        ex:availableStands  19 ;
-        vocab:capacity      20 ;
+        ex:availableBikes   "2" ;
+        ex:availableStands  "16" ;
+        vocab:capacity      "20" ;
         geo:lat             "48.85590755596891" ;
         geo:location        "Paris" ;
         geo:lon             "2.3925706744194035" .
@@ -46,9 +46,9 @@
         a                   ex:station ;
         rdfs:label          "Harpe - Saint-Germain" ;
         dbo:idNumber        "5001" ;
-        ex:availableBikes   8 ;
-        ex:availableStands  1 ;
-        vocab:capacity      1 ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "1" ;
+        vocab:capacity      "1" ;
         geo:lat             "48.85151881501689" ;
         geo:location        "Paris" ;
         geo:lon             "2.343670316040516" .
@@ -57,9 +57,9 @@
         a                   ex:station ;
         rdfs:label          "Jourdan - Stade Charléty" ;
         dbo:idNumber        "14014" ;
-        ex:availableBikes   0 ;
-        ex:availableStands  58 ;
-        vocab:capacity      60 ;
+        ex:availableBikes   "7" ;
+        ex:availableStands  "48" ;
+        vocab:capacity      "60" ;
         geo:lat             "48.81942833336948" ;
         geo:location        "Paris" ;
         geo:lon             "2.343335375189781" .
@@ -68,9 +68,9 @@
         a                   ex:station ;
         rdfs:label          "Toudouze - Clauzel" ;
         dbo:idNumber        "9020" ;
-        ex:availableBikes   1 ;
-        ex:availableStands  20 ;
-        vocab:capacity      21 ;
+        ex:availableBikes   "2" ;
+        ex:availableStands  "16" ;
+        vocab:capacity      "21" ;
         geo:lat             "48.87929591733507" ;
         geo:location        "Paris" ;
         geo:lon             "2.3373600840568547" .
@@ -79,9 +79,9 @@
         a                   ex:station ;
         rdfs:label          "Jouffroy d'Abbans - Wagram" ;
         dbo:idNumber        "17026" ;
-        ex:availableBikes   6 ;
-        ex:availableStands  0 ;
-        vocab:capacity      0 ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "0" ;
+        vocab:capacity      "0" ;
         geo:lat             "48.881973298351625" ;
         geo:location        "Paris" ;
         geo:lon             "2.301132157444954" .
@@ -90,9 +90,9 @@
         a                   ex:station ;
         rdfs:label          "Square Boucicaut" ;
         dbo:idNumber        "7003" ;
-        ex:availableBikes   22 ;
-        ex:availableStands  17 ;
-        vocab:capacity      60 ;
+        ex:availableBikes   "24" ;
+        ex:availableStands  "21" ;
+        vocab:capacity      "60" ;
         geo:lat             "48.851296433665276" ;
         geo:location        "Paris" ;
         geo:lon             "2.325061820447445" .
@@ -101,9 +101,9 @@
         a                   ex:station ;
         rdfs:label          "Mairie du 12ème" ;
         dbo:idNumber        "12109" ;
-        ex:availableBikes   2 ;
-        ex:availableStands  28 ;
-        vocab:capacity      30 ;
+        ex:availableBikes   "1" ;
+        ex:availableStands  "29" ;
+        vocab:capacity      "30" ;
         geo:lat             "48.84085531176338" ;
         geo:location        "Paris" ;
         geo:lon             "2.3875549435615544" .
@@ -112,9 +112,9 @@
         a                   ex:station ;
         rdfs:label          "Benjamin Godard - Victor Hugo" ;
         dbo:idNumber        "16107" ;
-        ex:availableBikes   2 ;
-        ex:availableStands  29 ;
-        vocab:capacity      35 ;
+        ex:availableBikes   "0" ;
+        ex:availableStands  "34" ;
+        vocab:capacity      "35" ;
         geo:lat             "48.865983" ;
         geo:location        "Paris" ;
         geo:lon             "2.275725" .

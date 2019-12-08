@@ -12,9 +12,9 @@
         a                   ex:station ;
         rdfs:label          "Plaine de Baud" ;
         dbo:idNumber        "5546" ;
-        ex:availableBikes   15 ;
-        ex:availableStands  23 ;
-        vocab:capacity      8 ;
+        ex:availableBikes   "23" ;
+        ex:availableStands  "24" ;
+        vocab:capacity      "1" ;
         geo:lat             "48.112461" ;
         geo:location        "Rennes" ;
         geo:lon             "-1.643674" .
@@ -23,9 +23,9 @@
         a                   ex:station ;
         rdfs:label          "La Poterie" ;
         dbo:idNumber        "5582" ;
-        ex:availableBikes   9 ;
-        ex:availableStands  27 ;
-        vocab:capacity      18 ;
+        ex:availableBikes   "15" ;
+        ex:availableStands  "28" ;
+        vocab:capacity      "13" ;
         geo:lat             "48.087282" ;
         geo:location        "Rennes" ;
         geo:lon             "-1.644121" .
@@ -34,9 +34,9 @@
         a                   ex:station ;
         rdfs:label          "La Criée" ;
         dbo:idNumber        "5521" ;
-        ex:availableBikes   13 ;
-        ex:availableStands  24 ;
-        vocab:capacity      11 ;
+        ex:availableBikes   "9" ;
+        ex:availableStands  "24" ;
+        vocab:capacity      "15" ;
         geo:lat             "48.107626" ;
         geo:location        "Rennes" ;
         geo:lon             "-1.680085" .
@@ -45,9 +45,9 @@
         a                   ex:station ;
         rdfs:label          "Painlevé" ;
         dbo:idNumber        "5580" ;
-        ex:availableBikes   11 ;
-        ex:availableStands  18 ;
-        vocab:capacity      7 ;
+        ex:availableBikes   "6" ;
+        ex:availableStands  "18" ;
+        vocab:capacity      "12" ;
         geo:lat             "48.122994" ;
         geo:location        "Rennes" ;
         geo:lon             "-1.660547" .
@@ -56,9 +56,9 @@
         a                   ex:station ;
         rdfs:label          "Marbeuf" ;
         dbo:idNumber        "5538" ;
-        ex:availableBikes   16 ;
-        ex:availableStands  20 ;
-        vocab:capacity      4 ;
+        ex:availableBikes   "3" ;
+        ex:availableStands  "20" ;
+        vocab:capacity      "17" ;
         geo:lat             "48.111749" ;
         geo:location        "Rennes" ;
         geo:lon             "-1.702077" .
@@ -67,9 +67,9 @@
         a                   ex:station ;
         rdfs:label          "Gros-Chêne" ;
         dbo:idNumber        "5578" ;
-        ex:availableBikes   9 ;
-        ex:availableStands  18 ;
-        vocab:capacity      9 ;
+        ex:availableBikes   "12" ;
+        ex:availableStands  "18" ;
+        vocab:capacity      "6" ;
         geo:lat             "48.126795" ;
         geo:location        "Rennes" ;
         geo:lon             "-1.665101" .
@@ -78,9 +78,9 @@
         a                   ex:station ;
         rdfs:label          "Champs Libres" ;
         dbo:idNumber        "5516" ;
-        ex:availableBikes   5 ;
-        ex:availableStands  24 ;
-        vocab:capacity      19 ;
+        ex:availableBikes   "10" ;
+        ex:availableStands  "24" ;
+        vocab:capacity      "14" ;
         geo:lat             "48.105537" ;
         geo:location        "Rennes" ;
         geo:lon             "-1.674328" .
@@ -89,9 +89,9 @@
         a                   ex:station ;
         rdfs:label          "Turmel" ;
         dbo:idNumber        "5581" ;
-        ex:availableBikes   14 ;
-        ex:availableStands  16 ;
-        vocab:capacity      2 ;
+        ex:availableBikes   "8" ;
+        ex:availableStands  "16" ;
+        vocab:capacity      "8" ;
         geo:lat             "48.122147" ;
         geo:location        "Rennes" ;
         geo:lon             "-1.650808" .
@@ -100,9 +100,9 @@
         a                   ex:station ;
         rdfs:label          "Brest - Verdun" ;
         dbo:idNumber        "5534" ;
-        ex:availableBikes   11 ;
-        ex:availableStands  24 ;
-        vocab:capacity      13 ;
+        ex:availableBikes   "6" ;
+        ex:availableStands  "24" ;
+        vocab:capacity      "18" ;
         geo:lat             "48.113009" ;
         geo:location        "Rennes" ;
         geo:lon             "-1.693264" .
@@ -111,9 +111,9 @@
         a                   ex:station ;
         rdfs:label          "Musée Beaux-Arts" ;
         dbo:idNumber        "5510" ;
-        ex:availableBikes   6 ;
-        ex:availableStands  16 ;
-        vocab:capacity      10 ;
+        ex:availableBikes   "2" ;
+        ex:availableStands  "16" ;
+        vocab:capacity      "14" ;
         geo:lat             "48.109601" ;
         geo:location        "Rennes" ;
         geo:lon             "-1.67408" .
