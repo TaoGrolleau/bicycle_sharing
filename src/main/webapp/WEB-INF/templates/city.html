@@ -84,7 +84,7 @@
                 </script>
                 <ul class="nav flex-column" th:each="stat : ${stations}">
                     <li class="nav-item">
-                        <a class="nav-item" th:text="${stat.station_name}" href="#"></a>
+                        <a class="nav-item" th:text="${stat.station_name}" th:href="@{/station(id=${stat.id})}"></a>
                         <script>
                         var stationName = "[[${stat.station_name}]]";
                         var stationId = "[[${stat.station_id}]]";
@@ -120,7 +120,6 @@
         integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
         crossorigin=""></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
-
 <script src="../../js/script_city.js"></script>
 </body>
 </html>
