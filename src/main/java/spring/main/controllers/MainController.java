@@ -76,8 +76,6 @@ public class MainController {
             while (sc.hasNext()) {
                 inline += sc.nextLine();
             }
-            System.out.println("\nJSON data in string format");
-            System.out.println(inline);
 
             sc.close();
         }
