@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import spring.main.models.BicycleStation;
 import spring.main.repositories.BicycleStationRepository;
 
+import java.util.Optional;
+
 @Controller
 @ComponentScan
 public class RequestController {
@@ -56,5 +58,15 @@ public class RequestController {
         conn.close();
 
         return "city";
+    }
+
+    @RequestMapping("/station")
+    public String request_station(Model model, @RequestParam("id") String id) {
+        Optional<BicycleStation> result = bicycleStationRepository.findById(Long.parseLong(id));
+        if (result.isPresent()) {
+            model.addAttribute("station_found", result.get());
+        }
+
+        return "station";
     }
 }

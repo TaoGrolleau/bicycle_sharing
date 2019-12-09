@@ -1,7 +1,7 @@
-<!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>Bicycle Sharing</title>
     <link href="../../css/styles.css" rel="stylesheet" type="text/css">
     <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -11,6 +11,7 @@
           rel="stylesheet"/>
     <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
           integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" rel="stylesheet">
+
 
 </head>
 <body>
@@ -69,10 +70,11 @@
             </div>
         </div>
         <div class="col-lg-2 bg-light">
-            <ul class="nav flex-column" th:each="stat : ${stations}">
-                <li class="nav-item">
-                    <a class="nav-item" th:text="${stat.station_name}" th:href="@{/station(id=${stat.id})}"></a>
-                </li>
+            <h3 th:text="${station_found.station_name}"></h3>
+            <ul>
+                <li th:text="${station_found.station_available_bikes}"></li>
+                <li th:text="${station_found.station_used_bikes}"></li>
+                <li th:text="${station_found.station_total_bikes}"></li>
             </ul>
         </div>
     </div>
