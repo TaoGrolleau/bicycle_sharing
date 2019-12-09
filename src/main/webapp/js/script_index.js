@@ -1,10 +1,10 @@
 var villes = {
-	 "Saint-Etienne": { "lat": 45.439695, "lon": 4.3871779},
-	 "Lyon": {"lat": 45.75, "lon": 4.85},
-	 "Montpellier": {"lat": 43.62505, "lon": 3.862038},
-	 "Rennes": {"lat": 48.0833 , "lon": -1.6833},
-	 "Strasbourg": {"lat": 48.5833, "lon": 7.75},
-	 "Paris": {"lat": 48.8534, "lon": 2.3488}
+	 "Saint-Etienne": { "lat": 45.439695, "lon": 4.3871779 , "name": "Saint-Etienne" },
+	 "Lyon": {"lat": 45.75, "lon": 4.85, "name": "Lyon" },
+	 "Montpellier": {"lat": 43.62505, "lon": 3.862038, "name": "Montpellier" },
+	 "Rennes": {"lat": 48.0833 , "lon": -1.6833, "name": "Rennes" },
+	 "Strasbourg": {"lat": 48.5833, "lon": 7.75, "name": "Strasbourg" },
+	 "Paris": {"lat": 48.8534, "lon": 2.3488, "name": "Paris" }
 };
 
 var lat = 48.852969;
@@ -26,13 +26,10 @@ function initMap() {
         maxZoom: 20
     }).addTo(macarte);
 
-    for (station in listStationName) {
-        var marker = L.marker([parseFloat(listStationLat[station]), parseFloat(listStationLon[station])] ,{
-                                                                                                              id: listId[station],
-                                                                                                              title: listStationName[station],
-                                                                                                              someCustomProperty: 'Adding custom data to this marker!',
-                                                                                                              anotherCustomProperty: 'More custom data to this marker!'
-                                                                                                          });
+    for (ville in villes) {
+        var marker = L.marker([villes[ville].lat, villes[ville].lon] ,{
+            name: villes[ville].name
+        });
         marker.addTo(macarte);
         markers.push(marker);
     }
@@ -50,8 +47,5 @@ window.onload = function(){
 
 function onClick(e){
     var marker = e.layer;
-    location.replace("http://localhost:8080/station?id=" + marker.options.id);
+    location.replace("http://localhost:8080/city?name=" + marker.options.name);
 }
-
-
-
