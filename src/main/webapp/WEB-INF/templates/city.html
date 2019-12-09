@@ -84,7 +84,7 @@
                 </script>
                 <ul class="nav flex-column" th:each="stat : ${stations}">
                     <li class="nav-item">
-                        <a class="nav-item" th:text="${stat.station_name}" href="#"></a>
+                        <a class="nav-item" th:text="${stat.station_name}" th:href="@{/station(id=${stat.id})}"></a>
                         <script>
                         var stationName = "[[${stat.station_name}]]";
                         var stationId = "[[${stat.station_id}]]";
