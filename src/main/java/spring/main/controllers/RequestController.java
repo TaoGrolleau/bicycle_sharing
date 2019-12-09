@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import spring.main.models.BicycleStation;
 import spring.main.repositories.BicycleStationRepository;
 
+import java.util.List;
 import java.util.Optional;
 
 @Controller
@@ -26,7 +27,7 @@ public class RequestController {
 
     @RequestMapping("/city")
     public String request_city(Model model, @RequestParam("name") String city_name) {
-        bicycleStationRepository.deleteAll();
+        /*bicycleStationRepository.deleteAll();
         BicycleStation station;
         RDFConnection conn = RDFConnectionFactory.connect("http://localhost:3030/bicycle-sharing/query", null, null);
         QueryExecution qExec = conn.query("PREFIX ex: <http://example.com/>\n" +
@@ -53,9 +54,11 @@ public class RequestController {
             station = new BicycleStation(label.toString(), id.toString(), lon.toString(), lat.toString(), "-1", "-1", "-1");
             bicycleStationRepository.save(station);
         }
-        model.addAttribute("stations", bicycleStationRepository.findAll());
+
         qExec.close();
-        conn.close();
+        conn.close();*/
+
+        model.addAttribute("stations", bicycleStationRepository.findByCity(city_name));
 
         return "city";
     }
