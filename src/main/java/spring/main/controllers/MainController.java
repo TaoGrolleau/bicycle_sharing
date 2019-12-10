@@ -103,7 +103,6 @@ public class MainController {
 
             sc.close();
         }
-
         JSONParser jsonParser = new JSONParser();
         JSONObject jobj = (JSONObject) jsonParser.parse(inline);
 
@@ -132,13 +131,13 @@ public class MainController {
                             "<http://ex.com/Rennes/" + fields.get("idstation").toString() +"> geo:lon "+coordonnees.get(1).toString()+".\n" +
                             "}";
                     String query6 = "INSERT DATA {\n" +
-                            "<http://ex.com/Rennes/" + fields.get("idstation").toString() +"> vocab:capacity "+fields.get("nombrevelosdisponibles").toString()+".\n" +
+                            "<http://ex.com/Rennes/" + fields.get("idstation").toString() +"> vocab:capacity \""+fields.get("nombrevelosdisponibles").toString()+"\".\n" +
                             "}";
                     String query7 = "INSERT DATA {\n" +
-                            "<http://ex.com/Rennes/" + fields.get("idstation").toString() +"> ex:availableStands "+fields.get("nombreemplacementsdisponibles").toString()+".\n" +
+                            "<http://ex.com/Rennes/" + fields.get("idstation").toString() +"> ex:availableStands \""+fields.get("nombreemplacementsdisponibles").toString()+"\".\n" +
                             "}";
                     String query8 = "INSERT DATA {\n" +
-                            "<http://ex.com/Rennes/" + fields.get("idstation").toString() +"> ex:availableBikes "+fields.get("nombreemplacementsactuels").toString()+".\n" +
+                            "<http://ex.com/Rennes/" + fields.get("idstation").toString() +"> ex:availableBikes \""+fields.get("nombreemplacementsactuels").toString()+"\".\n" +
                             "}";
                     String query9 = "INSERT DATA {\n" +
                             "<http://ex.com/Rennes/" + fields.get("idstation").toString() +"> geo:location \"Rennes\" ." +
@@ -300,8 +299,6 @@ public class MainController {
                     while (sc2.hasNext()) {
                         inline2 += sc2.nextLine();
                     }
-                    System.out.println("\nJSON data in string format");
-                    System.out.println(inline2);
 
                     sc2.close();
                 }
@@ -490,14 +487,8 @@ public class MainController {
                 );
                 bicycleStationRepository.save(bicycleStationToAdd);*/
             }
-
-
-
         } catch (ParserConfigurationException | SAXException e) {
             e.printStackTrace();
         }
-
-
-
     }
 }
