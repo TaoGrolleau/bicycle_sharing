@@ -25,6 +25,11 @@ public class RequestController {
     @Autowired
     BicycleStationRepository bicycleStationRepository;
 
+    @RequestMapping("/index")
+    public String index() {
+        return "index";
+    }
+
     @RequestMapping("/city")
     public String request_city(Model model, @RequestParam("name") String city_name) {
         bicycleStationRepository.deleteAll();

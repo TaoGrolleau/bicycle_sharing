@@ -28,7 +28,7 @@ public class UpdateController {
         get_data("Paris");
         get_data("Lyon");
 
-        return "redirect:/";
+        return "redirect:/index";
     }
 
     public void get_data(String city) throws IOException, ParseException {
