@@ -85,9 +85,4 @@ public class RequestController {
 
         return "station";
     }
-
-    @RequestMapping("/problem")
-    public String request_error(){
-        return "problem";
-    }
 }

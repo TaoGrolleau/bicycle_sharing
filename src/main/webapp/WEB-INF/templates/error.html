@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="utf-8">
     <title>Oups!</title>
@@ -20,7 +20,10 @@
              style="margin-top : 10px; margin-left:10px; margin-right:10px; position:absolute; top: 25%;left: 25%; height:50%">
             <h1>:(</h1>
             <h4>Oups!</h4>
-            <p> Our site encounter some troubles please try again later!</p>
+            <h5>Our site encountered some troubles, please try again later!</h5>
+            <p>If you encounter again this problem, follow this link : <a href="https://www.rickrolled.com/get-rolled">http://www.help.com</a> </p>
+            <p>Or return to the home page by clicking on this button </p>
+            <a class="btn btn-danger" th:href="@{/index}" >Home</a>
         </div>
         <div class="col-lg-2"></div>
     </div>
