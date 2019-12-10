@@ -24,7 +24,7 @@ public class UpdateController {
     public String update_rdf() throws IOException, ParseException {
         bicycleStationRepository.deleteAll();
 
-        get_data("Rennes");
+        //get_data("Rennes");
         get_data("Paris");
         get_data("Lyon");
 

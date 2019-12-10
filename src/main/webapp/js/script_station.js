@@ -11,8 +11,8 @@ function initMap() {
     L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
         // Il est toujours bien de laisser le lien vers la source des données
         attribution: 'données © OpenStreetMap/ODbL - rendu OSM France',
-        minZoom: 1,
-        maxZoom: 20
+        minZoom: 5,
+        maxZoom: 18
     }).addTo(macarte);
 
 
@@ -22,7 +22,7 @@ function initMap() {
 
 
     var group = new L.featureGroup(markers); // Nous créons le groupe des marqueurs pour adapter le zoom
-    macarte.fitBounds(group.getBounds().pad(0.5));// Nous demandons à ce que tous les marqueurs soient visibles, et ajoutons un padding (pad(0.5)) pour que les marqueurs ne soient pas coupés
+    macarte.fitBounds(group.getBounds().pad(8));// Nous demandons à ce que tous les marqueurs soient visibles, et ajoutons un padding (pad(0.5)) pour que les marqueurs ne soient pas coupés
     macarte.addLayer(markerClusters);
 }
 
