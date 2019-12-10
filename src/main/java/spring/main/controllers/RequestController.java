@@ -27,21 +27,24 @@ public class RequestController {
 
     @RequestMapping("/city")
     public String request_city(Model model, @RequestParam("name") String city_name) {
-        /*bicycleStationRepository.deleteAll();
+        bicycleStationRepository.deleteAll();
         BicycleStation station;
         RDFConnection conn = RDFConnectionFactory.connect("http://localhost:3030/bicycle-sharing/query", null, null);
-        QueryExecution qExec = conn.query("PREFIX ex: <http://example.com/>\n" +
+        QueryExecution qExec = conn.query("PREFIX ex: <http://example.org/>\n" +
                 "PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>\n" +
                 "PREFIX vocab: <http://rdf.ontology2.com/vocab#>\n" +
                 "PREFIX geo:   <http://www.opengis.net/ont/geosparql#>\n" +
                 "PREFIX dbo:   <http://dbpedia.org/ontology/>" +
-                "SELECT ?subject ?label ?id ?lat ?lon\n" +
+                "SELECT ?subject ?label ?id ?lat ?lon ?cap ?avBikes ?avStands\n" +
                 "WHERE {\n" +
                 "   ?subject rdfs:label ?label .\n" +
                 "   ?subject dbo:idNumber ?id .\n" +
                 "   ?subject geo:lat ?lat .\n" +
                 "   ?subject geo:lon ?lon .\n" +
                 "   ?subject geo:location \"" + city_name + "\" .\n" +
+                "   ?subject vocab:capacity ?cap .\n" +
+                "   ?subject ex:availableBikes ?avBikes .\n" +
+                "   ?subject ex:availableStands ?avStands .\n" +
                 "}\n");
         ResultSet rs = qExec.execSelect();
         while (rs.hasNext()) {
@@ -50,15 +53,20 @@ public class RequestController {
             Literal id = qs.getLiteral("?id");
             Literal lon = qs.getLiteral("?lon");
             Literal lat = qs.getLiteral("?lat");
+            Literal cap = qs.getLiteral("?cap");
+            Literal avBikes = qs.getLiteral("?avBikes");
+            Literal avStands = qs.getLiteral("?avStands");
 
-            station = new BicycleStation(label.toString(), id.toString(), lon.toString(), lat.toString(), "-1", "-1", "-1");
+            station = new BicycleStation(label.toString(), id.toString(), lon.toString(), lat.toString(), avStands.toString(), avBikes.toString(), cap.toString(), city_name);
+            System.out.println(station);
             bicycleStationRepository.save(station);
         }
 
         qExec.close();
-        conn.close();*/
+        conn.close();
 
-        model.addAttribute("stations", bicycleStationRepository.findByCity(city_name));
+        model.addAttribute("stations", bicycleStationRepository.findAll());
+        //model.addAttribute("stations", bicycleStationRepository.findByCity(city_name));
 
         return "city";
     }

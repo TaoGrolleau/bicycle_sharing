@@ -1,5 +1,9 @@
 package spring.main.controllers;
 
+import org.apache.jena.rdfconnection.RDFConnection;
+import org.apache.jena.rdfconnection.RDFConnectionFactory;
+import org.apache.jena.update.UpdateFactory;
+import org.apache.jena.update.UpdateRequest;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -23,16 +27,34 @@ public class MainController {
     @RequestMapping(value="/")
     //Fonction d'initialisation
     public String index() throws IOException, ParseException {
+        RDFConnection conn = RDFConnectionFactory.connect("http://localhost:3030/bicycle-sharing/update");
+
+        UpdateRequest clear = UpdateFactory.create("CLEAR DEFAULT");
+        UpdateRequest update = UpdateFactory.create("" +
+                "BASE <http://example.org/>\n" +
+                "PREFIX geo: <http://www.opengis.net/ont/geosparql#>\n" +
+                "PREFIX dbo: <http://dbpedia.org/ontology/>\n" +
+                "PREFIX ex: <http://example.org/>\n" +
+                "PREFIX vocab: <http://rdf.ontology2.com/vocab#>\n" +
+                "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
+                "PREFIX ite: <http://w3id.org/sparql-generate/iter/>\n" +
+                "PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>");
+
         bicycleStationRepository.deleteAll();
 
-        get_data("Rennes");
-        get_data("Paris");
-        get_data("Lyon");
+        get_data("Rennes", update);
+        get_data("Paris", update);
+        get_data("Lyon", update);
+
+        conn.update(clear);
+        conn.update(update);
+
+        conn.close();
 
         return "index";
     }
 
-    public void get_data(String city) throws IOException, ParseException {
+    public void get_data(String city, UpdateRequest update) throws IOException, ParseException {
         String inline = "";
         URL url;
         switch (city) {
@@ -78,7 +100,44 @@ public class MainController {
                     JSONObject fields = (JSONObject) json_obj_1.get("fields");
                     JSONArray coordonnees = (JSONArray) fields.get("coordonnees");
 
-                    BicycleStation bicycleStationToAdd = new BicycleStation(
+                    String query = "INSERT DATA {\n" +
+                            "<http://ex.com/" + fields.get("idstation").toString() +"> a ex:station .\n" +
+                            "}";
+                    String query2 = "INSERT DATA {\n" +
+                            "<http://ex.com/" + fields.get("idstation").toString() +"> dbo:idNumber "+fields.get("idstation").toString()+".\n" +
+                            "}";
+                    String query3 = "INSERT DATA {\n" +
+                            "<http://ex.com/" + fields.get("idstation").toString() +"> rdfs:label \""+ fields.get("nom").toString() +"\" .\n" +
+                            "}";
+                    String query4 = "INSERT DATA {\n" +
+                            "<http://ex.com/" + fields.get("idstation").toString() +"> geo:lat "+coordonnees.get(0).toString()+".\n" +
+                            "}";
+                    String query5 = "INSERT DATA {\n" +
+                            "<http://ex.com/" + fields.get("idstation").toString() +"> geo:lon "+coordonnees.get(1).toString()+".\n" +
+                            "}";
+                    String query6 = "INSERT DATA {\n" +
+                            "<http://ex.com/" + fields.get("idstation").toString() +"> vocab:capacity "+fields.get("nombrevelosdisponibles").toString()+".\n" +
+                            "}";
+                    String query7 = "INSERT DATA {\n" +
+                            "<http://ex.com/" + fields.get("idstation").toString() +"> ex:availableStands "+fields.get("nombreemplacementsdisponibles").toString()+".\n" +
+                            "}";
+                    String query8 = "INSERT DATA {\n" +
+                            "<http://ex.com/" + fields.get("idstation").toString() +"> ex:availableBikes "+fields.get("nombreemplacementsactuels").toString()+".\n" +
+                            "}";
+                    String query9 = "INSERT DATA {\n" +
+                            "<http://ex.com/" + fields.get("idstation").toString() +"> geo:location \"Rennes\" ." +
+                            "}";
+                    update.add(query);
+                    update.add(query2);
+                    update.add(query3);
+                    update.add(query4);
+                    update.add(query5);
+                    update.add(query6);
+                    update.add(query7);
+                    update.add(query8);
+                    update.add(query9);
+
+                    /*BicycleStation bicycleStationToAdd = new BicycleStation(
                             fields.get("nom").toString(),
                             fields.get("idstation").toString(),
                             coordonnees.get(1).toString(),
@@ -88,7 +147,7 @@ public class MainController {
                             fields.get("nombreemplacementsactuels").toString(),
                             city
                     );
-                    bicycleStationRepository.save(bicycleStationToAdd);
+                    bicycleStationRepository.save(bicycleStationToAdd);*/
                 }
                 break;
             case "Lyon":
@@ -100,7 +159,45 @@ public class MainController {
                     JSONObject properties = (JSONObject) json_obj_lyon.get("properties");
                     JSONArray coordinates = (JSONArray) geometry.get("coordinates");
 
-                    BicycleStation bicycleStationToAdd = new BicycleStation(
+                    String query = "INSERT DATA {\n" +
+                            "<http://ex.com/" + properties.get("number").toString() +"> a ex:station\n" +
+                            "}";
+                    String query2 = "INSERT DATA {\n" +
+                            "<http://ex.com/" + properties.get("number").toString() +"> dbo:idNumber "+properties.get("number").toString()+" .\n" +
+                            "}";
+                    String query3 = "INSERT DATA {\n" +
+                            "<http://ex.com/" + properties.get("number").toString() +"> rdfs:label \""+ properties.get("name").toString() +"\" .\n" +
+                            "}";
+                    String query4 = "INSERT DATA {\n" +
+                            "<http://ex.com/" + properties.get("number").toString() +"> geo:lat "+coordinates.get(1).toString()+" .\n" +
+                            "}";
+                    String query5 = "INSERT DATA {\n" +
+                            "<http://ex.com/" + properties.get("number").toString() +"> geo:lon "+coordinates.get(0).toString()+" .\n" +
+                            "}";
+                    String query6 = "INSERT DATA {\n" +
+                            "<http://ex.com/" + properties.get("number").toString() +"> vocab:capacity \""+properties.get("bike_stands").toString()+"\" .\n" +
+                            "}";
+                    String query7 = "INSERT DATA {\n" +
+                            "<http://ex.com/" + properties.get("number").toString() +"> ex:availableStands \""+properties.get("available_bike_stands").toString()+"\" .\n" +
+                            "}";
+                    String query8 = "INSERT DATA {\n" +
+                            "<http://ex.com/" + properties.get("number").toString() +"> ex:availableBikes \""+properties.get("available_bikes").toString()+"\" .\n" +
+                            "}";
+                    String query9 = "INSERT DATA {\n" +
+                            "<http://ex.com/" + properties.get("number").toString() +"> geo:location \"Lyon\" ." +
+                            "}";
+                    System.out.println(query5+"\n"+query6);
+                    update.add(query);
+                    update.add(query2);
+                    update.add(query3);
+                    update.add(query4);
+                    update.add(query5);
+                    update.add(query6);
+                    update.add(query7);
+                    update.add(query8);
+                    update.add(query9);
+
+                    /*BicycleStation bicycleStationToAdd = new BicycleStation(
                             properties.get("name").toString(),
                             properties.get("number").toString(),
                             coordinates.get(0).toString(),
@@ -110,7 +207,7 @@ public class MainController {
                             properties.get("bike_stands").toString(),
                             city
                     );
-                    bicycleStationRepository.save(bicycleStationToAdd);
+                    bicycleStationRepository.save(bicycleStationToAdd);*/
                 }
                 break;
             case "Paris":
