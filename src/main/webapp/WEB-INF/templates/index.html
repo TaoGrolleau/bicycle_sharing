@@ -1,5 +1,6 @@
 <!doctype html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" lang="en"
+      prefix="rdfs: http://www.w3.org/2000/01/rdf-schema#">
 <head>
     <meta charset="utf-8">
     <title>Bicycle Sharing</title>
@@ -31,38 +32,45 @@
             <ul class="nav flex-column">
                 <li class="nav-item">
                     <a class="nav-link active" th:href="@{/city(name='Saint-Etienne')}">
-                        <span data-feather="home"></span>
-                        Saint-Étienne <span class="sr-only">(current)</span>
+                        <span about="[_:Saint_Etienne]" property="rdfs:label">
+                            Saint-Étienne
+                        </span>
+
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" th:href="@{/city(name='Strasbourg')}">
-                        <span data-feather="file"></span>
-                        Strasbourg
+                        <span about="[_:Strasbourg]" property="rdfs:label">
+                            Strsbourg
+                        </span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" th:href="@{/city(name='Lyon')}">
-                        <span data-feather="shopping-cart"></span>
-                        Lyon
+                        <span about="[_:Lyon]"  property="rdfs:label">
+                            Lyon
+                        </span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" th:href="@{/city(name='Paris')}">
-                        <span data-feather="users"></span>
-                        Paris
+                        <span about="[_:Paris]" property="rdfs:label">
+                            Paris
+                        </span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" th:href="@{/city(name='Rennes')}">
-                        <span data-feather="bar-chart-2"></span>
-                        Rennes
+                        <span about="[_:Rennes]" property="rdfs:label" >
+                            Rennes
+                        </span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" th:href="@{/city(name='Montpellier')}">
-                        <span data-feather="layers"></span>
-                        Montpellier
+                        <span about="[_:Montpellier]" property="rdfs:label" >
+                            Montpellier
+                        </span>
                     </a>
                 </li>
             </ul>

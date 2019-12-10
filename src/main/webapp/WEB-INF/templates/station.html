@@ -1,5 +1,8 @@
 <!doctype html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" lang="en"
+      prefix="rdfs: http://www.w3.org/2000/01/rdf-schema#
+              ex: <http://example.org/>
+              vocab: <http://rdf.ontology2.com/vocab#> ">
 <head>
     <meta charset="utf-8">
     <title>Bicycle Sharing</title>
@@ -31,38 +34,45 @@
             <ul class="nav flex-column">
                 <li class="nav-item">
                     <a class="nav-link active" th:href="@{/city(name='Saint-Etienne')}">
-                        <span data-feather="home"></span>
-                        Saint-Étienne <span class="sr-only">(current)</span>
+                        <span about="[_:Saint_Etienne]" property="rdfs:label">
+                            Saint-Étienne
+                        </span>
+
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" th:href="@{/city(name='Strasbourg')}">
-                        <span data-feather="file"></span>
-                        Strasbourg
+                        <span about="[_:Strasbourg]" property="rdfs:label">
+                            Strsbourg
+                        </span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" th:href="@{/city(name='Lyon')}">
-                        <span data-feather="shopping-cart"></span>
-                        Lyon
+                        <span about="[_:Lyon]"  property="rdfs:label">
+                            Lyon
+                        </span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" th:href="@{/city(name='Paris')}">
-                        <span data-feather="users"></span>
-                        Paris
+                        <span about="[_:Paris]" property="rdfs:label">
+                            Paris
+                        </span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" th:href="@{/city(name='Rennes')}">
-                        <span data-feather="bar-chart-2"></span>
-                        Rennes
+                        <span about="[_:Rennes]" property="rdfs:label" >
+                            Rennes
+                        </span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" th:href="@{/city(name='Montpellier')}">
-                        <span data-feather="layers"></span>
-                        Montpellier
+                        <span about="[_:Montpellier]" property="rdfs:label" >
+                            Montpellier
+                        </span>
                     </a>
                 </li>
             </ul>
@@ -72,16 +82,16 @@
                 <!-- Ici s'affichera la carte -->
             </div>
         </div>
-        <div class="col-lg-2 bg-light">
-            <h3 th:text="'Station : ' + ${station_found.station_name}"></h3>
+        <div class="col-lg-2 bg-light" th:about="'[_:' + ${station_found.station_name} + ']'" typeof="ex:station">
+            <h3 th:about="'[_:' + ${station_found.station_name} + ']'" property="rdfs:label"> Station : [[${station_found.station_name}]] </h3>
             <script>
                 var lat = "[[${station_found.station_lat}]]";
                 var lon = "[[${station_found.station_lon}]]"
             </script>
             <ul class="nav flex-column">
-                <li class="nav-item" th:text="'Number of bike available : ' + ${station_found.station_available_bikes}"></li>
-                <li class="nav-item" th:text="'Number of bike stands available : ' + ${station_found.station_used_bikes}"></li>
-                <li class="nav-item" th:text="'Capacity of the station : ' + ${station_found.station_total_bikes}"></li>
+                <li class="nav-item">Number of bike available : <span th:about="'[_:' + ${station_found.station_name} + ']'" property="ex:availableBikes">[[${station_found.station_available_bikes}]]</span></li>
+                <li class="nav-item">Number of bike stands available : <span th:about="'[_:' + ${station_found.station_name} + ']'" property="ex:availableStands">[[${station_found.station_used_bikes}]]</span></li>
+                <li class="nav-item">Capacity of the station : <span th:about="'[_:' + ${station_found.station_name} + ']'" property="vocab:capacity">[[${station_found.station_total_bikes}]]</span></li>
             </ul>
         </div>
     </div>
