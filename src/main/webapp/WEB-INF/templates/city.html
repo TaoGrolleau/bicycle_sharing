@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" lang="en"
+      prefix="rdfs: http://www.w3.org/2000/01/rdf-schema#">
 <head>
     <meta charset="UTF-8">
     <title>Bicycle Sharing</title>
@@ -30,38 +31,45 @@
             <ul class="nav flex-column">
                 <li class="nav-item">
                     <a class="nav-link active" th:href="@{/city(name='Saint-Etienne')}">
-                        <span data-feather="home"></span>
-                        Saint-Étienne <span class="sr-only">(current)</span>
+                        <span about="[_:Saint_Etienne]" property="rdfs:label">
+                            Saint-Étienne
+                        </span>
+
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" th:href="@{/city(name='Strasbourg')}">
-                        <span data-feather="file"></span>
-                        Strasbourg
+                        <span about="[_:Strasbourg]" property="rdfs:label">
+                            Strsbourg
+                        </span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" th:href="@{/city(name='Lyon')}">
-                        <span data-feather="shopping-cart"></span>
-                        Lyon
+                        <span about="[_:Lyon]" property="rdfs:label">
+                            Lyon
+                        </span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" th:href="@{/city(name='Paris')}">
-                        <span data-feather="users"></span>
-                        Paris
+                        <span about="[_:Paris]" property="rdfs:label">
+                            Paris
+                        </span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" th:href="@{/city(name='Rennes')}">
-                        <span data-feather="bar-chart-2"></span>
-                        Rennes
+                        <span about="[_:Rennes]" property="rdfs:label">
+                            Rennes
+                        </span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" th:href="@{/city(name='Montpellier')}">
-                        <span data-feather="layers"></span>
-                        Montpellier
+                        <span about="[_:Montpellier]" property="rdfs:label">
+                            Montpellier
+                        </span>
                     </a>
                 </li>
             </ul>
@@ -72,7 +80,7 @@
             </div>
         </div>
 
-        <div class="col-lg-2 bg-light" >
+        <div class="col-lg-2 bg-light">
             <div class="overflow-auto " style="height: 92vh;">
                 <script>
                 var listStationName = [];
@@ -81,10 +89,15 @@
                 var listStationLon = [];
                 var listId = [];
 
+
+
                 </script>
                 <ul class="nav flex-column" th:each="stat : ${stations}">
                     <li class="nav-item">
-                        <a class="nav-item" th:text="${stat.station_name}" th:href="@{/station(id=${stat.id})}"></a>
+                        <a class="nav-item"
+                           th:href="@{/station(id=${stat.id})}">
+                            <span th:about="'[_:' + ${stat.station_name} + ']'" property="rdfs:label"> [[${stat.station_name}]]</span>
+                        </a>
                         <script>
                         var stationName = "[[${stat.station_name}]]";
                         var stationId = "[[${stat.station_id}]]";
@@ -97,6 +110,8 @@
                         listStationLat.push(stationLat);
                         listStationLon.push(stationLon);
                         listId.push(id);
+
+
 
                         </script>
                     </li>
