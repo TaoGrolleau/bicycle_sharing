@@ -63,7 +63,7 @@ public class RequestController {
             Literal avStands = qs.getLiteral("?avStands");
 
             station = new BicycleStation(label.toString(), id.toString(), lon.toString(), lat.toString(), avStands.toString(), avBikes.toString(), cap.toString(), city_name);
-            System.out.println(station);
+            //System.out.println(station);
             bicycleStationRepository.save(station);
         }
 
@@ -81,6 +81,7 @@ public class RequestController {
         Optional<BicycleStation> result = bicycleStationRepository.findById(Long.parseLong(id));
         if (result.isPresent()) {
             model.addAttribute("station_found", result.get());
+            model.addAttribute("other_stations", bicycleStationRepository.findAll());
         }
 
         return "station";

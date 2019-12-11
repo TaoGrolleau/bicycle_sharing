@@ -93,6 +93,9 @@
                 <li class="nav-item">Number of bike stands available : <span th:about="'[_:' + ${station_found.station_name} + ']'" property="ex:availableStands">[[${station_found.station_used_bikes}]]</span></li>
                 <li class="nav-item">Capacity of the station : <span th:about="'[_:' + ${station_found.station_name} + ']'" property="vocab:capacity">[[${station_found.station_total_bikes}]]</span></li>
             </ul>
+            <ul th:each="stats : ${other_stations}">
+                <li th:text="${stats.station_name}"></li>
+            </ul>
         </div>
     </div>
 </div>
