@@ -40,7 +40,7 @@
                 <li class="nav-item">
                     <a class="nav-link" th:href="@{/city(name='Strasbourg')}">
                         <span about="[_:Strasbourg]" property="rdfs:label">
-                            Strsbourg
+                            Strasbourg
                         </span>
                     </a>
                 </li>
@@ -88,6 +88,8 @@
                 var listStationLat = [];
                 var listStationLon = [];
                 var listId = [];
+                var listCapacity = [];
+                var listBikes = [];
 
 
 
@@ -104,12 +106,16 @@
                         var stationLat = "[[${stat.station_lat}]]";
                         var stationLon = "[[${stat.station_lon}]]";
                         var id = [[${stat.id}]];
+                        var capacity = "[[${stat.station_total_bikes}]]";
+                        var bikes = "[[${stat.station_available_bikes}]]";
 
                         listStationName.push(stationName);
                         listStationId.push(stationId);
                         listStationLat.push(stationLat);
                         listStationLon.push(stationLon);
                         listId.push(id);
+                        listCapacity.push(capacity);
+                        listBikes.push(bikes);
 
 
 

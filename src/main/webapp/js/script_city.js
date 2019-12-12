@@ -3,6 +3,37 @@ var lon = 2.349903;
 
 var macarte = null;
 
+var badIcon = new L.Icon({
+    iconUrl: 'https://i.ibb.co/phRCF6S/selected-bad.png',
+    //iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-icon-2x.png',
+    iconSize:    [48, 48],
+    iconAnchor:  [24, 48],
+    popupAnchor: [24, -32],
+    //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+    shadowSize:  [41, 41]
+});
+
+var okIcon = new L.Icon({
+    iconUrl: 'https://i.ibb.co/1Kqmf4v/station-ok.png',
+     //iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-icon-2x.png',
+     iconSize:    [48, 48],
+     iconAnchor:  [24, 48],
+     popupAnchor: [24, -32],
+     //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+     shadowSize:  [41, 41]
+});
+
+var goodIcon = new L.Icon({
+    iconUrl: 'https://i.ibb.co/P610D5T/station-good.png',
+    //iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-icon-2x.png',
+    //iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-icon-2x.png',
+     iconSize:    [48, 48],
+     iconAnchor:  [24, 48],
+     popupAnchor: [24, -32],
+     //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+     shadowSize:  [41, 41]
+});
+
 // Fonction d'initialisation de la carte
 function initMap() {
     var markers = [];
@@ -18,12 +49,31 @@ function initMap() {
     }).addTo(macarte);
 
     for (station in listStationName) {
-        var marker = L.marker([parseFloat(listStationLat[station]), parseFloat(listStationLon[station])] ,{
-            id: listId[station],
-            title: listStationName[station],
-            someCustomProperty: 'Adding custom data to this marker!',
-            anotherCustomProperty: 'More custom data to this marker!'
-        });
+        var averageCapacity = parseFloat(listBikes[station])/parseFloat(listCapacity[station]) * 100;
+        if(averageCapacity <= 10){
+            var marker = L.marker([parseFloat(listStationLat[station]), parseFloat(listStationLon[station])] ,{
+                id: listId[station],
+                title: listStationName[station],
+                icon : badIcon
+            });
+        }
+
+        if(averageCapacity <=30 && averageCapacity> 10){
+            var marker = L.marker([parseFloat(listStationLat[station]), parseFloat(listStationLon[station])] ,{
+                id: listId[station],
+                title: listStationName[station],
+                icon : okIcon
+            });
+        }
+
+        if(averageCapacity > 30 ){
+            var marker = L.marker([parseFloat(listStationLat[station]), parseFloat(listStationLon[station])] ,{
+                id: listId[station],
+                title: listStationName[station],
+                icon : goodIcon
+            });
+        }
+
         marker.addTo(macarte);
         markers.push(marker);
     }

@@ -12,6 +12,17 @@ var lon = 2.349903;
 
 var macarte = null;
 
+var smallIcon = new L.Icon({
+    iconUrl: 'https://i.ibb.co/5kgHf7z/station.png',
+    //iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-icon-2x.png',
+    iconSize:    [48, 48],
+    iconAnchor:  [24, 48],
+    popupAnchor: [24, -32],
+    //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+    shadowSize:  [41, 41]
+  });
+
+
 // Fonction d'initialisation de la carte
 function initMap() {
     var markers = [];
@@ -28,7 +39,8 @@ function initMap() {
 
     for (ville in villes) {
         var marker = L.marker([villes[ville].lat, villes[ville].lon] ,{
-            name: villes[ville].name
+            name: villes[ville].name,
+            icon : smallIcon
         });
         marker.addTo(macarte);
         markers.push(marker);

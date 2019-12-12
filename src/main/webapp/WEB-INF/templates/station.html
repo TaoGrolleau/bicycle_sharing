@@ -43,13 +43,13 @@
                 <li class="nav-item">
                     <a class="nav-link" th:href="@{/city(name='Strasbourg')}">
                         <span about="[_:Strasbourg]" property="rdfs:label">
-                            Strsbourg
+                            Strasbourg
                         </span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" th:href="@{/city(name='Lyon')}">
-                        <span about="[_:Lyon]"  property="rdfs:label">
+                        <span about="[_:Lyon]" property="rdfs:label">
                             Lyon
                         </span>
                     </a>
@@ -63,14 +63,14 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" th:href="@{/city(name='Rennes')}">
-                        <span about="[_:Rennes]" property="rdfs:label" >
+                        <span about="[_:Rennes]" property="rdfs:label">
                             Rennes
                         </span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" th:href="@{/city(name='Montpellier')}">
-                        <span about="[_:Montpellier]" property="rdfs:label" >
+                        <span about="[_:Montpellier]" property="rdfs:label">
                             Montpellier
                         </span>
                     </a>
@@ -83,19 +83,51 @@
             </div>
         </div>
         <div class="col-lg-2 bg-light" th:about="'[_:' + ${station_found.station_name} + ']'" typeof="ex:station">
-            <h3 th:about="'[_:' + ${station_found.station_name} + ']'" property="rdfs:label"> Station : [[${station_found.station_name}]] </h3>
+            <h3 th:about="'[_:' + ${station_found.station_name} + ']'" property="rdfs:label"> Station :
+                [[${station_found.station_name}]] </h3>
             <script>
-                var lat = "[[${station_found.station_lat}]]";
-                var lon = "[[${station_found.station_lon}]]"
+                var lat_found = "[[${station_found.station_lat}]]";
+                var lon_found = "[[${station_found.station_lon}]]";
+                var listStationName = [];
+                var listStationId = [];
+                var listStationLat = [];
+                var listStationLon = [];
+                var listId = [];
+                var listCapacity = [];
+                var listBikes = [];
+
             </script>
             <ul class="nav flex-column">
-                <li class="nav-item">Number of bike available : <span th:about="'[_:' + ${station_found.station_name} + ']'" property="ex:availableBikes">[[${station_found.station_available_bikes}]]</span></li>
-                <li class="nav-item">Number of bike stands available : <span th:about="'[_:' + ${station_found.station_name} + ']'" property="ex:availableStands">[[${station_found.station_used_bikes}]]</span></li>
-                <li class="nav-item">Capacity of the station : <span th:about="'[_:' + ${station_found.station_name} + ']'" property="vocab:capacity">[[${station_found.station_total_bikes}]]</span></li>
+                <li class="nav-item">Number of bike available : <span
+                        th:about="'[_:' + ${station_found.station_name} + ']'" property="ex:availableBikes">[[${station_found.station_available_bikes}]]</span>
+                </li>
+                <li class="nav-item">Number of bike stands available : <span
+                        th:about="'[_:' + ${station_found.station_name} + ']'" property="ex:availableStands">[[${station_found.station_used_bikes}]]</span>
+                </li>
+                <li class="nav-item">Capacity of the station : <span
+                        th:about="'[_:' + ${station_found.station_name} + ']'" property="vocab:capacity">[[${station_found.station_total_bikes}]]</span>
+                </li>
             </ul>
-            <ul th:each="stats : ${other_stations}">
-                <li th:text="${stats.station_name}"></li>
-            </ul>
+            <p th:each="stats : ${other_stations}">
+                <script>
+                        var stationName = "[[${stats.station_name}]]";
+                        var stationId = "[[${stats.station_id}]]";
+                        var stationLat = "[[${stats.station_lat}]]";
+                        var stationLon = "[[${stats.station_lon}]]";
+                        var id = [[${stats.id}]];
+                        var capacity = "[[${stats.station_total_bikes}]]";
+                        var bikes = "[[${stats.station_available_bikes}]]";
+
+                        listStationName.push(stationName);
+                        listStationId.push(stationId);
+                        listStationLat.push(stationLat);
+                        listStationLon.push(stationLon);
+                        listId.push(id);
+                        listCapacity.push(capacity);
+                        listBikes.push(bikes);
+
+                </script>
+            </p>
         </div>
     </div>
 </div>
