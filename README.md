@@ -1,20 +1,16 @@
-# SemWebProject
+# Semantic Web Project
 
 The Semantic Web project is a large and long practical exercise that consists in integrating all the pieces that have been seen during the first sessions into a consolidated Web application. To make sure you can advance sufficiently fast to cover everything, you are allowed to work by pair.
 
 ## Setup
 
-Apache Fuseki (create dataset /bicycle-sharing)
+At first, you should setup a RDF triplestore. In this project, we used Apache Fuseki. Make sure that the server is running on the port 3030. 
+Then, you should create the dataset named `bicycle-sharing`.
 
 ## Running
 
-At first go to localhost:8080/ (initialise the database)
-Redirect to index 
-
-## What you can see
-
-Possible refresh
-Click on the map or the list
+In order to initiate the RDF database, you should go to the URL http://localhost:8080/
+You're redirected to the page http://localhost:8080/index, which is the main page of our application.
 
 ## Getting data
 
@@ -29,8 +25,9 @@ We're getting data from these cities :
 
 ## Using librairies
 
-- Java Spring
-- HTML generated using Thymeleaf
-- Bootstrap
-- Javascript pour les cartes (OpenStreetMap) et [leaflet](https://leafletjs.com/) 
+We used in order to get the project running :
+- the Java Spring framework
+- the Thymeleaf framework in order to generate HTML pages
+- Bootstrap 
+- the JavaScript library [leaflet](https://leafletjs.com/) for the maps and the markers on these
 
