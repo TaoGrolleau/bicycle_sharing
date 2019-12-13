@@ -37,12 +37,14 @@ We then made the choice to develop specific Java parser for each city. So we can
 
 - Definition of the RDF vocabulary
 
+![Vocabulary](src\main\resources\rdf_vocabulary.png)
+
 ## Good aspects of the project
 
 In a user-friendly interface, we display some cities (6) but it is not adaptable enough to easily add new cities.
 We show the state of the stations directly on the map : 
-- Green means that at least 70% of the bikes are available.
-- Orange means between 70% and 90% of the bikes are taken.
+- Green means that at most 70% of the bikes are not available.
+- Orange means between 70% and 90% of the bikes not available.
 - Red means more than 90% are not available.  
 
 We use also real time data that can be refresh using the reload button.

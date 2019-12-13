@@ -2,14 +2,22 @@
 
 The Semantic Web project is a large and long practical exercise that consists in integrating all the pieces that have been seen during the first sessions into a consolidated Web application. To make sure you can advance sufficiently fast to cover everything, you are allowed to work by pair.
 
+You can find the report of this project [here](BissuelGrolleau_reportSemWeb2019.md).
+
 ## Setup
 
 At first, you should setup a RDF triplestore. In this project, we used Apache Fuseki. Make sure that the server is running on the port 3030. 
 Then, you should create the dataset named `bicycle-sharing`.
 
-## Running
+## Building and running the application
 
-In order to initiate the RDF database, you should go to the URL http://localhost:8080/
+When you've downloaded the project from Github, you can :
+- Open the project in your favorite IDE and run it from here. Project has been done with IntelliJ IDEA so it should be fine if you use it too. Other IDEs haven't been tested.
+- Build with Maven :
+    - `mvn -q package`
+    - `java -jar bicycle_sharing-1.0-SNAPSHOT.jar`
+
+In order to initiate the RDF database, you should go to the URL http://localhost:8080/.
 You're redirected to the page http://localhost:8080/index, which is the main page of our application.
 
 ## Getting data
