@@ -37,6 +37,8 @@ We then made the choice to develop specific Java parser for each city. So we can
 
 - Definition of the RDF vocabulary
 
+![Vocabulary](src\main\resources\rdf_vocabulary.png)
+
 ## Good aspects of the project
 
 In a user-friendly interface, we display some cities (6) but it is not adaptable enough to easily add new cities.
