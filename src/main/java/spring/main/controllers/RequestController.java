@@ -23,12 +23,12 @@ public class RequestController {
     @Autowired
     BicycleStationRepository bicycleStationRepository;
 
-    @RequestMapping("/index")
+    @RequestMapping("index")
     public String index() {
         return "index";
     }
 
-    @RequestMapping("/city")
+    @RequestMapping("city")
     public String request_city(Model model, @RequestParam("name") String city_name) {
         bicycleStationRepository.deleteAll();
         BicycleStation station;
@@ -74,7 +74,7 @@ public class RequestController {
         return "city";
     }
 
-    @RequestMapping("/station")
+    @RequestMapping("station")
     public String request_station(Model model, @RequestParam("id") String id) {
         Optional<BicycleStation> result = bicycleStationRepository.findById(Long.parseLong(id));
         if (result.isPresent()) {

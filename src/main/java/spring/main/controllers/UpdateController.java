@@ -27,7 +27,7 @@ public class UpdateController {
     @Autowired
     BicycleStationRepository bicycleStationRepository;
 
-    @RequestMapping("/update")
+    @RequestMapping("update")
     public String update_rdf() throws IOException, ParseException {
         bicycleStationRepository.deleteAll();
 
@@ -38,7 +38,7 @@ public class UpdateController {
         get_data_XML("Montpellier");
         get_data_XML("Strasbourg");
 
-        return "redirect:/index";
+        return "redirect:index";
     }
 
     public void get_data(String city) throws IOException, ParseException {

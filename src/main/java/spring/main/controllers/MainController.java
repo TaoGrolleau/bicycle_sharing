@@ -30,12 +30,12 @@ public class MainController implements ErrorController {
     @Autowired
     BicycleStationRepository bicycleStationRepository;
 
-    @RequestMapping("/error")
+    @RequestMapping("error")
     public String handle_error() {
         return "error";
     }
 
-    @RequestMapping(value = "/")
+    @RequestMapping(value = "")
     //Fonction d'initialisation
     public String init() throws IOException, ParseException {
         RDFConnection conn = RDFConnectionFactory.connect("http://localhost:3030/bicycle-sharing/update");
@@ -67,7 +67,7 @@ public class MainController implements ErrorController {
 
         conn.close();
 
-        return "redirect:/index";
+        return "redirect:index";
     }
 
     public void get_data(String city, UpdateRequest update) throws IOException, ParseException {
@@ -497,6 +497,6 @@ public class MainController implements ErrorController {
 
     @Override
     public String getErrorPath() {
-        return "/error";
+        return "error";
     }
 }
