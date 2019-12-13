@@ -59,7 +59,7 @@ function initMap() {
                         id: listId[station],
                         title: listStationName[station],
                         icon : badIcon
-                    });
+                    }).on('click',onClick);
                 }
 
                 if(averageCapacity <=30 && averageCapacity> 10){
@@ -67,7 +67,7 @@ function initMap() {
                         id: listId[station],
                         title: listStationName[station],
                         icon : okIcon
-                    });
+                    }).on('click',onClick);
                 }
 
                 if(averageCapacity > 30 ){
@@ -75,7 +75,7 @@ function initMap() {
                         id: listId[station],
                         title: listStationName[station],
                         icon : goodIcon
-                    });
+                    }).on('click',onClick);
                 }
 
                 marker_found.addTo(macarte);
@@ -87,7 +87,7 @@ function initMap() {
                         id: listId[station],
                         title: listStationName[station],
                         icon : badIcon
-                    });
+                    }).on('click',onClick);
                 }
 
                 if(averageCapacity <=30 && averageCapacity> 10){
@@ -95,7 +95,7 @@ function initMap() {
                         id: listId[station],
                         title: listStationName[station],
                         icon : okIcon
-                    });
+                    }).on('click',onClick);
                 }
 
                 if(averageCapacity > 30 ){
@@ -103,7 +103,7 @@ function initMap() {
                         id: listId[station],
                         title: listStationName[station],
                         icon : goodIcon
-                    });
+                    }).on('click',onClick);
                 }
 
                 marker.addTo(macarte);
@@ -121,3 +121,9 @@ window.onload = function(){
     // Fonction d'initialisation qui s'exécute lorsque le DOM est chargé
     initMap();
 };
+
+function onClick(e){
+    var marker = e.layer;
+    console.log(e);
+    location.replace("http://localhost:8080/station?id=" + e.target.options.id);
+}
